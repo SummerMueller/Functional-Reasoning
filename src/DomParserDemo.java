@@ -22,7 +22,7 @@ public class DomParserDemo {
 
             for (int temp = 0; temp < nList.getLength(); temp++) {
                 Node nNode = nList.item(temp);
-                System.out.println("\nCurrent Element :" + nNode.getNodeName());
+                System.out.println("\nCurrent Element: " + nNode.getNodeName());
 
                 if (nNode.getNodeType() == Node.ELEMENT_NODE) {
                     Element eElement = (Element) nNode;
@@ -34,6 +34,19 @@ public class DomParserDemo {
                             .getTextContent());
                 }
             }
+
+            NodeList classList = doc.getElementsByTagName("UML:Class");
+            Node classNode = classList.item(2);
+            System.out.println("\nCurrentElement: " + classNode.getNodeName());
+            Element classElement = (Element) classNode;
+            System.out.println("Name: " + classElement.getAttribute("name"));
+            System.out.println("xmi.id: " + classElement.getAttribute("xmi.id"));
+
+            NodeList taggedValueList = classElement.getElementsByTagName("UML:TaggedValue");
+            Node taggedValueNode = taggedValueList.item(2);
+            Element taggedValueElement = (Element) taggedValueNode;
+            System.out.println("xmi.id of owner: " + taggedValueElement.getAttribute("value"));
+
         } catch (Exception e) {
             e.printStackTrace();
         }
