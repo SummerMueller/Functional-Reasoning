@@ -5,8 +5,19 @@ import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
 import org.w3c.dom.Node;
 import org.w3c.dom.Element;
+import java.util.List;
+import java.util.ArrayList;
 
 public class DomParserDemo {
+
+    public static record UMLClass(String name, String xmi/*, String type, String xmiOfOwner*/) {
+    }
+
+    public static record Association(String name, String xmi, String sourceName, String destinationName, String xmiOfSource, String xmiOfDestination) {
+    }
+
+    public static record ClassifierRole(String name, String xmi, String type, String xmiOfOwner, String propertyType, String reusesProperty) {
+    }
 
     public static void main(String[] args) {
 
@@ -35,17 +46,25 @@ public class DomParserDemo {
                 }
             }
 
+            List<UMLClass> allClasses = new ArrayList<UMLClass>();
             NodeList classList = doc.getElementsByTagName("UML:Class");
-            Node classNode = classList.item(2);
-            System.out.println("\nCurrentElement: " + classNode.getNodeName());
-            Element classElement = (Element) classNode;
-            System.out.println("Name: " + classElement.getAttribute("name"));
-            System.out.println("xmi.id: " + classElement.getAttribute("xmi.id"));
+            for (int i = 0; i < classList.getLength(); i++) {
+                Node classNode = classList.item(i);
+                Element classElement = (Element) classNode;
+                allClasses.add(new UMLClass (classElement.getAttribute("name"), classElement.getAttribute("xmi.id")));
+            }
 
-            NodeList taggedValueList = classElement.getElementsByTagName("UML:TaggedValue");
-            Node taggedValueNode = taggedValueList.item(2);
-            Element taggedValueElement = (Element) taggedValueNode;
-            System.out.println("xmi.id of owner: " + taggedValueElement.getAttribute("value"));
+            //System.out.println("\nCurrentElement: " + classNode.getNodeName());
+            //Element classElement = (Element) classNode;
+            //System.out.println("Name: " + classElement.getAttribute("name"));
+            //System.out.println("xmi.id: " + classElement.getAttribute("xmi.id"));
+
+            //NodeList taggedValueList = classElement.getElementsByTagName("UML:TaggedValue");
+            //Node taggedValueNode = taggedValueList.item(2);
+            //Element taggedValueElement = (Element) taggedValueNode;
+            //System.out.println("xmi.id of owner: " + taggedValueElement.getAttribute("value"));
+
+            System.out.println(allClasses.get(2));
 
         } catch (Exception e) {
             e.printStackTrace();
