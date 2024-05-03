@@ -27,7 +27,7 @@ public class ExtractKnowledge {
    public static void main(String[] args) {
 
       try {
-         File inputFile = new File("C:\\Users\\summe\\Functional Reasoning\\CoffeeMaker.xml");
+         File inputFile = new File("data/CoffeeMaker.xml");
          DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
          DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
          Document doc = dBuilder.parse(inputFile);
