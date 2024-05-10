@@ -27,12 +27,13 @@ public class ExtractKnowledge {
    public static void main(String[] args) {
 
       try {
+
+         // Sets up the file
          File inputFile = new File("data/CoffeeMaker.xml");
          DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
          DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
          Document doc = dBuilder.parse(inputFile);
          doc.getDocumentElement().normalize();
-         System.out.println("Root element :" + doc.getDocumentElement().getNodeName());
          NodeList nList = doc.getElementsByTagName("XMI.documentation");
          System.out.printf ("----------------------------%n%n");
             
@@ -111,7 +112,7 @@ public class ExtractKnowledge {
                   aEndElement1.getAttribute("type")));
          }
          
-         // Creates an ArrayList of records to old all the associations
+         // Creates an ArrayList of records to old all the classifier roles
          List<ClassifierRole> allRoles = new ArrayList<ClassifierRole>();
          
          NodeList roleList = namespaceElement.getElementsByTagName("UML:ClassifierRole");
@@ -119,13 +120,46 @@ public class ExtractKnowledge {
          // Iterates over each UML:ClassifierRole
          for (int i = 0; i < roleList.getLength(); i++) {
             
+            Node roleNode = roleList.item(i);
+            Element roleElement = (Element) roleNode;
             
+            NodeList taggedValueList = roleElement.getElementsByTagName("UML:TaggedValue");
+            
+            Node taggedValueNode0 = taggedValueList.item(0);
+            Element taggedValueElement0 = (Element) taggedValueNode0;
+            Node taggedValueNode2 = taggedValueList.item(2);
+            Element taggedValueElement2 = (Element) taggedValueNode2;
+            Node taggedValueNode4 = taggedValueList.item(4);
+            Element taggedValueElement4 = (Element) taggedValueNode4;
+            
+            // Determines if the classifier role has a reuses property
+            String reusesProperty;
+            if (taggedValueList.getLength() >= 6) {
+               Node taggedValueNode5 = taggedValueList.item(5);
+               Element taggedValueElement5 = (Element) taggedValueNode5;
+               reusesProperty = taggedValueElement5.getAttribute("value");
+            } else {
+               reusesProperty = "";
+            }
+            
+            // Adds a new classifier role to the list of all classifier roles
+            allRoles.add(new ClassifierRole (roleElement.getAttribute("name"), 
+                  roleElement.getAttribute("xmi.id"),
+                  taggedValueElement0.getAttribute("value"),
+                  taggedValueElement2.getAttribute("value"),
+                  taggedValueElement4.getAttribute("value"),
+                  reusesProperty));
             
          }
 
+         // Tests by printing the first element of each list
          System.out.println(allBlocks.get(0));
+         System.out.println();
          System.out.println(allPorts.get(0));
+         System.out.println();
          System.out.println(allAssociations.get(0));
+         System.out.println();
+         System.out.println(allRoles.get(0));
 
       } catch (Exception e) {
          e.printStackTrace();
