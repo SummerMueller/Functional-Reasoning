@@ -74,7 +74,8 @@ public class Reasoning {
          doc.getDocumentElement().normalize();
          NodeList nList = doc.getElementsByTagName("XMI.documentation");
          System.out.printf ("----------------------------%n%n");
-         
+
+
          // Extracts the system name from the file
          int start, end;
          String currentSystem = "";
