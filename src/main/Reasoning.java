@@ -1,3 +1,5 @@
+package main;
+
 import java.io.File;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.DocumentBuilder;
@@ -62,12 +64,12 @@ public class Reasoning {
       try {
          
          // Sets up the file
-         //String file = "C:\\Users\\summe\\Functional Reasoning\\ActiveStandby_NLP.xml";
-         String file = "C:\\Users\\summe\\Functional Reasoning\\CoffeeMaker_NLP.xml";
-         //String file = "C:\\Users\\summe\\Functional Reasoning\\NoFlows_Condensed.xml";
-         //String file = "C:\\Users\\summe\\Functional Reasoning\\CoffeeMaker_Manual.xml";
-         //String file = "C:\\Users\\summe\\Functional Reasoning\\FGS_NLP.xml";
-         //String file = "C:\\Users\\summe\\Functional Reasoning\\HairDryer_NLP.xml";
+         //String file = "C:\\Users\\summe\\Functional main.Reasoning\\ActiveStandby_NLP.xml";
+         String file = "C:\\Users\\summe\\Functional Reasoning\\data\\CoffeeMaker_NLP.xml";
+         //String file = "C:\\Users\\summe\\Functional main.Reasoning\\NoFlows_Condensed.xml";
+         //String file = "C:\\Users\\summe\\Functional main.Reasoning\\CoffeeMaker_Manual.xml";
+         //String file = "C:\\Users\\summe\\Functional main.Reasoning\\FGS_NLP.xml";
+         //String file = "C:\\Users\\summe\\Functional main.Reasoning\\HairDryer_NLP.xml";
          File inputFile = new File(file);
          DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
          DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
