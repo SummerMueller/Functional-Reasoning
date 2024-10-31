@@ -1,5 +1,3 @@
-package main;
-
 import java.io.File;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.DocumentBuilder;
@@ -10,10 +8,10 @@ import org.w3c.dom.Element;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-
 public class Reasoning {
     
-   public static record Block(String name, String xmi) {
+   // Main components for the BDDs and IBDs 
+   public static record Block(String name, String xmi, ArrayList<String> ports) {
    }
     
    public static record Port(String name, String xmi, String xmiOfOwner, 
@@ -28,18 +26,37 @@ public class Reasoning {
          String xmiOfOwner, String propertyType, String reusesProperty) {
    }
    
-   public static record Function(String name, String xmi, String xmiOfOwner) {
-   }
-   
    public static record IBD(String name, String xmi, ArrayList<String> subjects) {
    }
    
-   
-   public static record DanglingNode(String IBD, String portName, String xmiOfPort, 
-         String roleName, String xmiOfRole) {
+   // Components of the activity diagrams
+   public static record ActivityParameter(String name, String type, String xmi, String xmiOfOwner) {
    }
    
-   public static record BalanceLaws(String IBD, String roleName, String xmiOfRole,
+   public static record ActionPin(String name, String type, String xmi, String xmiOfOwner) {
+   }
+   
+   public static record Action(String name, String xmi, String xmiOfOwner, 
+         ArrayList<ActionPin> inPins, ArrayList<ActionPin> outPins) {
+   }
+
+   public static record Transition(String xmi, String sourceName, String targetName,
+         String xmiOfSource, String xmiOfTarget, String sourceElementType, String targetElementType) {
+   }
+   
+   public static record ActD(String name, String xmi, ArrayList<String> subjects,
+         ArrayList<Action> actions) {
+   }
+   
+   // Types of errors
+   public static record IncompleteTopologyI(String blockName, String xmiOfBlock) {
+   }
+   
+   public static record IncompleteTopologyII(String nodeName, String nodeType, String ownerName, 
+         String ownerType, String diagramName, String diagramType, String xmiOfNode) {
+   }
+   
+   /*public static record BalanceLaws(String IBD, String roleName, String xmiOfRole,
          String dPorts, String sPorts) {
    }
    
@@ -48,28 +65,52 @@ public class Reasoning {
    
    public static record DanglingEdge(String name, String xmi, String sourceName,
          String xmiOfSource, String destinationName, String xmiOfDestination) {
-   }
+   }*/
    
-   public static record FlowIntegrityTypeI(String IBD, String associationName,
+   public static record BalanceLawsI(String IBD, String associationName,
          String xmiOfAssociation, String sPortOwner, String sPort,
          String xmiOfsPort, String dPortOwner, String dPort, String xmiOfdPort) {
    }
    
-   public static record FlowIntegrityTypeII(String blockName,
-         String xmiOfBlock, String port, String xmiOfPort) {
+   public static record BalanceLawsII(String blockName, String flowType, 
+         int inputs, int outputs) {
    }
+   
+   public static record DanglingNode(String ActDName, String xmi) {
+   }
+   
+   public static record FunctionalReasoning(String actionName, String ActDName,
+         String xmiOfAction, String xmiOfActD) {
+   }
+
+   // Creates ArrayLists of records to hold all the components of BDDs and IBDs
+   public static ArrayList<Block> allBlocks = new ArrayList<Block>();
+   public static ArrayList<Port> allPorts = new ArrayList<Port>();
+   public static ArrayList<Association> allAssociations = new ArrayList<Association>();
+   public static ArrayList<ClassifierRole> allRoles = new ArrayList<ClassifierRole>();
+   public static ArrayList<IBD> allIBDs = new ArrayList<IBD>();
+   
+   // Creates ArrayLists of records to hold the components of activity diagrams
+   public static ArrayList<Action> allActions = new ArrayList<Action>();
+   public static ArrayList<ActivityParameter> allParameters = new ArrayList<ActivityParameter>();
+   public static ArrayList<ActionPin> allPins = new ArrayList<ActionPin>();
+   public static ArrayList<Transition> allTransitions = new ArrayList<Transition>();
+   public static ArrayList<ActD> allActDs = new ArrayList<ActD>();
+   public static ArrayList<String> allDataTypes = new ArrayList<String>();
+   
+   public static ArrayList<ActionPin> sourcePins = new ArrayList<ActionPin>();
+   public static ArrayList<ActionPin> targetPins = new ArrayList<ActionPin>();
 
    public static void main(String[] args) {
 
       try {
-         
+         boolean hasActD = true;
          // Sets up the file
-         //String file = "C:\\Users\\summe\\Functional main.Reasoning\\ActiveStandby_NLP.xml";
-         String file = "C:\\Users\\summe\\Functional Reasoning\\data\\CoffeeMaker_NLP.xml";
-         //String file = "C:\\Users\\summe\\Functional main.Reasoning\\NoFlows_Condensed.xml";
-         //String file = "C:\\Users\\summe\\Functional main.Reasoning\\CoffeeMaker_Manual.xml";
-         //String file = "C:\\Users\\summe\\Functional main.Reasoning\\FGS_NLP.xml";
-         //String file = "C:\\Users\\summe\\Functional main.Reasoning\\HairDryer_NLP.xml";
+         //String file = "C:\\Users\\summe\\Functional Reasoning\\DanglingNode_Condensed.xml";
+         String file = "C:\\Users\\summe\\Functional Reasoning\\coffeemaker_manual_2024_Condensed.xml";
+         //String file = "C:\\Users\\summe\\Functional Reasoning\\HairDryer_NLP.xml";
+         //String file = "C:\\Users\\summe\\Functional Reasoning\\Speaker_Manual_Condensed.xml";
+         //String file = "C:\\Users\\summe\\Functional Reasoning\\VacuumCleaner_Condensed.xml";
          File inputFile = new File(file);
          DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
          DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
@@ -77,8 +118,7 @@ public class Reasoning {
          doc.getDocumentElement().normalize();
          NodeList nList = doc.getElementsByTagName("XMI.documentation");
          System.out.printf ("----------------------------%n%n");
-
-
+         
          // Extracts the system name from the file
          int start, end;
          String currentSystem = "";
@@ -88,13 +128,10 @@ public class Reasoning {
          
          // Prints out the file name
          System.out.printf ("%s%n%n%n", currentSystem);
-         
-         
+        
+        
+/**************************************************************************************************/       
          // Begins the extract knowledge algorithm
-         
-         // Creates an ArrayList of records to hold all the blocks and another one for the ports
-         ArrayList<Block> allBlocks = new ArrayList<Block>();
-         ArrayList<Port> allPorts = new ArrayList<Port>();
             
          // Selects only the UML:Class blocks nested within the UML:Namespace.ownedElement block
          NodeList namespaceList = doc.getElementsByTagName("UML:Namespace.ownedElement");
@@ -121,7 +158,7 @@ public class Reasoning {
                // Adds a new block or port to the appropriate list
                if (type.equals("Class")) {
                   allBlocks.add(new Block (classElement.getAttribute("name"), 
-                        classElement.getAttribute("xmi.id")));
+                        classElement.getAttribute("xmi.id"), new ArrayList<String>()));
                } else if (type.equals("Port")) {
                   Node taggedValueNode2 = taggedValueList.item(2);
                   Element taggedValueElement2 = (Element) taggedValueNode2;
@@ -139,6 +176,12 @@ public class Reasoning {
                         classElement.getAttribute("xmi.id"),
                         taggedValueElement2.getAttribute("value"), 
                         reusesProperty));
+               
+               // Adds a new data type to the list of all data types
+               } else if (type.equals("DataType")) {
+                  allDataTypes.add(classElement.getAttribute("name"));
+                  
+               // Prints an error if the UML:Class isn't a block or port
                } else {
                   System.out.printf ("Invalid UML:Class tag at %s%n", 
                         classElement.getAttribute("name"));
@@ -146,8 +189,74 @@ public class Reasoning {
             }
          }
          
-         // Creates an ArrayList of records to hold all the associations
-         ArrayList<Association> allAssociations = new ArrayList<Association>();
+         NodeList roleList = namespaceElement.getElementsByTagName("UML:ClassifierRole");
+         
+         // Iterates over each UML:ClassifierRole
+         for (int i = 0; i < roleList.getLength(); i++) {
+            
+            // Where main info is labeled like the name and xmi
+            Node roleNode = roleList.item(i);
+            Element roleElement = (Element) roleNode;
+            
+            // Gets the type to determine what it is
+            NodeList taggedValueList = roleElement.getElementsByTagName("UML:TaggedValue");
+            Node taggedValueNode0 = taggedValueList.item(0);
+            Element taggedValueElement0 = (Element) taggedValueNode0;
+            String type = taggedValueElement0.getAttribute("value");
+            
+            // Other common values relevant to parts, pins, and parameters
+            Node taggedValueNode3 = taggedValueList.item(3);
+            Element taggedValueElement3 = (Element) taggedValueNode3;
+            Node taggedValueNode4 = taggedValueList.item(4);
+            Element taggedValueElement4 = (Element) taggedValueNode4;
+            
+            // If its a part in an IBD create a new classifier role object with apropriate fields
+            if (type.equals("Part")) {
+               
+               // Gets xmi of owner
+               Node taggedValueNode2 = taggedValueList.item(2);
+               Element taggedValueElement2 = (Element) taggedValueNode2;
+               
+               // Determines if the classifier role has a reuses property
+               String reusesProperty;
+               if (taggedValueList.getLength() >= 6) {
+                  Node taggedValueNode5 = taggedValueList.item(5);
+                  Element taggedValueElement5 = (Element) taggedValueNode5;
+                  reusesProperty = taggedValueElement5.getAttribute("value");
+               } else {
+                  reusesProperty = "";
+               }
+               
+               // Adds a new classifier role to the list of all classifier roles
+               allRoles.add(new ClassifierRole (roleElement.getAttribute("name"), 
+                     roleElement.getAttribute("xmi.id"),
+                     taggedValueElement0.getAttribute("value"),
+                     taggedValueElement2.getAttribute("value"),
+                     taggedValueElement4.getAttribute("value"),
+                     reusesProperty));
+            
+            // Adds a new activity parameter to the list of all activity parameters
+            } else if (type.equals("ActivityParameter")) {
+               allParameters.add(new ActivityParameter (roleElement.getAttribute("name"),
+                     taggedValueElement4.getAttribute("value"),
+                     roleElement.getAttribute("xmi.id"),
+                     taggedValueElement3.getAttribute("value")));
+            
+            // Adds a new action pin to the list of all action pins
+            } else if (type.equals("ActionPin")) {
+               if (taggedValueList.getLength() > 4) {
+                  allPins.add(new ActionPin (roleElement.getAttribute("name"),
+                        taggedValueElement4.getAttribute("value"),
+                        roleElement.getAttribute("xmi.id"),
+                        taggedValueElement3.getAttribute("value")));
+               }
+            
+            // Prints an error if the UML:ClassifierRole isn't a part, pin, or parameter
+            } else {
+               System.out.printf ("Invalid UML:ClassifierRole tag at %s%n", 
+                     roleElement.getAttribute("name"));
+            }
+         }
          
          NodeList associationList = namespaceElement.getElementsByTagName("UML:Association");
          
@@ -178,86 +287,88 @@ public class Reasoning {
                   aEndElement1.getAttribute("type")));
          }
          
-         // Creates an ArrayList of records to hold all the classifier roles
-         ArrayList<ClassifierRole> allRoles = new ArrayList<ClassifierRole>();
+         NodeList transitionList = namespaceElement.getElementsByTagName("UML:Transition");
          
-         NodeList roleList = namespaceElement.getElementsByTagName("UML:ClassifierRole");
-         
-         // Iterates over each UML:ClassifierRole
-         for (int i = 0; i < roleList.getLength(); i++) {
+         // Iterates over each UML:Transition tag
+         for (int i = 0; i < transitionList.getLength(); i++) {
             
-            Node roleNode = roleList.item(i);
-            Element roleElement = (Element) roleNode;
+            Node transitionNode = transitionList.item(i);
+            Element transitionElement = (Element) transitionNode;
             
-            NodeList taggedValueList = roleElement.getElementsByTagName("UML:TaggedValue");
-            
-            Node taggedValueNode0 = taggedValueList.item(0);
-            Element taggedValueElement0 = (Element) taggedValueNode0;
+            // Gets the source and target names
+            NodeList taggedValueList = transitionElement.getElementsByTagName("UML:TaggedValue");
             Node taggedValueNode2 = taggedValueList.item(2);
             Element taggedValueElement2 = (Element) taggedValueNode2;
+            Node taggedValueNode3 = taggedValueList.item(3);
+            Element taggedValueElement3 = (Element) taggedValueNode3;
             Node taggedValueNode4 = taggedValueList.item(4);
             Element taggedValueElement4 = (Element) taggedValueNode4;
+            Node taggedValueNode5 = taggedValueList.item(5);
+            Element taggedValueElement5 = (Element) taggedValueNode5;
             
-            // Determines if the classifier role has a reuses property
-            String reusesProperty;
-            if (taggedValueList.getLength() >= 6) {
-               Node taggedValueNode5 = taggedValueList.item(5);
-               Element taggedValueElement5 = (Element) taggedValueNode5;
-               reusesProperty = taggedValueElement5.getAttribute("value");
-            } else {
-               reusesProperty = "";
-            }
-            
-            // Adds a new classifier role to the list of all classifier roles
-            allRoles.add(new ClassifierRole (roleElement.getAttribute("name"), 
-                  roleElement.getAttribute("xmi.id"),
-                  taggedValueElement0.getAttribute("value"),
+            // Adds a new transition to the list of all transitions
+            allTransitions.add(new Transition (transitionElement.getAttribute("xmi.id"),
                   taggedValueElement2.getAttribute("value"),
+                  taggedValueElement3.getAttribute("value"),
+                  transitionElement.getAttribute("source"),
+                  transitionElement.getAttribute("target"),
                   taggedValueElement4.getAttribute("value"),
-                  reusesProperty));
-            
+                  taggedValueElement5.getAttribute("value")));
          }
          
-         // Creates an ArrayList of records to hold all the functions
-         ArrayList<Function> allFunctions = new ArrayList<Function>();
-         
-         NodeList functionList = doc.getElementsByTagName("UML:TaggedValue");
-         
-         // Iterates over each UML:TaggedValue
-         for (int i = 0; i < functionList.getLength(); i++) {
-            Node functionNode = functionList.item(i);
-            Element functionElement = (Element) functionNode;
+         if (hasActD) {
+            NodeList machineList = doc.getElementsByTagName("UML:StateMachine.top");
+            Node machineNode = machineList.item(0);
+            Element machineElement = (Element) machineNode;
+            NodeList actionList = machineElement.getElementsByTagName("UML:ActionState");
             
-            // Verifies the tag is a function
-            String tag = functionElement.getAttribute("tag");
-            if (tag.length() > 4) {
-               if (tag.substring(0,4).equals("Func")) {
-                  
-                  // Adds a new function to the list of all functions
-                  allFunctions.add(new Function (functionElement.getAttribute("value").trim(),
-                        functionElement.getAttribute("xmi.id"),
-                        functionElement.getAttribute("modelElement")));
+            // Iterates over each UML:ActionState tag
+            for (int i = 0; i < actionList.getLength(); i++) {
+               
+               Node actionNode = actionList.item(i);
+               Element actionElement = (Element) actionNode;
+               
+               // Gets the type and owner's xmi
+               NodeList taggedValueList = actionElement.getElementsByTagName("UML:TaggedValue");
+               Node taggedValueNode0 = taggedValueList.item(0);
+               Element taggedValueElement0 = (Element) taggedValueNode0;
+               String type = taggedValueElement0.getAttribute("value");
+               Node taggedValueNode2 = taggedValueList.item(2);
+               Element taggedValueElement2 = (Element) taggedValueNode2;
+               
+               // Adds a new action to the list of all actions
+               if (type.equals("Action")) {
+                  allActions.add(new Action (actionElement.getAttribute("name"),
+                        actionElement.getAttribute("xmi.id"),
+                        taggedValueElement2.getAttribute("value"),
+                        new ArrayList<ActionPin>(), new ArrayList<ActionPin>()));
+
+               // Prints an error if the UML:ActionState isn't an action
+               /*} else {
+                  System.out.printf ("Invalid UML:ActionState tag at %s%n", 
+                        actionElement.getAttribute("name"));*/
                }
             }
          }
          
-         // Creates an ArrayList of records to hold all the IBDs
-         ArrayList<IBD> allIBDs = new ArrayList<IBD>();
+         NodeList diagramList = doc.getElementsByTagName("UML:Diagram");
          
-         NodeList ibdList = doc.getElementsByTagName("UML:Diagram");
-         
-         // Iterates over each UML:Diagram
-         for (int i = 0; i < ibdList.getLength(); i++) {
-            Node ibdNode = ibdList.item(i);
-            Element ibdElement = (Element) ibdNode;
+         // Iterates over each UML:Diagram and gets the type of diagram IBD/ActD
+         for (int i = 0; i < diagramList.getLength(); i++) {
+            Node diagramNode = diagramList.item(i);
+            Element diagramElement = (Element) diagramNode;
+            NodeList taggedValueList = diagramElement.getElementsByTagName("UML:TaggedValue");
+            Node taggedValueNode1 = taggedValueList.item(1);
+            Element taggedValueElement1 = (Element) taggedValueNode1;
+            String type = taggedValueElement1.getAttribute("value");
             
             // Checks to make sure its not including the main BDD
-            if (!(ibdElement.getAttribute("name").equals("One Level Block Hierarchy"))) {
+            if (!(diagramElement.getAttribute("name").equals("One Level Block Hierarchy"))) {
                
                // Creates an ArrayList to store all the components of each IBD
                ArrayList<String> allSubjects = new ArrayList<String>();
                
-               NodeList subjectList = ibdElement.getElementsByTagName("UML:DiagramElement");
+               NodeList subjectList = diagramElement.getElementsByTagName("UML:DiagramElement");
 
                // Iterates over each UML:DiagramElement per diagram and adds the components to an ArrayList
                for (int j = 0; j < subjectList.getLength(); j++) {
@@ -267,12 +378,45 @@ public class Reasoning {
                }
                
                // Adds a new ibd to the list of all ibds
-               allIBDs.add(new IBD (ibdElement.getAttribute("name"), 
-                     ibdElement.getAttribute("xmi.id"), allSubjects));
+               if (type.equals("CompositeStructure")) {
+                  allIBDs.add(new IBD (diagramElement.getAttribute("name"), 
+                        diagramElement.getAttribute("xmi.id"), allSubjects));
+               
+               // Adds a new ActD to the list of all ActDs
+               } else if (type.equals("Activity")) {
+                  Node taggedValueNode3 = taggedValueList.item(3);
+                  Element taggedValueElement3 = (Element) taggedValueNode3;
+                  allActDs.add(new ActD (diagramElement.getAttribute("name"),
+                        taggedValueElement3.getAttribute("value"), allSubjects, 
+                        new ArrayList<Action>()));
+               
+               // Prints an error if the UML:Diagram isn't an IBD or ActD
+               } else {
+                  System.out.printf ("Invalid UML:Diagram tag at %s%n", 
+                        diagramElement.getAttribute("name"));
+               }
+            }
+         }
+         
+         // Stores each block with all its ports
+         for (Port port : allPorts) {
+            for (Block block : allBlocks) {
+               if (port.xmiOfOwner().equals(block.xmi())) {
+                  block.ports().add(port.name());
+               }
+            }
+         }
+         
+         // Stores each actD with its actions
+         for (Action action : allActions) {
+            for (ActD act : allActDs) {
+               if (action.xmiOfOwner().equals(act.xmi())) {
+                  act.actions().add(action);
+               }
             }
          }
 
-         // Tests by printing the first element of each list
+         // Tests by printing the first element of each list for BDD and IBD components
          /*System.out.println(allBlocks.get(0));
          System.out.println();
          System.out.println(allPorts.get(0));
@@ -282,52 +426,99 @@ public class Reasoning {
          System.out.println(allRoles.get(0));
          System.out.println();
          System.out.println(allFunctions.get(0));
-         for (IBD ibd : allIBDs) {
-            System.out.printf("%s%n%n", ibd);
+         for (Block block : allBlocks) {
+            System.out.printf("%s%n%n", block);
          }*/
-
-         // Begins validating the dangling node inspection
+         // Tests by printing the first element of each list for the activity diagram components
+         /*System.out.println(allActions.get(0));
+         System.out.println();
+         System.out.println(allParameters.get(0));
+         System.out.println();
+         System.out.println(allPins.get(0));
+         System.out.println();
+         System.out.println(allTransitions.get(0));
+         System.out.println();
+         System.out.println(allActDs.get(0));
+         System.out.println();*/
+         
+/**************************************************************************************************/
+         // Begins validating the Incomplete Topology inspection
          
          // Creates ArrayLists to hold the complete list of errors and their types
+         ArrayList<IncompleteTopologyI> allTopsI = new ArrayList<IncompleteTopologyI>();
+         ArrayList<IncompleteTopologyII> allTopsII = new ArrayList<IncompleteTopologyII>();
+         ArrayList<BalanceLawsI> allIntegritiesI = new ArrayList<BalanceLawsI>();
+         ArrayList<BalanceLawsII> allIntegritiesII = new ArrayList<BalanceLawsII>();
          ArrayList<DanglingNode> allNodes = new ArrayList<DanglingNode>();
-         ArrayList<BalanceLaws> allLaws = new ArrayList<BalanceLaws>();
-         ArrayList<NoFlows> allFlows = new ArrayList<NoFlows>();
-         ArrayList<DanglingEdge> allEdges = new ArrayList<DanglingEdge>();
-         ArrayList<FlowIntegrityTypeI> allIntegritiesI = new ArrayList<FlowIntegrityTypeI>();
-         ArrayList<FlowIntegrityTypeII> allIntegritiesII = new ArrayList<FlowIntegrityTypeII>();
+         ArrayList<FunctionalReasoning> allFunctions = new ArrayList<FunctionalReasoning>();
+         
+         // Validates that each block has at least one port
+         for (Block block : allBlocks) {
+            if (block.ports.size() == 0) {
+               allTopsI.add(new IncompleteTopologyI (block.name(), block.xmi()));
+            }
+         }
          
          // Creates two HashMaps to separately define the sources and destinations of each association
-         HashMap<String, String> sources = new HashMap<String, String>();
-         HashMap<String, String> destinations = new HashMap<String, String>();
+         HashMap<String, String> aSources = new HashMap<String, String>();
+         HashMap<String, String> aDestinations = new HashMap<String, String>();
          
          // Fills the maps with unique associations but not necessarily unique ports 
          for (Association association : allAssociations) {
-           sources.put(association.xmi(), association.xmiOfSource());
-           destinations.put(association.xmi(), association.xmiOfDestination());
+           aSources.put(association.xmi(), association.xmiOfSource());
+           aDestinations.put(association.xmi(), association.xmiOfDestination());
          }
    
          // Validates that each port within an IBD is either the source or destination of an association
          for (Port port : allPorts) {
             if (!(port.reusesProperty().equals(""))) {
-               if (!(sources.containsValue(port.xmi()) || destinations.containsValue(port.xmi()))) {
-                  String ownerName = "";
-                  // Finds the name of the owner's block
-                  for (ClassifierRole role : allRoles) {
-                     if (role.xmi().equals(port.xmiOfOwner())) {
-                        ownerName = role.name();
-                     }
-                  }
-                  allNodes.add(new DanglingNode (getIBD(allIBDs, port.xmi()), port.name(), port.xmi(), 
-                        ownerName, port.xmiOfOwner()));
+               if (!(aSources.containsValue(port.xmi()) || aDestinations.containsValue(port.xmi()))) {
+                  String ownerName = getPortOwner(port.xmi()).name();
+                  allTopsII.add(new IncompleteTopologyII (port.name(), "Port", ownerName, "Property",
+                        getIBD(allIBDs, port.xmi()), "IBD", port.xmi()));
                }     
             }
          }
          
+         ArrayList<String> tSources = new ArrayList<String>();
+         ArrayList<String> tTargets = new ArrayList<String>();
          
-         // Begins validating the balance laws inspection
+         for (Transition transition : allTransitions) {
+            tSources.add(transition.xmiOfSource());
+            tTargets.add(transition.xmiOfTarget());
+         }
+         
+         for (ActionPin pin : allPins) {
+            if (tSources.contains(pin.xmi())) {
+               sourcePins.add(pin);
+            } else if (tTargets.contains(pin.xmi())) {
+               targetPins.add(pin);
+            } else {
+               String ownerName = getPinOwner(pin.xmi()).name();
+               // Finds the name of the owner's action
+               allTopsII.add(new IncompleteTopologyII (pin.name(), "ActionPin", ownerName, "Action",
+                     "", "ActD", pin.xmi()));
+            }
+         }
+         
+         for (ActivityParameter par : allParameters) {
+            if (tSources.contains(par.xmi())) {
+               //valid
+            } else if (tTargets.contains(par.xmi())) {
+               //valid
+            } else {
+               String ownerName = "";
+               // Finds the name of the owner's action
+               allTopsII.add(new IncompleteTopologyII ("ActD", "", "ActD", ownerName,
+                     "ActivityParameter", par.name(), par.xmi()));
+            }
+         }
+
+         
+         // Begins validating the old balance laws inspection
          
          // Creates ArrayLists to separately store source and destination ports
-         ArrayList<Port> allDPorts = new ArrayList<Port>();
+         /*ArrayList<Port> allDPorts = new ArrayList<Port>();
          ArrayList<Port> allSPorts = new ArrayList<Port>();
          
          // Separates each port into source and destination
@@ -384,10 +575,10 @@ public class Reasoning {
                allLaws.add(new BalanceLaws (getIBD(allIBDs, role.xmi()), role.name(), role.xmi(), dPortsList, sPortsList));
             }
 
-         }
+         }*/
          
          // Checks for dangling edges
-         for (Association asso : allAssociations) {
+         /*for (Association asso : allAssociations) {
             boolean validSource = false;
             boolean validDestination = false;
             for (Port port : allPorts) {
@@ -402,55 +593,26 @@ public class Reasoning {
                allEdges.add(new DanglingEdge (asso.name(), asso.xmi(), asso.sourceName(),
                   asso.xmiOfSource(), asso.destinationName(), asso.xmiOfDestination()));
             }
-         }
+         }*/
          
          
-         // Begins validating the flow integrity inspection
-         
-         // Defines separate lists to distinguish between types
-         String[] solids = {"m", "s", "liq", "gas"};
-         String[] energies = {"e", "ee", "me", "the", "che", "eme", "nue"};
+/**************************************************************************************************/         
+         // Begins validating the balance laws inspection
          
          // Iterates over each association to ensure both ends match types
          for (Association asso : allAssociations) {
 
-            // Initially sets types different in case a type isn't listed in either list
-            String sType = "0";
-            String dType = "1";
+            // Gets the types of the source and destination ports for each association
+            String sType = getType(asso.sourceName());
+            String dType = getType(asso.destinationName());
 
-            // Manipulates the Strings to represent only each port's type
-            String outer = removeDigits(asso.sourceName()).toLowerCase();
-            String inner = removeDigits(asso.destinationName()).toLowerCase();
-            String[] outerS = outer.split("_");
-            String[] innerS = inner.split("_");
-            
-            // Determines if the type of either port is a solid 
-            for (int i = 0; i < solids.length; i++) {
-               if (solids[i].equals(outerS[1])) {
-                  sType = "solid";
-               }
-               if (solids[i].equals(innerS[1])) {
-                  dType = "solid";
-               }
-            }
-            
-            // Determines if the type of either port is an energy
-            for (int i = 0; i < energies.length; i++) {
-               if (energies[i].equals(outerS[1])) {
-                  sType = "energy";
-               }
-               if (energies[i].equals(innerS[1])) {
-                  dType = "energy";
-               }
-            }
-            
             // Validates that both ends of an association have the same type
             if (!(sType.equals(dType))) {
 
                // Gets the name of the current IBD and the name of the port's owner
                String currentIBD = getIBD(allIBDs, asso.xmi());
-               String sPortOwner = getPortOwner(allPorts, allRoles, asso.xmiOfSource()).name();
-               String dPortOwner = getPortOwner(allPorts, allRoles, asso.xmiOfDestination()).name();
+               String sPortOwner = getPortOwner(asso.xmiOfSource()).name();
+               String dPortOwner = getPortOwner(asso.xmiOfDestination()).name();
                
                // If the port owner's name is blank then it's owner is the same as the current IBD
                if (sPortOwner.equals("")) {
@@ -461,41 +623,265 @@ public class Reasoning {
                }
                
                // If the types don't match then a new Type I FLow Integrity error is added to the list
-               allIntegritiesI.add(new FlowIntegrityTypeI (currentIBD,
+               allIntegritiesI.add(new BalanceLawsI (currentIBD,
                      asso.name(), asso.xmi(), sPortOwner,
                      asso.sourceName(), asso.xmiOfSource(), dPortOwner,
                      asso.destinationName(), asso.xmiOfDestination()));
             }
          }
          
-
+         // Iterates over each block to check that the input and output ports are balanced
+         for (Block block : allBlocks) {
+            
+            // Creates counts for the number of types of input and output ports on each block
+            int numInM = 0; int numInE = 0; int numOutM = 0; int numOutE = 0;
+            
+            // Creates new ArrayLists for separating storing the input and output ports of each block
+            ArrayList<String> inputPorts = new ArrayList<String>();
+            ArrayList<String> outputPorts = new ArrayList<String>();
+            
+            // Fills the ArrayLists with input and output ports
+            for (String port : block.ports()) {
+               port = port.toUpperCase();
+               if (port.contains("IN")) {
+                  inputPorts.add(port);
+               }
+               if (port.contains("OUT")) {
+                  outputPorts.add(port);
+               }
+            }
+            
+            // Counts the number of materials and energies inputted
+            for (String inPort : inputPorts) {
+               String portType = getType(inPort);
+               if (portType.equals("material")) {
+                  numInM++;
+               } else if (portType.equals("energy")) {
+                  numInE++;
+               }
+            }
+            
+            // Counts the number of materials and energies outputted
+            for (String outPort : outputPorts) {
+               String portType = getType(outPort);
+               if (portType.equals("material")) {
+                  numOutM++;
+               } else if (portType.equals("energy")) {
+                  numOutE++;
+               }
+            }
+            
+            if (!(numInM == numOutM)) {
+               allIntegritiesII.add(new BalanceLawsII (block.name(), 
+                     "materials", numInM, numOutM));
+            } else if (!(numInE == numOutE)) {
+               allIntegritiesII.add(new BalanceLawsII (block.name(), 
+                     "energies", numInE, numOutE));
+            } else {
+               //valid 
+            }
+         }
+         
+         
+/**************************************************************************************************/
+         // Begins validating Inferred Balance Laws and Dangling Node Inspection
+         
+         // Stores each action with its input action pins
+         for (ActionPin pin : targetPins) {
+            for (Action action : allActions) {
+               if (pin.xmiOfOwner().equals(action.xmi())) {
+                  action.inPins().add(pin);
+               }
+            }
+         }
+         
+         // Stores each action with its output action pins
+         for (ActionPin pin : sourcePins) {
+            for (Action action : allActions) {
+               if (pin.xmiOfOwner().equals(action.xmi())) {
+                  action.outPins().add(pin);
+               }
+            }
+         }
+         
+         // Iterates over each ActD
+         for (ActD act : allActDs) {
+            
+            // If the actD has no parameters, raise a DanglingNode error
+            if (!hasParameter(act)) {
+               allNodes.add(new DanglingNode (act.name(), act.xmi()));
+            }
+            
+            // Iterates over each action to check for inferred balance errors
+            for (Action action : act.actions()) {
+               if(!validAction(action)) {
+                  allFunctions.add(new FunctionalReasoning (action.name(),
+                        act.name(), action.xmi(), act.xmi()));
+               }
+            }
+         }
+         
+ 
+/**************************************************************************************************/
          // Prints the type of each error caught and its location
+         for (BalanceLawsI error : allIntegritiesI) {
+            System.out.printf ("%s%n%n", error);
+         }
+         if (!hasActD) {
+            for (BalanceLawsII error : allIntegritiesII) {
+               System.out.printf ("%s%n%n", error);
+            }
+         }
+         for (IncompleteTopologyI error : allTopsI) {
+            System.out.printf ("%s%n%n", error);
+         }
+         for (IncompleteTopologyII error : allTopsII) {
+            System.out.printf ("%s%n%n", error);
+         }
          for (DanglingNode error : allNodes) {
             System.out.printf ("%s%n%n", error);
          }
-         for (BalanceLaws error : allLaws) {
+         for (FunctionalReasoning error : allFunctions) {
             System.out.printf ("%s%n%n", error);
          }
-         for (NoFlows error : allFlows) {
-            System.out.printf ("%s%n%n", error);
-         }
-         for (DanglingEdge error : allEdges) {
-            System.out.printf ("%s%n%n", error);
-         }
-         for (FlowIntegrityTypeI error : allIntegritiesI) {
-            System.out.printf ("%s%n%n", error);
-         }
-         for (FlowIntegrityTypeII error : allIntegritiesII) {
-            System.out.printf ("%s%n%n", error);
-         }
-         int totalErrors = allNodes.size() + allLaws.size() + allFlows.size() + 
-               allEdges.size() + allIntegritiesI.size() + allIntegritiesII.size();
+         int totalErrors = allTopsI.size() + allTopsII.size() + allIntegritiesI.size() + 
+               allIntegritiesII.size() + allNodes.size() + allFunctions.size();
          System.out.printf ("Total errors: %d%n", totalErrors);
 
       } catch (Exception e) {
          e.printStackTrace();
       }
    }
+   
+   // Determines if the given action follows the function knowledge base
+   public static boolean validAction(final Action action) {
+     
+     String function = action.name().toUpperCase();
+     
+      if (function.equals("IMPORT") || function.equals("EXPORT")) {
+         if (action.inPins().size() == 1 && action.outPins().size() == 1) {
+            if (action.inPins().get(0).type.equals(action.outPins().get(0).type)) {
+               return true;
+            }
+         }
+      
+      } else if (function.equals("STORE") || function.equals("STOP")) {
+         if (action.inPins().size() == 1 && action.outPins().size() == 0) {
+            if (getGeneralType(action.inPins().get(0)).equals("material")) {
+               return true;
+            }
+         }
+         
+      } else if (function.equals("SEPARATE")) {
+         return true;
+         
+      } else if (function.equals("DISTRIBUTE")) {
+         return true;
+         
+      } else if (function.equals("TRANSFER")) {
+         return true;
+         
+      } else if (function.equals("GUIDE")) {
+         return true;
+         
+      } else if (function.equals("COUPLE")) {
+         return true;
+         
+      } else if (function.equals("MIX")) {
+         return true;
+         
+      } else if (function.equals("ENERGIZE")) {
+         return true;
+         
+      } else if (function.equals("DEENERGIZE")) {
+         return true;
+         
+      } else if (function.equals("REGULATE")) {
+         return true;
+         
+      } else if (function.equals("CHANGE")) {
+         return true;
+         
+      } else if (function.equals("CONVERT")) {
+         return true;
+         
+      } else if (function.equals("SUPPLY")) {
+         return true;
+      
+      } else if (function.equals("ACTUATE")) {
+         return true;
+      }
+      
+      return false;
+   }
+   
+   // Determines if the actD has at least one parameter
+   public static boolean hasParameter(final ActD act) {
+      for (String xmiOfComponent : act.subjects()) {
+         for (ActivityParameter par : allParameters) {
+            if (xmiOfComponent.equals(par.xmi())) {
+               return true;
+            }
+         }
+      }
+      return false;
+   }
+   
+   public static String getGeneralType (final ActionPin pin) {
+      
+      // Defines separate lists to distinguish between types
+      String[] materials = {"M", "S", "L", "G"};
+      String[] energies = {"EE", "ME", "THE", "CHE", "EME", "NUE"};
+      
+      // Determines if the type is a material
+      for (int i = 0; i < materials.length; i++) {
+         if (materials[i].equals(pin.type())) {
+            return "material";
+         }
+      }
+   
+      // Determines if the type is an energy
+      for (int i = 0; i < energies.length; i++) {
+         if (energies[i].equals(pin.type())) {
+            return "energy";
+         }
+      }
+      
+      // If the type isn't labeled as a material or energy, return an empty string
+      return "";
+   }
+   
+   
+   // Determines the type of a port from its name
+   public static String getType (final String portName) {
+      
+      // Defines separate lists to distinguish between types
+      String[] materials = {"M", "S", "LIQ", "GAS"};
+      String[] energies = {"E", "EE", "ME", "THE", "CHE", "EME", "NUE"};
+      
+      // Manipulates the Strings to represent the port's exact type
+      String formattedPortName = removeDigits(portName.toUpperCase());
+      String[] portNameSplit = formattedPortName.split("_");
+      String exactType = portNameSplit[1];
+      
+      // Determines if the type is a material
+      for (int i = 0; i < materials.length; i++) {
+         if (materials[i].equals(exactType)) {
+            return "material";
+         }
+      }
+   
+      // Determines if the type is an energy
+      for (int i = 0; i < energies.length; i++) {
+         if (energies[i].equals(exactType)) {
+            return "energy";
+         }
+      }
+      
+      // If the type isn't labeled as a material or energy, return an empty string
+      return "";
+   }
+   
    
    // Finds and returns the owner IBD of any port, role, or other component
    public static String getIBD (final ArrayList<IBD> ibds, final String xmiOfComponent) {
@@ -509,13 +895,14 @@ public class Reasoning {
       return "";
    }
    
+   
    // Finds and returns the owner of a port (assuming that owner is a classifier role)
-   public static ClassifierRole getPortOwner (final ArrayList<Port> ports, final ArrayList<ClassifierRole> roles, final String xmiOfPort) {
+   public static ClassifierRole getPortOwner (final String xmiOfPort) {
       String owner = "";
-      for (Port port : ports) {
+      for (Port port : allPorts) {
          if (port.xmi().equals(xmiOfPort)) {
             owner = port.xmiOfOwner();
-            for (ClassifierRole role : roles) {
+            for (ClassifierRole role : allRoles) {
                if (role.xmi().equals(owner)) {
                   return role;
                }
@@ -524,6 +911,24 @@ public class Reasoning {
       }
       return new ClassifierRole ("","","","","","");
    }
+   
+   
+   // Finds and return the owner of an action pin (assuming the owner is an action)
+   public static Action getPinOwner (final String xmiOfPin) {
+      String owner = "";
+      for (ActionPin pin : allPins) {
+         if (pin.xmi().equals(xmiOfPin)) {
+            owner = pin.xmiOfOwner();
+            for (Action action : allActions) {
+               if (action.xmi().equals(owner)) {
+                  return action;
+               }
+            }
+         }
+      }
+      return new Action ("","","", null, null);
+   }
+   
    
    // Removes all numbers from a String and returns the resulting String
    public static String removeDigits (final String original) {
