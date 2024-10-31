@@ -1,0 +1,1245 @@
+<XMI xmlns:UML="omg.org/UML1.3" xmi.version="1.1" timestamp="2024-10-29 17:12:46">
+	<XMI.header>
+		<XMI.documentation>
+			<XMI.exporter>Enterprise Architect</XMI.exporter>
+			<XMI.exporterVersion>2.5</XMI.exporterVersion>
+		</XMI.documentation>
+	</XMI.header>
+	<XMI.content>
+		<UML:Model name="EA Model" xmi.id="MX_EAID_E092F1C0_346C_47b7_954C_672F6CB419DB">
+			<UML:Namespace.ownedElement>
+				<UML:Class name="EARootClass" xmi.id="EAID_11111111_5487_4080_A7F4_41526CB0AA00" isRoot="true" isLeaf="false" isAbstract="false"/>
+				<UML:Package name="VaccuumCleaner" xmi.id="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+					<UML:Namespace.ownedElement>
+						<UML:Collaboration xmi.id="EAID_E092F1C0_346C_47b7_954C_672F6CB419DB_Collaboration" name="Collaborations">
+							<UML:Namespace.ownedElement>
+								<UML:ClassifierRole name="Control Unit" xmi.id="EAID_01E64839_2091_434c_8FAA_D01837CCFF59" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_0E6374BA_73A8_4eea_A301_382B3DB02104"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{5F44C924-DB37-4aa8-AF07-C3F1D3B038AC}"/>
+										<UML:TaggedValue tag="reusesProperty" value="{DBD22F8C-2965-4cd9-9466-0F6989E895A4}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Brush Assembly" xmi.id="EAID_09828AB7_EBE2_4a85_9CEF_A898FA54F388" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_0D12EAEA_D9A4_4825_B21D_6BE029FD06C3"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{FD6DDB63-EA41-4f00-B104-FF8095830265}"/>
+										<UML:TaggedValue tag="reusesProperty" value="{282EC263-62D3-40e0-ADEF-2F7FF230455E}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Suction Assembly" xmi.id="EAID_09B49F20_8E8E_48e9_8885_9FF7A4030E93" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_22C5D12F_9EA3_4627_BC87_37F9C0514148"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{9F1A5166-F591-46ad-BBDC-18349F0F827A}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="HEPA Assembly" xmi.id="EAID_0C81BF37_E6E2_4b71_ACC9_51E74AD8DCE2" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_1E60CB11_83E8_4c48_A97D_27BF77F56B49"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{35D47AF9-7616-4437-AE22-D516DA55F607}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Nozzle Assembly" xmi.id="EAID_0D12EAEA_D9A4_4825_B21D_6BE029FD06C3" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_DD0262E1_7FB8_4bec_8278_71ACB5F9C019"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{D8A214F8-7D1E-4e64-A83D-15F6D5B1FF6D}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Electrical Assembly" xmi.id="EAID_0E6374BA_73A8_4eea_A301_382B3DB02104" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_22C5D12F_9EA3_4627_BC87_37F9C0514148"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{FCD4F419-8EA4-4268-A8DE-581373254F5C}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Electrical Assembly" xmi.id="EAID_12DA13F3_8C09_4792_8329_63BAC6C5EDD7" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_5C9D4E9D_5E7D_43ab_BD19_104282222C97"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{FCD4F419-8EA4-4268-A8DE-581373254F5C}"/>
+										<UML:TaggedValue tag="reusesProperty" value="{0E6374BA-73A8-4eea-A301-382B3DB02104}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Handle" xmi.id="EAID_1A8B00D2_F7A9_459a_B258_F737F54D4BED" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_C68C24BB_EF2D_413e_A3A0_D7932283573C"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{F77A2FE1-7CCB-421a-A535-57C39056F71A}"/>
+										<UML:TaggedValue tag="reusesProperty" value="{36087F81-A5EF-40c3-B29C-E4D88021B4DC}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Brush Assembly" xmi.id="EAID_282EC263_62D3_40e0_ADEF_2F7FF230455E" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_D8A214F8_7D1E_4e64_A83D_15F6D5B1FF6D"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{FD6DDB63-EA41-4f00-B104-FF8095830265}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Charging Unit" xmi.id="EAID_294C55FB_D041_40ee_A0F1_73DBE85BDFBB" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_0E6374BA_73A8_4eea_A301_382B3DB02104"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{35AAC731-3A14-4258-9D84-F383D6C444A9}"/>
+										<UML:TaggedValue tag="reusesProperty" value="{7CEC49E4-8F46-435d-95C4-3AC142D093AC}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Intake Grill" xmi.id="EAID_2A63A8F9_EA79_4814_882B_75D60D24B82E" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_5C9D4E9D_5E7D_43ab_BD19_104282222C97"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{BDDF06DC-64A4-4081-8FB7-86B6E60ED19F}"/>
+										<UML:TaggedValue tag="reusesProperty" value="{460A584F-0BDA-4d47-96AB-6373E12F73CE}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Nozzle Body" xmi.id="EAID_2E6C750F_39F4_4088_AD83_4870974951B4" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_D8A214F8_7D1E_4e64_A83D_15F6D5B1FF6D"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{43816C95-D930-460d-ADB1-D7CB05CC2B56}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Filter Holder" xmi.id="EAID_2E949E58_1FFB_440d_AB33_E6000D87FA95" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_0C81BF37_E6E2_4b71_ACC9_51E74AD8DCE2"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{96E3B01E-93D8-4ac7-96A7-73981789CCD5}"/>
+										<UML:TaggedValue tag="reusesProperty" value="{BDB76ABA-6E69-475a-B4E6-854D1BE92F9E}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Valve Assembly" xmi.id="EAID_2EC1A153_6978_48f2_B79D_850CBE02AEE9" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_0D12EAEA_D9A4_4825_B21D_6BE029FD06C3"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{E198D5AD-852F-4972-9B63-69CFC476CF68}"/>
+										<UML:TaggedValue tag="reusesProperty" value="{C190C459-973E-4de6-9465-9DE6A98F6689}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Rocker" xmi.id="EAID_31B9AFE1_9A30_4f24_91A8_7A3294F4604F" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_FD6DDB63_EA41_4f00_B104_FF8095830265"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{DCCFF5A6-7230-4c15-B831-6FB5B8B52A88}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Handle Assembly" xmi.id="EAID_34584C72_A7B1_4552_A6BB_12D45547B769" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_5C9D4E9D_5E7D_43ab_BD19_104282222C97"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{9302175D-A7D2-4218-B55A-1EE85C305596}"/>
+										<UML:TaggedValue tag="reusesProperty" value="{C68C24BB-EF2D-413e-A3A0-D7932283573C}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Handle" xmi.id="EAID_36087F81_A5EF_40c3_B29C_E4D88021B4DC" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_9302175D_A7D2_4218_B55A_1EE85C305596"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{F77A2FE1-7CCB-421a-A535-57C39056F71A}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Drive Housing" xmi.id="EAID_3C4DCDEC_2449_4dea_87FF_B073D32F638A" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_22C5D12F_9EA3_4627_BC87_37F9C0514148"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{C2E1F3BB-C506-4e4d-9E85-527393A1E464}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Intake Grill" xmi.id="EAID_460A584F_0BDA_4d47_96AB_6373E12F73CE" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_22C5D12F_9EA3_4627_BC87_37F9C0514148"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{BDDF06DC-64A4-4081-8FB7-86B6E60ED19F}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Motor" xmi.id="EAID_49EDCC28_3A71_4022_9D6E_BF0C026A2690" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_9F1A5166_F591_46ad_BBDC_18349F0F827A"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{21878B23-4952-4c80-BB03-E5AB3C7A125F}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Suction Assembly" xmi.id="EAID_50DD73F9_FEED_4998_97DE_7DBDA34FAB79" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_5C9D4E9D_5E7D_43ab_BD19_104282222C97"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{9F1A5166-F591-46ad-BBDC-18349F0F827A}"/>
+										<UML:TaggedValue tag="reusesProperty" value="{09B49F20-8E8E-48e9-8885-9FF7A4030E93}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Valve" xmi.id="EAID_5B0BB43C_EF9F_4b8d_A0F9_97EAC6F48610" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_C190C459_973E_4de6_9465_9DE6A98F6689"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{304B124E-F243-4f6f-BA91-6D413AEE52B1}"/>
+										<UML:TaggedValue tag="reusesProperty" value="{F5FE8734-C55A-48a9-9947-D669C1172EBD}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Drive Housing" xmi.id="EAID_5BFD05AB_D2BB_4068_A967_E170E293EE74" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_5C9D4E9D_5E7D_43ab_BD19_104282222C97"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{C2E1F3BB-C506-4e4d-9E85-527393A1E464}"/>
+										<UML:TaggedValue tag="reusesProperty" value="{3C4DCDEC-2449-4dea-87FF-B073D32F638A}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Drive Assembly" xmi.id="EAID_5C9D4E9D_5E7D_43ab_BD19_104282222C97" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_DD0262E1_7FB8_4bec_8278_71ACB5F9C019"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{22C5D12F-9EA3-4627-BC87-37F9C0514148}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Rocker" xmi.id="EAID_5F332D30_5008_4627_9797_4946C4AAE289" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_282EC263_62D3_40e0_ADEF_2F7FF230455E"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{DCCFF5A6-7230-4c15-B831-6FB5B8B52A88}"/>
+										<UML:TaggedValue tag="reusesProperty" value="{31B9AFE1-9A30-4f24-91A8-7A3294F4604F}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Valve Housing" xmi.id="EAID_65EFDD9C_1B0D_4daf_A32D_7B6F1D35D28F" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_E198D5AD_852F_4972_9B63_69CFC476CF68"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{2D83F8E0-7483-438a-9932-05227DF8AC33}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Canister" xmi.id="EAID_6EB005DB_D4D0_40e8_81BA_0E0FFD99506D" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_A3152236_F098_4896_A672_FA9C9A0B9AEB"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{F98D8280-D693-4c0e-BC50-A3D928D491A5}"/>
+										<UML:TaggedValue tag="reusesProperty" value="{A672CFF3-1468-4bd6-9D60-CEAAD91A9001}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Discharge Grill" xmi.id="EAID_6EE3BC5B_1BA5_45ff_9D0D_DEEBB53B9812" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_DEFDACE0_B456_4cc0_95F5_C6555B21AAF0"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{AC21A64B-96D3-4e90-B7FD-D5B6D7ADC38D}"/>
+										<UML:TaggedValue tag="reusesProperty" value="{796BC9EC-F97B-49f4-BB9A-75F359A831D9}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Discharge Grill" xmi.id="EAID_796BC9EC_F97B_49f4_BB9A_75F359A831D9" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_0A241831_191B_43d9_8DA6_730B097863CE"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{AC21A64B-96D3-4e90-B7FD-D5B6D7ADC38D}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Charging Unit" xmi.id="EAID_7CEC49E4_8F46_435d_95C4_3AC142D093AC" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_FCD4F419_8EA4_4268_A8DE_581373254F5C"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{35AAC731-3A14-4258-9D84-F383D6C444A9}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Battery" xmi.id="EAID_88F19F16_46E9_4edf_997A_C739BDAEB24E" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_0E6374BA_73A8_4eea_A301_382B3DB02104"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{3B9582C4-0AC6-42d3-9524-9340DBE20D5A}"/>
+										<UML:TaggedValue tag="reusesProperty" value="{F470C2D1-C921-43b5-8CC8-B0B003AF85C2}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Motor" xmi.id="EAID_89373B4C_588D_4d12_93EB_02CB40963853" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_09B49F20_8E8E_48e9_8885_9FF7A4030E93"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{21878B23-4952-4c80-BB03-E5AB3C7A125F}"/>
+										<UML:TaggedValue tag="reusesProperty" value="{49EDCC28-3A71-4022-9D6E-BF0C026A2690}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Filter Insert" xmi.id="EAID_8A557F2A_6C89_4a4e_AAE4_35B7A4608751" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_0C81BF37_E6E2_4b71_ACC9_51E74AD8DCE2"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{807AF25B-04F7-4072-923E-065B83A0CEBF}"/>
+										<UML:TaggedValue tag="reusesProperty" value="{CFFE61AA-5471-4365-8523-B45FAC3DFCCB}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="HEPA Assembly" xmi.id="EAID_94827EED_2826_4418_98BD_BBF4280D06B3" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_A3152236_F098_4896_A672_FA9C9A0B9AEB"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{35D47AF9-7616-4437-AE22-D516DA55F607}"/>
+										<UML:TaggedValue tag="reusesProperty" value="{0C81BF37-E6E2-4b71-ACC9-51E74AD8DCE2}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Discharge Assembly" xmi.id="EAID_95151182_AB4D_468c_B8DC_B44561EB824A" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_5C9D4E9D_5E7D_43ab_BD19_104282222C97"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{0A241831-191B-43d9-8DA6-730B097863CE}"/>
+										<UML:TaggedValue tag="reusesProperty" value="{DEFDACE0-B456-4cc0-95F5-C6555B21AAF0}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Bristles" xmi.id="EAID_96CC72B0_1DFC_4170_858A_99819119C622" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_282EC263_62D3_40e0_ADEF_2F7FF230455E"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{2642413E-8115-4178-9A7D-32E90F57A571}"/>
+										<UML:TaggedValue tag="reusesProperty" value="{D89B4231-AFD1-46b0-9383-2E93AC351BC7}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Discharge Filter" xmi.id="EAID_983A4EC4_40E4_4219_A893_2944C412D1BA" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_DEFDACE0_B456_4cc0_95F5_C6555B21AAF0"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{BC6B1922-E8DB-4594-BF87-A2DC9C20A1E9}"/>
+										<UML:TaggedValue tag="reusesProperty" value="{EC015574-9F0C-4b91-8258-5B2E9B3E44FB}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Impeller" xmi.id="EAID_A1C0FF91_81EA_4755_90E5_0D48C19B9EBD" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_9F1A5166_F591_46ad_BBDC_18349F0F827A"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{E37D3D23-8284-4ef7-B78C-0208DC514832}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Filter Assembly" xmi.id="EAID_A3152236_F098_4896_A672_FA9C9A0B9AEB" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_DD0262E1_7FB8_4bec_8278_71ACB5F9C019"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{1E60CB11-83E8-4c48-A97D-27BF77F56B49}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Canister" xmi.id="EAID_A672CFF3_1468_4bd6_9D60_CEAAD91A9001" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_1E60CB11_83E8_4c48_A97D_27BF77F56B49"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{F98D8280-D693-4c0e-BC50-A3D928D491A5}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Nozzle Body" xmi.id="EAID_AA23D6CD_B0A9_4b84_8557_2D6F66089E21" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_0D12EAEA_D9A4_4825_B21D_6BE029FD06C3"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{43816C95-D930-460d-ADB1-D7CB05CC2B56}"/>
+										<UML:TaggedValue tag="reusesProperty" value="{2E6C750F-39F4-4088-AD83-4870974951B4}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Nozzle Extender" xmi.id="EAID_AD150D1A_AD36_43eb_B57B_9FDFD7213664" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_0D12EAEA_D9A4_4825_B21D_6BE029FD06C3"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{4C6E5700-CAFE-4a1e-88BF-2AA888EB7076}"/>
+										<UML:TaggedValue tag="reusesProperty" value="{CED108CF-AA3D-4c2f-8E49-4B87D862C482}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Filter Holder" xmi.id="EAID_BDB76ABA_6E69_475a_B4E6_854D1BE92F9E" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_35D47AF9_7616_4437_AE22_D516DA55F607"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{96E3B01E-93D8-4ac7-96A7-73981789CCD5}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Valve Assembly" xmi.id="EAID_C190C459_973E_4de6_9465_9DE6A98F6689" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_D8A214F8_7D1E_4e64_A83D_15F6D5B1FF6D"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{E198D5AD-852F-4972-9B63-69CFC476CF68}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Switch" xmi.id="EAID_C475F94F_C5A4_4f71_9C5C_50E3A400E63E" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_9302175D_A7D2_4218_B55A_1EE85C305596"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{AEC76784-2A3D-469f-B689-5D3907AF0E86}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Handle Assembly" xmi.id="EAID_C68C24BB_EF2D_413e_A3A0_D7932283573C" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_22C5D12F_9EA3_4627_BC87_37F9C0514148"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{9302175D-A7D2-4218-B55A-1EE85C305596}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Switch" xmi.id="EAID_C7D76CE7_7883_4f91_BF41_99551A87980C" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_C68C24BB_EF2D_413e_A3A0_D7932283573C"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{AEC76784-2A3D-469f-B689-5D3907AF0E86}"/>
+										<UML:TaggedValue tag="reusesProperty" value="{C475F94F-C5A4-4f71-9C5C-50E3A400E63E}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Grill Filter" xmi.id="EAID_CA6ABF28_ABE0_4d76_94DF_6F56C0D3A256" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_A3152236_F098_4896_A672_FA9C9A0B9AEB"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{E9A7A2F4-4AA4-415a-98E7-B2944762EE49}"/>
+										<UML:TaggedValue tag="reusesProperty" value="{CB9AFF66-B568-420b-8485-6150C79B22D9}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Grill Filter" xmi.id="EAID_CB9AFF66_B568_420b_8485_6150C79B22D9" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_1E60CB11_83E8_4c48_A97D_27BF77F56B49"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{E9A7A2F4-4AA4-415a-98E7-B2944762EE49}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Nozzle Extender" xmi.id="EAID_CED108CF_AA3D_4c2f_8E49_4B87D862C482" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_D8A214F8_7D1E_4e64_A83D_15F6D5B1FF6D"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{4C6E5700-CAFE-4a1e-88BF-2AA888EB7076}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Filter Insert" xmi.id="EAID_CFFE61AA_5471_4365_8523_B45FAC3DFCCB" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_35D47AF9_7616_4437_AE22_D516DA55F607"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{807AF25B-04F7-4072-923E-065B83A0CEBF}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Bristles" xmi.id="EAID_D89B4231_AFD1_46b0_9383_2E93AC351BC7" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_FD6DDB63_EA41_4f00_B104_FF8095830265"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{2642413E-8115-4178-9A7D-32E90F57A571}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Valve Housing" xmi.id="EAID_DADE0809_AD47_4dc4_B9B6_365B71236AFA" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_C190C459_973E_4de6_9465_9DE6A98F6689"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{2D83F8E0-7483-438a-9932-05227DF8AC33}"/>
+										<UML:TaggedValue tag="reusesProperty" value="{65EFDD9C-1B0D-4daf-A32D-7B6F1D35D28F}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Control Unit" xmi.id="EAID_DBD22F8C_2965_4cd9_9466_0F6989E895A4" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_FCD4F419_8EA4_4268_A8DE_581373254F5C"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{5F44C924-DB37-4aa8-AF07-C3F1D3B038AC}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Discharge Assembly" xmi.id="EAID_DEFDACE0_B456_4cc0_95F5_C6555B21AAF0" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_22C5D12F_9EA3_4627_BC87_37F9C0514148"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{0A241831-191B-43d9-8DA6-730B097863CE}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Discharge Filter" xmi.id="EAID_EC015574_9F0C_4b91_8258_5B2E9B3E44FB" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_0A241831_191B_43d9_8DA6_730B097863CE"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{BC6B1922-E8DB-4594-BF87-A2DC9C20A1E9}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Impeller" xmi.id="EAID_EFFF178A_F080_4e71_B55D_0D97C1A462E3" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_09B49F20_8E8E_48e9_8885_9FF7A4030E93"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{E37D3D23-8284-4ef7-B78C-0208DC514832}"/>
+										<UML:TaggedValue tag="reusesProperty" value="{A1C0FF91-81EA-4755-90E5-0D48C19B9EBD}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Battery" xmi.id="EAID_F470C2D1_C921_43b5_8CC8_B0B003AF85C2" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_FCD4F419_8EA4_4268_A8DE_581373254F5C"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{3B9582C4-0AC6-42d3-9524-9340DBE20D5A}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Valve" xmi.id="EAID_F5FE8734_C55A_48a9_9947_D669C1172EBD" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="ea_stype" value="Part"/>
+										<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+										<UML:TaggedValue tag="owner" value="EAID_E198D5AD_852F_4972_9B63_69CFC476CF68"/>
+										<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+										<UML:TaggedValue tag="propertyType" value="{304B124E-F243-4f6f-BA91-6D413AEE52B1}"/>
+										</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+							</UML:Namespace.ownedElement>
+							<UML:Collaboration.interaction/>
+						</UML:Collaboration>
+						<UML:Class name="Discharge Assembly" xmi.id="EAID_0A241831_191B_43d9_8DA6_730B097863CE" namespace="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="block"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="ea_ntype" value="8"/>
+								<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+								<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+								<UML:TaggedValue tag="stereotype" value="block"/>
+								<UML:TaggedValue tag="styleex" value="ConstructID=0;"/>
+								<UML:TaggedValue tag="diagram" value="EAID_A648462D_5C8C_481b_803B_E546F440DDEC"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={40BAC263-222B-4895-BA57-1F3A31A151F4}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=block;FQName=SysML1.4::block;@ENDSTEREO;$DES;$CLT={0A241831-191B-43d9-8DA6-730B097863CE}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={DE43D8E2-246F-424c-BDC7-64494B38D6BA}$XID;$NAM=DefaultDiagram$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$CLT={0A241831-191B-43d9-8DA6-730B097863CE}$CLT;$SUP={A648462D-5C8C-481b-803B-E546F440DDEC}$SUP;$ENDXREF;$XREFPROP=$XID={F1AA693E-E6EB-4201-A0C9-F89C1B1A7B9B}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=_defaultDiagramType@ENDNAME;@TYPE=string@ENDTYPE;@VALU=SysML1.4::InternalBlock@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={0A241831-191B-43d9-8DA6-730B097863CE}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="Filter Assembly" xmi.id="EAID_1E60CB11_83E8_4c48_A97D_27BF77F56B49" namespace="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="block"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="ea_ntype" value="8"/>
+								<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+								<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+								<UML:TaggedValue tag="stereotype" value="block"/>
+								<UML:TaggedValue tag="styleex" value="ConstructID=0;"/>
+								<UML:TaggedValue tag="diagram" value="EAID_8D9ED3EC_8ED1_4a12_8537_58E3A6B8C303"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={A513A289-466C-459b-9AC1-7BBACF498E54}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=block;FQName=SysML1.4::block;@ENDSTEREO;$DES;$CLT={1E60CB11-83E8-4c48-A97D-27BF77F56B49}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={3AF0F438-A3B3-48eb-B02A-C22A63D41F83}$XID;$NAM=DefaultDiagram$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$CLT={1E60CB11-83E8-4c48-A97D-27BF77F56B49}$CLT;$SUP={8D9ED3EC-8ED1-4a12-8537-58E3A6B8C303}$SUP;$ENDXREF;$XREFPROP=$XID={F153E00F-DE29-4481-8F32-2203452ED899}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=_defaultDiagramType@ENDNAME;@TYPE=string@ENDTYPE;@VALU=SysML1.4::InternalBlock@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={1E60CB11-83E8-4c48-A97D-27BF77F56B49}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="Motor" xmi.id="EAID_21878B23_4952_4c80_BB03_E5AB3C7A125F" namespace="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="block"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+								<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+								<UML:TaggedValue tag="stereotype" value="block"/>
+								</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="Drive Assembly" xmi.id="EAID_22C5D12F_9EA3_4627_BC87_37F9C0514148" namespace="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="block"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="ea_ntype" value="8"/>
+								<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+								<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+								<UML:TaggedValue tag="stereotype" value="block"/>
+								<UML:TaggedValue tag="styleex" value="ConstructID=0;"/>
+								<UML:TaggedValue tag="diagram" value="EAID_61745FBA_F656_466a_A25F_1CA23BC4E2AA"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={50DB90F8-F66F-4a17-92DE-C31778FBDC39}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=block;FQName=SysML1.4::block;@ENDSTEREO;$DES;$CLT={22C5D12F-9EA3-4627-BC87-37F9C0514148}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={65C2F486-D244-42c4-BB6E-03B902677098}$XID;$NAM=DefaultDiagram$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$CLT={22C5D12F-9EA3-4627-BC87-37F9C0514148}$CLT;$SUP={61745FBA-F656-466a-A25F-1CA23BC4E2AA}$SUP;$ENDXREF;$XREFPROP=$XID={DA887466-5B49-4a73-A32B-1CF3E480E9E1}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=_defaultDiagramType@ENDNAME;@TYPE=string@ENDTYPE;@VALU=SysML1.4::InternalBlock@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={22C5D12F-9EA3-4627-BC87-37F9C0514148}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="Bristles" xmi.id="EAID_2642413E_8115_4178_9A7D_32E90F57A571" namespace="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="block"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+								<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+								<UML:TaggedValue tag="stereotype" value="block"/>
+								</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="Valve Housing" xmi.id="EAID_2D83F8E0_7483_438a_9932_05227DF8AC33" namespace="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="block"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+								<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+								<UML:TaggedValue tag="stereotype" value="block"/>
+								</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="Valve" xmi.id="EAID_304B124E_F243_4f6f_BA91_6D413AEE52B1" namespace="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="block"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+								<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+								<UML:TaggedValue tag="stereotype" value="block"/>
+								</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="Charging Unit" xmi.id="EAID_35AAC731_3A14_4258_9D84_F383D6C444A9" namespace="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="block"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+								<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+								<UML:TaggedValue tag="stereotype" value="block"/>
+								</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="HEPA Assembly" xmi.id="EAID_35D47AF9_7616_4437_AE22_D516DA55F607" namespace="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="block"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="ea_ntype" value="8"/>
+								<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+								<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+								<UML:TaggedValue tag="stereotype" value="block"/>
+								<UML:TaggedValue tag="styleex" value="ConstructID=0;"/>
+								<UML:TaggedValue tag="diagram" value="EAID_5D0B13E4_2CD3_4bcb_8830_DC437FECC737"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={A76F49E4-8F79-4d85-BDEF-A8F28DACD860}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=block;FQName=SysML1.4::block;@ENDSTEREO;$DES;$CLT={35D47AF9-7616-4437-AE22-D516DA55F607}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={146FE311-E9DF-44b0-85EA-00DAC247E2D5}$XID;$NAM=DefaultDiagram$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$CLT={35D47AF9-7616-4437-AE22-D516DA55F607}$CLT;$SUP={5D0B13E4-2CD3-4bcb-8830-DC437FECC737}$SUP;$ENDXREF;$XREFPROP=$XID={04304AB0-2EC7-4031-9ADA-450EB0FED897}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=_defaultDiagramType@ENDNAME;@TYPE=string@ENDTYPE;@VALU=SysML1.4::InternalBlock@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={35D47AF9-7616-4437-AE22-D516DA55F607}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="Battery" xmi.id="EAID_3B9582C4_0AC6_42d3_9524_9340DBE20D5A" namespace="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="block"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+								<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+								<UML:TaggedValue tag="stereotype" value="block"/>
+								</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="Nozzle Body" xmi.id="EAID_43816C95_D930_460d_ADB1_D7CB05CC2B56" namespace="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="block"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+								<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+								<UML:TaggedValue tag="stereotype" value="block"/>
+								</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="Nozzle Extender" xmi.id="EAID_4C6E5700_CAFE_4a1e_88BF_2AA888EB7076" namespace="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="block"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+								<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+								<UML:TaggedValue tag="stereotype" value="block"/>
+								</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="Control Unit" xmi.id="EAID_5F44C924_DB37_4aa8_AF07_C3F1D3B038AC" namespace="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="block"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+								<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+								<UML:TaggedValue tag="stereotype" value="block"/>
+								</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="Filter Insert" xmi.id="EAID_807AF25B_04F7_4072_923E_065B83A0CEBF" namespace="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="block"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+								<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+								<UML:TaggedValue tag="stereotype" value="block"/>
+								</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="Handle Assembly" xmi.id="EAID_9302175D_A7D2_4218_B55A_1EE85C305596" namespace="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="block"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="ea_ntype" value="8"/>
+								<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+								<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+								<UML:TaggedValue tag="stereotype" value="block"/>
+								<UML:TaggedValue tag="styleex" value="ConstructID=0;"/>
+								<UML:TaggedValue tag="diagram" value="EAID_F5F6E45F_856D_4b61_8A01_E4E9E3C9D151"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={DB11EB60-68EF-4bbc-9EA0-F42E27AE9C86}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=block;FQName=SysML1.4::block;@ENDSTEREO;$DES;$CLT={9302175D-A7D2-4218-B55A-1EE85C305596}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={DD6A88AA-C7CF-4ee3-B10B-8EF8F793A055}$XID;$NAM=DefaultDiagram$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$CLT={9302175D-A7D2-4218-B55A-1EE85C305596}$CLT;$SUP={F5F6E45F-856D-4b61-8A01-E4E9E3C9D151}$SUP;$ENDXREF;$XREFPROP=$XID={CE4F554E-BD70-4f79-A922-0CD6A4CC9594}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=_defaultDiagramType@ENDNAME;@TYPE=string@ENDTYPE;@VALU=SysML1.4::InternalBlock@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={9302175D-A7D2-4218-B55A-1EE85C305596}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="Filter Holder" xmi.id="EAID_96E3B01E_93D8_4ac7_96A7_73981789CCD5" namespace="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="block"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+								<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+								<UML:TaggedValue tag="stereotype" value="block"/>
+								</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="Suction Assembly" xmi.id="EAID_9F1A5166_F591_46ad_BBDC_18349F0F827A" namespace="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="block"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="ea_ntype" value="8"/>
+								<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+								<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+								<UML:TaggedValue tag="stereotype" value="block"/>
+								<UML:TaggedValue tag="styleex" value="ConstructID=0;"/>
+								<UML:TaggedValue tag="diagram" value="EAID_B658068E_0119_4781_9097_F5DDD7EE89E1"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={05026811-0162-4309-848A-50B0371DB594}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=block;FQName=SysML1.4::block;@ENDSTEREO;$DES;$CLT={9F1A5166-F591-46ad-BBDC-18349F0F827A}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={674307D4-69FD-47b2-ABA9-27890DF36C53}$XID;$NAM=DefaultDiagram$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$CLT={9F1A5166-F591-46ad-BBDC-18349F0F827A}$CLT;$SUP={B658068E-0119-4781-9097-F5DDD7EE89E1}$SUP;$ENDXREF;$XREFPROP=$XID={0D76346B-4939-4bdc-AE16-9D8E6F99C223}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=_defaultDiagramType@ENDNAME;@TYPE=string@ENDTYPE;@VALU=SysML1.4::InternalBlock@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={9F1A5166-F591-46ad-BBDC-18349F0F827A}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="DIscharge Grill" xmi.id="EAID_AC21A64B_96D3_4e90_B7FD_D5B6D7ADC38D" namespace="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="block"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+								<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+								<UML:TaggedValue tag="stereotype" value="block"/>
+								</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="Switch" xmi.id="EAID_AEC76784_2A3D_469f_B689_5D3907AF0E86" namespace="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="block"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+								<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+								<UML:TaggedValue tag="stereotype" value="block"/>
+								</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="Discharge FIlter" xmi.id="EAID_BC6B1922_E8DB_4594_BF87_A2DC9C20A1E9" namespace="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="block"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+								<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+								<UML:TaggedValue tag="stereotype" value="block"/>
+								</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="Intake Grill" xmi.id="EAID_BDDF06DC_64A4_4081_8FB7_86B6E60ED19F" namespace="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="block"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+								<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+								<UML:TaggedValue tag="stereotype" value="block"/>
+								</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="Drive Housing" xmi.id="EAID_C2E1F3BB_C506_4e4d_9E85_527393A1E464" namespace="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="block"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+								<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+								<UML:TaggedValue tag="stereotype" value="block"/>
+								</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="Nozzle Assembly" xmi.id="EAID_D8A214F8_7D1E_4e64_A83D_15F6D5B1FF6D" namespace="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="block"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="ea_ntype" value="8"/>
+								<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+								<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+								<UML:TaggedValue tag="stereotype" value="block"/>
+								<UML:TaggedValue tag="styleex" value="ConstructID=0;"/>
+								<UML:TaggedValue tag="diagram" value="EAID_AA3D9307_B92A_4dd4_A45A_E7AF9560E80C"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={7CE61515-52A6-477d-B88C-2C8823513A8E}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=block;FQName=SysML1.4::block;@ENDSTEREO;$DES;$CLT={D8A214F8-7D1E-4e64-A83D-15F6D5B1FF6D}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={3E89BF3B-FB45-49c1-8CBA-762A1930560C}$XID;$NAM=DefaultDiagram$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$CLT={D8A214F8-7D1E-4e64-A83D-15F6D5B1FF6D}$CLT;$SUP={AA3D9307-B92A-4dd4-A45A-E7AF9560E80C}$SUP;$ENDXREF;$XREFPROP=$XID={9BAAE53C-ECFB-49d5-9319-AE47F2358573}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=_defaultDiagramType@ENDNAME;@TYPE=string@ENDTYPE;@VALU=SysML1.4::InternalBlock@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={D8A214F8-7D1E-4e64-A83D-15F6D5B1FF6D}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="Rocker" xmi.id="EAID_DCCFF5A6_7230_4c15_B831_6FB5B8B52A88" namespace="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="block"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+								<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+								<UML:TaggedValue tag="stereotype" value="block"/>
+								</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="Handvac" xmi.id="EAID_DD0262E1_7FB8_4bec_8278_71ACB5F9C019" namespace="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="block"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="ea_ntype" value="8"/>
+								<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+								<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+								<UML:TaggedValue tag="stereotype" value="block"/>
+								<UML:TaggedValue tag="styleex" value="ConstructID=0;"/>
+								<UML:TaggedValue tag="diagram" value="EAID_4EC2ACC1_D373_455a_B292_878B6120FBF1"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={4A0427A0-82D5-4312-9E3B-B754EBFE8A0A}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=block;FQName=SysML1.4::block;@ENDSTEREO;$DES;$CLT={DD0262E1-7FB8-4bec-8278-71ACB5F9C019}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={41FC5792-7114-4b1e-AE7B-E4C5C45C7831}$XID;$NAM=DefaultDiagram$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$CLT={DD0262E1-7FB8-4bec-8278-71ACB5F9C019}$CLT;$SUP={4EC2ACC1-D373-455a-B292-878B6120FBF1}$SUP;$ENDXREF;$XREFPROP=$XID={9C916AE5-C91E-4763-8ADF-DBD87014A7F2}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=_defaultDiagramType@ENDNAME;@TYPE=string@ENDTYPE;@VALU=SysML1.4::InternalBlock@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={DD0262E1-7FB8-4bec-8278-71ACB5F9C019}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="Valve Assembly" xmi.id="EAID_E198D5AD_852F_4972_9B63_69CFC476CF68" namespace="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="block"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="ea_ntype" value="8"/>
+								<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+								<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+								<UML:TaggedValue tag="stereotype" value="block"/>
+								<UML:TaggedValue tag="styleex" value="ConstructID=0;"/>
+								<UML:TaggedValue tag="diagram" value="EAID_AA4D454A_136D_48bb_B602_6A3BCDF491A0"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={EAFB0938-1528-4bb6-88E3-73A31C9B07C7}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=block;FQName=SysML1.4::block;@ENDSTEREO;$DES;$CLT={E198D5AD-852F-4972-9B63-69CFC476CF68}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={102E9537-CD33-400f-AEB2-E69B5887085E}$XID;$NAM=DefaultDiagram$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$CLT={E198D5AD-852F-4972-9B63-69CFC476CF68}$CLT;$SUP={AA4D454A-136D-48bb-B602-6A3BCDF491A0}$SUP;$ENDXREF;$XREFPROP=$XID={15A1AEC4-F1A8-4acf-8F0E-283348622AD6}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=_defaultDiagramType@ENDNAME;@TYPE=string@ENDTYPE;@VALU=SysML1.4::InternalBlock@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={E198D5AD-852F-4972-9B63-69CFC476CF68}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="Impeller" xmi.id="EAID_E37D3D23_8284_4ef7_B78C_0208DC514832" namespace="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="block"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+								<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+								<UML:TaggedValue tag="stereotype" value="block"/>
+								</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="Grill Filter" xmi.id="EAID_E9A7A2F4_4AA4_415a_98E7_B2944762EE49" namespace="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="block"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+								<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+								<UML:TaggedValue tag="stereotype" value="block"/>
+								</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="Handle" xmi.id="EAID_F77A2FE1_7CCB_421a_A535_57C39056F71A" namespace="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="block"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+								<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+								<UML:TaggedValue tag="stereotype" value="block"/>
+								</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="Canister" xmi.id="EAID_F98D8280_D693_4c0e_BC50_A3D928D491A5" namespace="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="block"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+								<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+								<UML:TaggedValue tag="stereotype" value="block"/>
+								</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="Electrical Assembly" xmi.id="EAID_FCD4F419_8EA4_4268_A8DE_581373254F5C" namespace="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="block"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="ea_ntype" value="8"/>
+								<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+								<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+								<UML:TaggedValue tag="stereotype" value="block"/>
+								<UML:TaggedValue tag="styleex" value="ConstructID=0;"/>
+								<UML:TaggedValue tag="diagram" value="EAID_3E004D49_05A2_4d5d_B06C_15D0E36AFD12"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={A7DA303F-85DE-47c9-B595-E34B7F832F29}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=block;FQName=SysML1.4::block;@ENDSTEREO;$DES;$CLT={FCD4F419-8EA4-4268-A8DE-581373254F5C}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={ABA406B5-EA67-4126-BA44-4EEE030FB809}$XID;$NAM=DefaultDiagram$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$CLT={FCD4F419-8EA4-4268-A8DE-581373254F5C}$CLT;$SUP={3E004D49-05A2-4d5d-B06C-15D0E36AFD12}$SUP;$ENDXREF;$XREFPROP=$XID={9933E2B9-E568-43b9-845D-D6F004FEF48E}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=_defaultDiagramType@ENDNAME;@TYPE=string@ENDTYPE;@VALU=SysML1.4::InternalBlock@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={FCD4F419-8EA4-4268-A8DE-581373254F5C}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="Brush Assembly" xmi.id="EAID_FD6DDB63_EA41_4f00_B104_FF8095830265" namespace="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="block"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="ea_ntype" value="8"/>
+								<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+								<UML:TaggedValue tag="package_name" value="VaccuumCleaner"/>
+								<UML:TaggedValue tag="stereotype" value="block"/>
+								<UML:TaggedValue tag="styleex" value="ConstructID=0;"/>
+								<UML:TaggedValue tag="diagram" value="EAID_6E23AB3D_B7E1_4666_81EE_08413BD285FD"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={D9EDF202-EE34-4fc3-BFA3-D7381D1971B7}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=block;FQName=SysML1.4::block;@ENDSTEREO;$DES;$CLT={FD6DDB63-EA41-4f00-B104-FF8095830265}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={818CB0B4-6D26-4026-8F54-0B95700ADEAA}$XID;$NAM=DefaultDiagram$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$CLT={FD6DDB63-EA41-4f00-B104-FF8095830265}$CLT;$SUP={6E23AB3D-B7E1-4666-81EE-08413BD285FD}$SUP;$ENDXREF;$XREFPROP=$XID={45213322-6063-4104-89FF-9C821BF740E2}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=_defaultDiagramType@ENDNAME;@TYPE=string@ENDTYPE;@VALU=SysML1.4::InternalBlock@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={FD6DDB63-EA41-4f00-B104-FF8095830265}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+					</UML:Namespace.ownedElement>
+				</UML:Package>
+			</UML:Namespace.ownedElement>
+		</UML:Model>
+		<UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_8B88_009B9E86AE4C" value="#NOTES#Values: true,false&#10;" modelElement="EAID_0A241831_191B_43d9_8DA6_730B097863CE"/>
+		<UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_8DFE_CFCAD4AAB4F7" value="#NOTES#Values: true,false&#10;" modelElement="EAID_1E60CB11_83E8_4c48_A97D_27BF77F56B49"/>
+		<UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_A6FB_C5D175E73442" value="#NOTES#Values: true,false&#10;" modelElement="EAID_21878B23_4952_4c80_BB03_E5AB3C7A125F"/>
+		<UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_9D78_9974957AE2FF" value="#NOTES#Values: true,false&#10;" modelElement="EAID_22C5D12F_9EA3_4627_BC87_37F9C0514148"/>
+		<UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_9DA8_F93E76350E83" value="#NOTES#Values: true,false&#10;" modelElement="EAID_2642413E_8115_4178_9A7D_32E90F57A571"/>
+		<UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_9C86_B11601BDD4C2" value="#NOTES#Values: true,false&#10;" modelElement="EAID_2D83F8E0_7483_438a_9932_05227DF8AC33"/>
+		<UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_AF19_0137D783FAA1" value="#NOTES#Values: true,false&#10;" modelElement="EAID_304B124E_F243_4f6f_BA91_6D413AEE52B1"/>
+		<UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_9D3E_A399158C1145" value="#NOTES#Values: true,false&#10;" modelElement="EAID_35AAC731_3A14_4258_9D84_F383D6C444A9"/>
+		<UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_B7DD_5446718ED505" value="#NOTES#Values: true,false&#10;" modelElement="EAID_35D47AF9_7616_4437_AE22_D516DA55F607"/>
+		<UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_98FD_70AFD6E22499" value="#NOTES#Values: true,false&#10;" modelElement="EAID_3B9582C4_0AC6_42d3_9524_9340DBE20D5A"/>
+		<UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_8058_EBFAB9BBD187" value="#NOTES#Values: true,false&#10;" modelElement="EAID_43816C95_D930_460d_ADB1_D7CB05CC2B56"/>
+		<UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_87E6_790F3BF2536C" value="#NOTES#Values: true,false&#10;" modelElement="EAID_4C6E5700_CAFE_4a1e_88BF_2AA888EB7076"/>
+		<UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_B829_07C9BB554258" value="#NOTES#Values: true,false&#10;" modelElement="EAID_5F44C924_DB37_4aa8_AF07_C3F1D3B038AC"/>
+		<UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_A34A_0E07C8AE0776" value="#NOTES#Values: true,false&#10;" modelElement="EAID_807AF25B_04F7_4072_923E_065B83A0CEBF"/>
+		<UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_AD7F_2939B64F6FDF" value="#NOTES#Values: true,false&#10;" modelElement="EAID_9302175D_A7D2_4218_B55A_1EE85C305596"/>
+		<UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_B8E8_12F6D87437FC" value="#NOTES#Values: true,false&#10;" modelElement="EAID_96E3B01E_93D8_4ac7_96A7_73981789CCD5"/>
+		<UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_B59E_B92D3EC4C5DE" value="#NOTES#Values: true,false&#10;" modelElement="EAID_9F1A5166_F591_46ad_BBDC_18349F0F827A"/>
+		<UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_8CB8_6B1CC9732863" value="#NOTES#Values: true,false&#10;" modelElement="EAID_AC21A64B_96D3_4e90_B7FD_D5B6D7ADC38D"/>
+		<UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_90DC_25DC173A1B57" value="#NOTES#Values: true,false&#10;" modelElement="EAID_AEC76784_2A3D_469f_B689_5D3907AF0E86"/>
+		<UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_A6F4_B429C02E758E" value="#NOTES#Values: true,false&#10;" modelElement="EAID_BC6B1922_E8DB_4594_BF87_A2DC9C20A1E9"/>
+		<UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_B78E_4E64D8AFD1FF" value="#NOTES#Values: true,false&#10;" modelElement="EAID_BDDF06DC_64A4_4081_8FB7_86B6E60ED19F"/>
+		<UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_B1FF_64AACF3BF6DF" value="#NOTES#Values: true,false&#10;" modelElement="EAID_C2E1F3BB_C506_4e4d_9E85_527393A1E464"/>
+		<UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_B8C3_B72F6DE47B49" value="#NOTES#Values: true,false&#10;" modelElement="EAID_D8A214F8_7D1E_4e64_A83D_15F6D5B1FF6D"/>
+		<UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_8790_9E55300097C9" value="#NOTES#Values: true,false&#10;" modelElement="EAID_DCCFF5A6_7230_4c15_B831_6FB5B8B52A88"/>
+		<UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_BF9D_745781829516" value="#NOTES#Values: true,false&#10;" modelElement="EAID_DD0262E1_7FB8_4bec_8278_71ACB5F9C019"/>
+		<UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_9876_C07A4A2AD75A" value="#NOTES#Values: true,false&#10;" modelElement="EAID_E198D5AD_852F_4972_9B63_69CFC476CF68"/>
+		<UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_A29D_97F7B0E9C97E" value="#NOTES#Values: true,false&#10;" modelElement="EAID_E37D3D23_8284_4ef7_B78C_0208DC514832"/>
+		<UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_A892_F5532EF00837" value="#NOTES#Values: true,false&#10;" modelElement="EAID_E9A7A2F4_4AA4_415a_98E7_B2944762EE49"/>
+		<UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_9CBF_C9EC73EBC5F0" value="#NOTES#Values: true,false&#10;" modelElement="EAID_F77A2FE1_7CCB_421a_A535_57C39056F71A"/>
+		<UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_8728_BFE9A5D8694D" value="#NOTES#Values: true,false&#10;" modelElement="EAID_F98D8280_D693_4c0e_BC50_A3D928D491A5"/>
+		<UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_A550_43EB77B7CB05" value="#NOTES#Values: true,false&#10;" modelElement="EAID_FCD4F419_8EA4_4268_A8DE_581373254F5C"/>
+		<UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_9ECD_73D6B532B9DD" value="#NOTES#Values: true,false&#10;" modelElement="EAID_FD6DDB63_EA41_4f00_B104_FF8095830265"/>
+		<UML:Diagram name="VaccuumCleaner" xmi.id="EAID_5ED5367E_8ADB_4212_BC16_8BAF64E9E1E6" diagramType="ClassDiagram" owner="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+				<UML:TaggedValue tag="styleex" value="MDGDgm=SysML1.4::BlockDefinition;SF=1;"/>
+			</UML:ModelElement.taggedValue>
+			<UML:Diagram.element>
+				<UML:DiagramElement geometry="Left=1840;Top=522;Right=1930;Bottom=592;" subject="EAID_AEC76784_2A3D_469f_B689_5D3907AF0E86"/>
+				<UML:DiagramElement geometry="Left=1695;Top=522;Right=1785;Bottom=592;" subject="EAID_F77A2FE1_7CCB_421a_A535_57C39056F71A"/>
+				<UML:DiagramElement geometry="Left=1832;Top=798;Right=1922;Bottom=868;" subject="EAID_E37D3D23_8284_4ef7_B78C_0208DC514832"/>
+				<UML:DiagramElement geometry="Left=1695;Top=798;Right=1785;Bottom=868;" subject="EAID_21878B23_4952_4c80_BB03_E5AB3C7A125F"/>
+				<UML:DiagramElement geometry="Left=1557;Top=531;Right=1647;Bottom=601;" subject="EAID_AC21A64B_96D3_4e90_B7FD_D5B6D7ADC38D"/>
+				<UML:DiagramElement geometry="Left=1422;Top=531;Right=1512;Bottom=601;" subject="EAID_BC6B1922_E8DB_4594_BF87_A2DC9C20A1E9"/>
+				<UML:DiagramElement geometry="Left=1288;Top=536;Right=1378;Bottom=606;" subject="EAID_5F44C924_DB37_4aa8_AF07_C3F1D3B038AC"/>
+				<UML:DiagramElement geometry="Left=1181;Top=536;Right=1271;Bottom=606;" subject="EAID_35AAC731_3A14_4258_9D84_F383D6C444A9"/>
+				<UML:DiagramElement geometry="Left=1077;Top=536;Right=1167;Bottom=606;" subject="EAID_3B9582C4_0AC6_42d3_9524_9340DBE20D5A"/>
+				<UML:DiagramElement geometry="Left=920;Top=460;Right=1010;Bottom=530;" subject="EAID_807AF25B_04F7_4072_923E_065B83A0CEBF"/>
+				<UML:DiagramElement geometry="Left=792;Top=460;Right=882;Bottom=530;" subject="EAID_96E3B01E_93D8_4ac7_96A7_73981789CCD5"/>
+				<UML:DiagramElement geometry="Left=178;Top=595;Right=268;Bottom=665;" subject="EAID_DCCFF5A6_7230_4c15_B831_6FB5B8B52A88"/>
+				<UML:DiagramElement geometry="Left=41;Top=595;Right=131;Bottom=665;" subject="EAID_2642413E_8115_4178_9A7D_32E90F57A571"/>
+				<UML:DiagramElement geometry="Left=310;Top=595;Right=400;Bottom=665;" subject="EAID_304B124E_F243_4f6f_BA91_6D413AEE52B1"/>
+				<UML:DiagramElement geometry="Left=451;Top=595;Right=541;Bottom=665;" subject="EAID_2D83F8E0_7483_438a_9932_05227DF8AC33"/>
+				<UML:DiagramElement geometry="Left=1737;Top=673;Right=1894;Bottom=769;" subject="EAID_9F1A5166_F591_46ad_BBDC_18349F0F827A"/>
+				<UML:DiagramElement geometry="Left=1750;Top=410;Right=1894;Bottom=507;" subject="EAID_9302175D_A7D2_4218_B55A_1EE85C305596"/>
+				<UML:DiagramElement geometry="Left=1271;Top=686;Right=1361;Bottom=756;" subject="EAID_BDDF06DC_64A4_4081_8FB7_86B6E60ED19F"/>
+				<UML:DiagramElement geometry="Left=1449;Top=410;Right=1625;Bottom=499;" subject="EAID_0A241831_191B_43d9_8DA6_730B097863CE"/>
+				<UML:DiagramElement geometry="Left=330;Top=480;Right=492;Bottom=569;" subject="EAID_E198D5AD_852F_4972_9B63_69CFC476CF68"/>
+				<UML:DiagramElement geometry="Left=82;Top=480;Right=225;Bottom=569;" subject="EAID_FD6DDB63_EA41_4f00_B104_FF8095830265"/>
+				<UML:DiagramElement geometry="Left=825;Top=350;Right=975;Bottom=439;" subject="EAID_35D47AF9_7616_4437_AE22_D516DA55F607"/>
+				<UML:DiagramElement geometry="Left=694;Top=350;Right=784;Bottom=420;" subject="EAID_E9A7A2F4_4AA4_415a_98E7_B2944762EE49"/>
+				<UML:DiagramElement geometry="Left=1522;Top=686;Right=1612;Bottom=756;" subject="EAID_C2E1F3BB_C506_4e4d_9E85_527393A1E464"/>
+				<UML:DiagramElement geometry="Left=563;Top=350;Right=653;Bottom=420;" subject="EAID_F98D8280_D693_4c0e_BC50_A3D928D491A5"/>
+				<UML:DiagramElement geometry="Left=366;Top=381;Right=456;Bottom=451;" subject="EAID_4C6E5700_CAFE_4a1e_88BF_2AA888EB7076"/>
+				<UML:DiagramElement geometry="Left=1158;Top=408;Right=1318;Bottom=510;" subject="EAID_FCD4F419_8EA4_4268_A8DE_581373254F5C"/>
+				<UML:DiagramElement geometry="Left=108;Top=381;Right=198;Bottom=451;" subject="EAID_43816C95_D930_460d_ADB1_D7CB05CC2B56"/>
+				<UML:DiagramElement geometry="Left=1442;Top=202;Right=1654;Bottom=343;" subject="EAID_22C5D12F_9EA3_4627_BC87_37F9C0514148"/>
+				<UML:DiagramElement geometry="Left=653;Top=213;Right=837;Bottom=323;" subject="EAID_1E60CB11_83E8_4c48_A97D_27BF77F56B49"/>
+				<UML:DiagramElement geometry="Left=184;Top=213;Right=387;Bottom=344;" subject="EAID_D8A214F8_7D1E_4e64_A83D_15F6D5B1FF6D"/>
+				<UML:DiagramElement geometry="Left=768;Top=43;Right=1032;Bottom=169;" subject="EAID_DD0262E1_7FB8_4bec_8278_71ACB5F9C019"/>
+				<UML:DiagramElement geometry="Left=10;Top=10;Right=1967;Bottom=905;" subject="EAID_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+			</UML:Diagram.element>
+		</UML:Diagram>
+		<UML:Diagram name="Nozzle Assembly" xmi.id="EAID_AA3D9307_B92A_4dd4_A45A_E7AF9560E80C" diagramType="CompositeStructureDiagram" owner="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+				<UML:TaggedValue tag="type" value="CompositeStructure"/>
+				<UML:TaggedValue tag="ea_localid" value="2"/>
+				<UML:TaggedValue tag="parent" value="EAID_D8A214F8_7D1E_4e64_A83D_15F6D5B1FF6D"/>
+				<UML:TaggedValue tag="styleex" value="MDGDgm=SysML1.4::InternalBlock;SF=1;"/>
+			</UML:ModelElement.taggedValue>
+			<UML:Diagram.element>
+				<UML:DiagramElement geometry="Left=453;Top=155;Right=523;Bottom=187;" subject="EAID_5B0BB43C_EF9F_4b8d_A0F9_97EAC6F48610"/>
+				<UML:DiagramElement geometry="Left=367;Top=129;Right=437;Bottom=198;" subject="EAID_DADE0809_AD47_4dc4_B9B6_365B71236AFA"/>
+				<UML:DiagramElement geometry="Left=557;Top=131;Right=627;Bottom=187;" subject="EAID_96CC72B0_1DFC_4170_858A_99819119C622"/>
+				<UML:DiagramElement geometry="Left=659;Top=131;Right=729;Bottom=187;" subject="EAID_5F332D30_5008_4627_9797_4946C4AAE289"/>
+				<UML:DiagramElement geometry="Left=547;Top=75;Right=738;Bottom=219;" subject="EAID_282EC263_62D3_40e0_ADEF_2F7FF230455E"/>
+				<UML:DiagramElement geometry="Left=359;Top=84;Right=530;Bottom=211;" subject="EAID_C190C459_973E_4de6_9465_9DE6A98F6689"/>
+				<UML:DiagramElement geometry="Left=214;Top=75;Right=321;Bottom=159;" subject="EAID_CED108CF_AA3D_4c2f_8E49_4B87D862C482"/>
+				<UML:DiagramElement geometry="Left=57;Top=75;Right=155;Bottom=159;" subject="EAID_2E6C750F_39F4_4088_AD83_4870974951B4"/>
+				<UML:DiagramElement geometry="Left=20;Top=20;Right=775;Bottom=256;" subject="EAID_D8A214F8_7D1E_4e64_A83D_15F6D5B1FF6D"/>
+			</UML:Diagram.element>
+		</UML:Diagram>
+		<UML:Diagram name="Valve Assembly" xmi.id="EAID_AA4D454A_136D_48bb_B602_6A3BCDF491A0" diagramType="CompositeStructureDiagram" owner="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+				<UML:TaggedValue tag="type" value="CompositeStructure"/>
+				<UML:TaggedValue tag="ea_localid" value="3"/>
+				<UML:TaggedValue tag="parent" value="EAID_E198D5AD_852F_4972_9B63_69CFC476CF68"/>
+				<UML:TaggedValue tag="styleex" value="MDGDgm=SysML1.4::InternalBlock;SF=1;"/>
+			</UML:ModelElement.taggedValue>
+			<UML:Diagram.element>
+				<UML:DiagramElement geometry="Left=211;Top=67;Right=303;Bottom=146;" subject="EAID_F5FE8734_C55A_48a9_9947_D669C1172EBD"/>
+				<UML:DiagramElement geometry="Left=44;Top=68;Right=133;Bottom=146;" subject="EAID_65EFDD9C_1B0D_4daf_A32D_7B6F1D35D28F"/>
+				<UML:DiagramElement geometry="Left=20;Top=20;Right=340;Bottom=183;" subject="EAID_E198D5AD_852F_4972_9B63_69CFC476CF68"/>
+			</UML:Diagram.element>
+		</UML:Diagram>
+		<UML:Diagram name="Brush Assembly" xmi.id="EAID_6E23AB3D_B7E1_4666_81EE_08413BD285FD" diagramType="CompositeStructureDiagram" owner="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+				<UML:TaggedValue tag="type" value="CompositeStructure"/>
+				<UML:TaggedValue tag="ea_localid" value="4"/>
+				<UML:TaggedValue tag="parent" value="EAID_FD6DDB63_EA41_4f00_B104_FF8095830265"/>
+				<UML:TaggedValue tag="styleex" value="MDGDgm=SysML1.4::InternalBlock;SF=1;"/>
+			</UML:ModelElement.taggedValue>
+			<UML:Diagram.element>
+				<UML:DiagramElement geometry="Left=252;Top=70;Right=351;Bottom=161;" subject="EAID_D89B4231_AFD1_46b0_9383_2E93AC351BC7"/>
+				<UML:DiagramElement geometry="Left=65;Top=71;Right=164;Bottom=160;" subject="EAID_31B9AFE1_9A30_4f24_91A8_7A3294F4604F"/>
+				<UML:DiagramElement geometry="Left=20;Top=20;Right=388;Bottom=198;" subject="EAID_FD6DDB63_EA41_4f00_B104_FF8095830265"/>
+			</UML:Diagram.element>
+		</UML:Diagram>
+		<UML:Diagram name="HEPA Assembly" xmi.id="EAID_5D0B13E4_2CD3_4bcb_8830_DC437FECC737" diagramType="CompositeStructureDiagram" owner="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+				<UML:TaggedValue tag="type" value="CompositeStructure"/>
+				<UML:TaggedValue tag="ea_localid" value="5"/>
+				<UML:TaggedValue tag="parent" value="EAID_35D47AF9_7616_4437_AE22_D516DA55F607"/>
+				<UML:TaggedValue tag="styleex" value="MDGDgm=SysML1.4::InternalBlock;SF=1;"/>
+			</UML:ModelElement.taggedValue>
+			<UML:Diagram.element>
+				<UML:DiagramElement geometry="Left=242;Top=67;Right=341;Bottom=148;" subject="EAID_CFFE61AA_5471_4365_8523_B45FAC3DFCCB"/>
+				<UML:DiagramElement geometry="Left=74;Top=69;Right=175;Bottom=148;" subject="EAID_BDB76ABA_6E69_475a_B4E6_854D1BE92F9E"/>
+				<UML:DiagramElement geometry="Left=20;Top=20;Right=378;Bottom=185;" subject="EAID_35D47AF9_7616_4437_AE22_D516DA55F607"/>
+			</UML:Diagram.element>
+		</UML:Diagram>
+		<UML:Diagram name="Filter Assembly" xmi.id="EAID_8D9ED3EC_8ED1_4a12_8537_58E3A6B8C303" diagramType="CompositeStructureDiagram" owner="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+				<UML:TaggedValue tag="type" value="CompositeStructure"/>
+				<UML:TaggedValue tag="ea_localid" value="6"/>
+				<UML:TaggedValue tag="parent" value="EAID_1E60CB11_83E8_4c48_A97D_27BF77F56B49"/>
+				<UML:TaggedValue tag="styleex" value="MDGDgm=SysML1.4::InternalBlock;SF=1;"/>
+			</UML:ModelElement.taggedValue>
+			<UML:Diagram.element>
+				<UML:DiagramElement geometry="Left=556;Top=61;Right=663;Bottom=176;" subject="EAID_A672CFF3_1468_4bd6_9D60_CEAAD91A9001"/>
+				<UML:DiagramElement geometry="Left=362;Top=61;Right=471;Bottom=177;" subject="EAID_CB9AFF66_B568_420b_8485_6150C79B22D9"/>
+				<UML:DiagramElement geometry="Left=81;Top=118;Right=151;Bottom=174;" subject="EAID_8A557F2A_6C89_4a4e_AAE4_35B7A4608751"/>
+				<UML:DiagramElement geometry="Left=208;Top=118;Right=278;Bottom=174;" subject="EAID_2E949E58_1FFB_440d_AB33_E6000D87FA95"/>
+				<UML:DiagramElement geometry="Left=58;Top=61;Right=301;Bottom=195;" subject="EAID_0C81BF37_E6E2_4b71_ACC9_51E74AD8DCE2"/>
+				<UML:DiagramElement geometry="Left=20;Top=20;Right=700;Bottom=232;" subject="EAID_1E60CB11_83E8_4c48_A97D_27BF77F56B49"/>
+			</UML:Diagram.element>
+		</UML:Diagram>
+		<UML:Diagram name="Electrical Assembly" xmi.id="EAID_3E004D49_05A2_4d5d_B06C_15D0E36AFD12" diagramType="CompositeStructureDiagram" owner="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+				<UML:TaggedValue tag="type" value="CompositeStructure"/>
+				<UML:TaggedValue tag="ea_localid" value="7"/>
+				<UML:TaggedValue tag="parent" value="EAID_FCD4F419_8EA4_4268_A8DE_581373254F5C"/>
+				<UML:TaggedValue tag="styleex" value="MDGDgm=SysML1.4::InternalBlock;SF=1;"/>
+			</UML:ModelElement.taggedValue>
+			<UML:Diagram.element>
+				<UML:DiagramElement geometry="Left=385;Top=107;Right=455;Bottom=163;" subject="EAID_DBD22F8C_2965_4cd9_9466_0F6989E895A4"/>
+				<UML:DiagramElement geometry="Left=220;Top=107;Right=290;Bottom=163;" subject="EAID_7CEC49E4_8F46_435d_95C4_3AC142D093AC"/>
+				<UML:DiagramElement geometry="Left=60;Top=107;Right=130;Bottom=163;" subject="EAID_F470C2D1_C921_43b5_8CC8_B0B003AF85C2"/>
+				<UML:DiagramElement geometry="Left=20;Top=20;Right=492;Bottom=200;" subject="EAID_FCD4F419_8EA4_4268_A8DE_581373254F5C"/>
+			</UML:Diagram.element>
+		</UML:Diagram>
+		<UML:Diagram name="Discharge Assembly" xmi.id="EAID_A648462D_5C8C_481b_803B_E546F440DDEC" diagramType="CompositeStructureDiagram" owner="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+				<UML:TaggedValue tag="type" value="CompositeStructure"/>
+				<UML:TaggedValue tag="ea_localid" value="8"/>
+				<UML:TaggedValue tag="parent" value="EAID_0A241831_191B_43d9_8DA6_730B097863CE"/>
+				<UML:TaggedValue tag="styleex" value="MDGDgm=SysML1.4::InternalBlock;SF=1;"/>
+			</UML:ModelElement.taggedValue>
+			<UML:Diagram.element>
+				<UML:DiagramElement geometry="Left=266;Top=91;Right=378;Bottom=173;" subject="EAID_796BC9EC_F97B_49f4_BB9A_75F359A831D9"/>
+				<UML:DiagramElement geometry="Left=79;Top=91;Right=190;Bottom=173;" subject="EAID_EC015574_9F0C_4b91_8258_5B2E9B3E44FB"/>
+				<UML:DiagramElement geometry="Left=20;Top=20;Right=415;Bottom=210;" subject="EAID_0A241831_191B_43d9_8DA6_730B097863CE"/>
+			</UML:Diagram.element>
+		</UML:Diagram>
+		<UML:Diagram name="Suction Assembly" xmi.id="EAID_B658068E_0119_4781_9097_F5DDD7EE89E1" diagramType="CompositeStructureDiagram" owner="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+				<UML:TaggedValue tag="type" value="CompositeStructure"/>
+				<UML:TaggedValue tag="ea_localid" value="9"/>
+				<UML:TaggedValue tag="parent" value="EAID_9F1A5166_F591_46ad_BBDC_18349F0F827A"/>
+				<UML:TaggedValue tag="styleex" value="MDGDgm=SysML1.4::InternalBlock;SF=1;"/>
+			</UML:ModelElement.taggedValue>
+			<UML:Diagram.element>
+				<UML:DiagramElement geometry="Left=250;Top=63;Right=337;Bottom=150;" subject="EAID_A1C0FF91_81EA_4755_90E5_0D48C19B9EBD"/>
+				<UML:DiagramElement geometry="Left=92;Top=63;Right=177;Bottom=150;" subject="EAID_49EDCC28_3A71_4022_9D6E_BF0C026A2690"/>
+				<UML:DiagramElement geometry="Left=20;Top=20;Right=374;Bottom=187;" subject="EAID_9F1A5166_F591_46ad_BBDC_18349F0F827A"/>
+			</UML:Diagram.element>
+		</UML:Diagram>
+		<UML:Diagram name="Handle Assembly" xmi.id="EAID_F5F6E45F_856D_4b61_8A01_E4E9E3C9D151" diagramType="CompositeStructureDiagram" owner="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+				<UML:TaggedValue tag="type" value="CompositeStructure"/>
+				<UML:TaggedValue tag="ea_localid" value="10"/>
+				<UML:TaggedValue tag="parent" value="EAID_9302175D_A7D2_4218_B55A_1EE85C305596"/>
+				<UML:TaggedValue tag="styleex" value="MDGDgm=SysML1.4::InternalBlock;SF=1;"/>
+			</UML:ModelElement.taggedValue>
+			<UML:Diagram.element>
+				<UML:DiagramElement geometry="Left=228;Top=71;Right=326;Bottom=149;" subject="EAID_C475F94F_C5A4_4f71_9C5C_50E3A400E63E"/>
+				<UML:DiagramElement geometry="Left=77;Top=68;Right=175;Bottom=149;" subject="EAID_36087F81_A5EF_40c3_B29C_E4D88021B4DC"/>
+				<UML:DiagramElement geometry="Left=20;Top=20;Right=363;Bottom=186;" subject="EAID_9302175D_A7D2_4218_B55A_1EE85C305596"/>
+			</UML:Diagram.element>
+		</UML:Diagram>
+		<UML:Diagram name="Drive Assembly" xmi.id="EAID_61745FBA_F656_466a_A25F_1CA23BC4E2AA" diagramType="CompositeStructureDiagram" owner="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+				<UML:TaggedValue tag="type" value="CompositeStructure"/>
+				<UML:TaggedValue tag="ea_localid" value="11"/>
+				<UML:TaggedValue tag="parent" value="EAID_22C5D12F_9EA3_4627_BC87_37F9C0514148"/>
+				<UML:TaggedValue tag="styleex" value="MDGDgm=SysML1.4::InternalBlock;SF=1;"/>
+			</UML:ModelElement.taggedValue>
+			<UML:Diagram.element>
+				<UML:DiagramElement geometry="Left=823;Top=119;Right=893;Bottom=175;" subject="EAID_C7D76CE7_7883_4f91_BF41_99551A87980C"/>
+				<UML:DiagramElement geometry="Left=702;Top=119;Right=772;Bottom=175;" subject="EAID_1A8B00D2_F7A9_459a_B258_F737F54D4BED"/>
+				<UML:DiagramElement geometry="Left=170;Top=339;Right=240;Bottom=395;" subject="EAID_EFFF178A_F080_4e71_B55D_0D97C1A462E3"/>
+				<UML:DiagramElement geometry="Left=56;Top=339;Right=126;Bottom=395;" subject="EAID_89373B4C_588D_4d12_93EB_02CB40963853"/>
+				<UML:DiagramElement geometry="Left=346;Top=327;Right=416;Bottom=396;" subject="EAID_6EE3BC5B_1BA5_45ff_9D0D_DEEBB53B9812"/>
+				<UML:DiagramElement geometry="Left=449;Top=327;Right=519;Bottom=409;" subject="EAID_983A4EC4_40E4_4219_A893_2944C412D1BA"/>
+				<UML:DiagramElement geometry="Left=622;Top=346;Right=692;Bottom=402;" subject="EAID_01E64839_2091_434c_8FAA_D01837CCFF59"/>
+				<UML:DiagramElement geometry="Left=718;Top=340;Right=788;Bottom=409;" subject="EAID_294C55FB_D041_40ee_A0F1_73DBE85BDFBB"/>
+				<UML:DiagramElement geometry="Left=830;Top=346;Right=900;Bottom=402;" subject="EAID_88F19F16_46E9_4edf_997A_C739BDAEB24E"/>
+				<UML:DiagramElement geometry="Left=601;Top=254;Right=915;Bottom=444;" subject="EAID_0E6374BA_73A8_4eea_A301_382B3DB02104"/>
+				<UML:DiagramElement geometry="Left=327;Top=270;Right=548;Bottom=428;" subject="EAID_DEFDACE0_B456_4cc0_95F5_C6555B21AAF0"/>
+				<UML:DiagramElement geometry="Left=43;Top=285;Right=265;Bottom=413;" subject="EAID_09B49F20_8E8E_48e9_8885_9FF7A4030E93"/>
+				<UML:DiagramElement geometry="Left=686;Top=63;Right=915;Bottom=204;" subject="EAID_C68C24BB_EF2D_413e_A3A0_D7932283573C"/>
+				<UML:DiagramElement geometry="Left=361;Top=84;Right=462;Bottom=173;" subject="EAID_460A584F_0BDA_4d47_96AB_6373E12F73CE"/>
+				<UML:DiagramElement geometry="Left=124;Top=90;Right=218;Bottom=195;" subject="EAID_3C4DCDEC_2449_4dea_87FF_B073D32F638A"/>
+				<UML:DiagramElement geometry="Left=20;Top=20;Right=952;Bottom=481;" subject="EAID_22C5D12F_9EA3_4627_BC87_37F9C0514148"/>
+			</UML:Diagram.element>
+		</UML:Diagram>
+		<UML:Diagram name="Handvac" xmi.id="EAID_4EC2ACC1_D373_455a_B292_878B6120FBF1" diagramType="CompositeStructureDiagram" owner="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="package" value="EAPK_E092F1C0_346C_47b7_954C_672F6CB419DB"/>
+				<UML:TaggedValue tag="type" value="CompositeStructure"/>
+				<UML:TaggedValue tag="ea_localid" value="12"/>
+				<UML:TaggedValue tag="parent" value="EAID_DD0262E1_7FB8_4bec_8278_71ACB5F9C019"/>
+				<UML:TaggedValue tag="styleex" value="MDGDgm=SysML1.4::InternalBlock;SF=1;"/>
+			</UML:ModelElement.taggedValue>
+			<UML:Diagram.element>
+				<UML:DiagramElement geometry="Left=856;Top=151;Right=926;Bottom=233;" subject="EAID_12DA13F3_8C09_4792_8329_63BAC6C5EDD7"/>
+				<UML:DiagramElement geometry="Left=964;Top=151;Right=1034;Bottom=233;" subject="EAID_95151182_AB4D_468c_B8DC_B44561EB824A"/>
+				<UML:DiagramElement geometry="Left=1076;Top=157;Right=1146;Bottom=239;" subject="EAID_50DD73F9_FEED_4998_97DE_7DBDA34FAB79"/>
+				<UML:DiagramElement geometry="Left=964;Top=255;Right=1034;Bottom=337;" subject="EAID_34584C72_A7B1_4552_A6BB_12D45547B769"/>
+				<UML:DiagramElement geometry="Left=1061;Top=261;Right=1131;Bottom=317;" subject="EAID_2A63A8F9_EA79_4814_882B_75D60D24B82E"/>
+				<UML:DiagramElement geometry="Left=856;Top=255;Right=926;Bottom=324;" subject="EAID_5BFD05AB_D2BB_4068_A967_E170E293EE74"/>
+				<UML:DiagramElement geometry="Left=606;Top=191;Right=676;Bottom=247;" subject="EAID_6EB005DB_D4D0_40e8_81BA_0E0FFD99506D"/>
+				<UML:DiagramElement geometry="Left=508;Top=191;Right=578;Bottom=247;" subject="EAID_CA6ABF28_ABE0_4d76_94DF_6F56C0D3A256"/>
+				<UML:DiagramElement geometry="Left=706;Top=178;Right=776;Bottom=260;" subject="EAID_94827EED_2826_4418_98BD_BBF4280D06B3"/>
+				<UML:DiagramElement geometry="Left=61;Top=177;Right=131;Bottom=259;" subject="EAID_09828AB7_EBE2_4a85_9CEF_A898FA54F388"/>
+				<UML:DiagramElement geometry="Left=161;Top=177;Right=231;Bottom=259;" subject="EAID_2EC1A153_6978_48f2_B79D_850CBE02AEE9"/>
+				<UML:DiagramElement geometry="Left=257;Top=177;Right=327;Bottom=259;" subject="EAID_AD150D1A_AD36_43eb_B57B_9FDFD7213664"/>
+				<UML:DiagramElement geometry="Left=339;Top=177;Right=409;Bottom=259;" subject="EAID_AA23D6CD_B0A9_4b84_8557_2D6F66089E21"/>
+				<UML:DiagramElement geometry="Left=833;Top=95;Right=1174;Bottom=352;" subject="EAID_5C9D4E9D_5E7D_43ab_BD19_104282222C97"/>
+				<UML:DiagramElement geometry="Left=491;Top=95;Right=796;Bottom=312;" subject="EAID_A3152236_F098_4896_A672_FA9C9A0B9AEB"/>
+				<UML:DiagramElement geometry="Left=45;Top=85;Right=430;Bottom=323;" subject="EAID_0D12EAEA_D9A4_4825_B21D_6BE029FD06C3"/>
+				<UML:DiagramElement geometry="Left=20;Top=20;Right=1211;Bottom=389;" subject="EAID_DD0262E1_7FB8_4bec_8278_71ACB5F9C019"/>
+			</UML:Diagram.element>
+		</UML:Diagram>
+	</XMI.content>
+	<XMI.difference/>
+	<XMI.extensions xmi.extender="Enterprise Architect 2.5"/>
+</XMI>

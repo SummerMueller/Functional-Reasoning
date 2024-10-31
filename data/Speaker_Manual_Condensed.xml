@@ -1,0 +1,2056 @@
+<XMI xmlns:UML="omg.org/UML1.3" xmi.version="1.1" timestamp="2024-10-16 15:23:37">
+    <XMI.header>
+        <XMI.documentation>
+            <XMI.exporter>Enterprise Architect</XMI.exporter>
+            <XMI.exporterVersion>2.5</XMI.exporterVersion>
+        </XMI.documentation>
+    </XMI.header>
+    <XMI.content>
+        <UML:Model name="EA Model" xmi.id="MX_EAID_AB78C4E3_C2DD_48d9_884D_31434547872A">
+            <UML:Namespace.ownedElement>
+                <UML:Class name="EARootClass" xmi.id="EAID_11111111_5487_4080_A7F4_41526CB0AA00" isRoot="true" isLeaf="false" isAbstract="false"/>
+                <UML:Package name="Speaker" xmi.id="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+                    <UML:Namespace.ownedElement>
+                        <UML:Class name="Magnet" xmi.id="EAID_0468774A_3FA0_47dd_922C_7531A4727489" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A" isActive="false">
+                            <UML:ModelElement.stereotype>
+                                <UML:Stereotype name="block"/>
+                            </UML:ModelElement.stereotype>
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Class"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="stereotype" value="block"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="In_ME" xmi.id="EAID_0685472C_D405_49b3_82C1_7BFB86C3B742" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_BD50AA64_8036_449a_A860_683E06BF87B6"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{19C16C36-E179-4aba-A7D5-0820B710C09A}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Association xmi.id="EAID_B59EB2BA_BF29_4529_AEC5_D4EB49FD9026">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_type" value="Connector"/>
+                                <UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+                                <UML:TaggedValue tag="ea_sourceName" value="Out_ME"/>
+                                <UML:TaggedValue tag="ea_targetName" value="In_ME"/>
+                                <UML:TaggedValue tag="ea_sourceType" value="Port"/>
+                                <UML:TaggedValue tag="ea_targetType" value="Port"/>
+                                <UML:TaggedValue tag="privatedata5" value="SX=0;SY=1;EX=0;EY=0;EDGE=2;"/>
+                                </UML:ModelElement.taggedValue>
+                            <UML:Association.connection>
+                                <UML:AssociationEnd type="EAID_AF832A55_87CB_4a2d_AD1E_8D1C3241BE91">
+                                    </UML:AssociationEnd>
+                                <UML:AssociationEnd type="EAID_0685472C_D405_49b3_82C1_7BFB86C3B742">
+                                    </UML:AssociationEnd>
+                            </UML:Association.connection>
+                        </UML:Association>
+                        <UML:Class name="In_E" xmi.id="EAID_06F15C65_EB2F_4029_A116_D983ABC7181B" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_91E0587C_88B2_456d_8FF9_072EC3B2DF0A"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{D5E9F8B8-32CC-49a0-9FB1-419838CB09D1}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Association xmi.id="EAID_7576B39A_9C74_41a2_B018_6E6527FB0274">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_type" value="Connector"/>
+                                <UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+                                <UML:TaggedValue tag="ea_sourceName" value="Out_E3"/>
+                                <UML:TaggedValue tag="ea_targetName" value="In_E"/>
+                                <UML:TaggedValue tag="ea_sourceType" value="Port"/>
+                                <UML:TaggedValue tag="ea_targetType" value="Port"/>
+                                <UML:TaggedValue tag="privatedata5" value="SX=7;SY=0;EX=0;EY=3;EDGE=3;"/>
+                                </UML:ModelElement.taggedValue>
+                            <UML:Association.connection>
+                                <UML:AssociationEnd type="EAID_12687534_C780_42ef_B46D_9661DAD64857">
+                                    </UML:AssociationEnd>
+                                <UML:AssociationEnd type="EAID_06F15C65_EB2F_4029_A116_D983ABC7181B">
+                                    </UML:AssociationEnd>
+                            </UML:Association.connection>
+                        </UML:Association>
+                        <UML:Class name="In_ME" xmi.id="EAID_07D47DA9_1736_4ca8_9341_5CC9284A556B" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_0468774A_3FA0_47dd_922C_7531A4727489"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="In_ME" xmi.id="EAID_0A37FAFB_1FE8_45df_9D6D_2E794F3556BF" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_F19F2C88_A6F3_4eec_8F08_8D85D8A19EF9"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{19C16C36-E179-4aba-A7D5-0820B710C09A}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Association xmi.id="EAID_67B8F35B_FD74_4a42_A26A_B723E4372374">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_type" value="Connector"/>
+                                <UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+                                <UML:TaggedValue tag="ea_sourceName" value="Out_ME"/>
+                                <UML:TaggedValue tag="ea_targetName" value="In_ME"/>
+                                <UML:TaggedValue tag="ea_sourceType" value="Port"/>
+                                <UML:TaggedValue tag="ea_targetType" value="Port"/>
+                                <UML:TaggedValue tag="privatedata5" value="SX=0;SY=2;EX=0;EY=7;EDGE=2;"/>
+                                </UML:ModelElement.taggedValue>
+                            <UML:Association.connection>
+                                <UML:AssociationEnd type="EAID_F394BBBB_CC16_4183_9324_367FCE611128">
+                                    </UML:AssociationEnd>
+                                <UML:AssociationEnd type="EAID_0A37FAFB_1FE8_45df_9D6D_2E794F3556BF">
+                                    </UML:AssociationEnd>
+                            </UML:Association.connection>
+                        </UML:Association>
+                        <UML:Class name="In_E" xmi.id="EAID_0A6C3959_1900_4bf7_B98A_D38759BD0D89" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_BD50AA64_8036_449a_A860_683E06BF87B6"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{BC897B5A-2CA3-498d-80AA-E631F06EAC93}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Association xmi.id="EAID_7205D04E_61C2_4fda_8EBB_93EBCDA6DE19">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_type" value="Connector"/>
+                                <UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+                                <UML:TaggedValue tag="ea_sourceName" value="In_E"/>
+                                <UML:TaggedValue tag="ea_targetName" value="In_E"/>
+                                <UML:TaggedValue tag="ea_sourceType" value="Port"/>
+                                <UML:TaggedValue tag="ea_targetType" value="Port"/>
+                                <UML:TaggedValue tag="privatedata5" value="SX=0;SY=-7;EX=2;EY=0;EDGE=2;"/>
+                                </UML:ModelElement.taggedValue>
+                            <UML:Association.connection>
+                                <UML:AssociationEnd type="EAID_8F885D88_2452_48f5_91CF_1A232CEECAD3">
+                                    </UML:AssociationEnd>
+                                <UML:AssociationEnd type="EAID_0A6C3959_1900_4bf7_B98A_D38759BD0D89">
+                                    </UML:AssociationEnd>
+                            </UML:Association.connection>
+                        </UML:Association>
+                        <UML:Class name="Out_E2" xmi.id="EAID_0EBBDD8C_E841_411c_A4CC_0328381419DD" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_9C60CE10_3023_4a7b_86D4_FF993385CE7A"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{E26A5C0A-0629-4f11-9514-E1841B6B81CE}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Association xmi.id="EAID_94AD0135_F95F_4db6_A7E3_73AAA112A3B0">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_type" value="Connector"/>
+                                <UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+                                <UML:TaggedValue tag="ea_sourceName" value="Out_E2"/>
+                                <UML:TaggedValue tag="ea_targetName" value="Out_E2"/>
+                                <UML:TaggedValue tag="ea_sourceType" value="Port"/>
+                                <UML:TaggedValue tag="ea_targetType" value="Port"/>
+                                <UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=-6;EY=1;EDGE=2;"/>
+                                </UML:ModelElement.taggedValue>
+                            <UML:Association.connection>
+                                <UML:AssociationEnd type="EAID_0EBBDD8C_E841_411c_A4CC_0328381419DD">
+                                    </UML:AssociationEnd>
+                                <UML:AssociationEnd type="EAID_4BF2B2E1_30C5_4ea7_8F21_A1BBAC9EB24D">
+                                    </UML:AssociationEnd>
+                            </UML:Association.connection>
+                        </UML:Association>
+                        <UML:Class name="Out_ME" xmi.id="EAID_120D3828_DB12_4717_A325_1B262677BDDD" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_0468774A_3FA0_47dd_922C_7531A4727489"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Out_E3" xmi.id="EAID_12687534_C780_42ef_B46D_9661DAD64857" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_C76959A9_F807_42f5_9DF1_BC441A647905"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{D689F1AD-4ED5-4d00-A41D-08BD306ACD90}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Out_ME1" xmi.id="EAID_1593E7F3_7841_43ce_8BA2_04CD7E93638D" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_F19F2C88_A6F3_4eec_8F08_8D85D8A19EF9"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{F9E7227B-3142-42ce-9892-A52BCB7BA579}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Association xmi.id="EAID_23D913D8_3172_4ef4_BC75_076332EAE196">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_type" value="Connector"/>
+                                <UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+                                <UML:TaggedValue tag="ea_sourceName" value="Out_ME1"/>
+                                <UML:TaggedValue tag="ea_targetName" value="In_ME"/>
+                                <UML:TaggedValue tag="ea_sourceType" value="Port"/>
+                                <UML:TaggedValue tag="ea_targetType" value="Port"/>
+                                <UML:TaggedValue tag="privatedata5" value="SX=0;SY=-6;EX=0;EY=7;EDGE=2;"/>
+                                </UML:ModelElement.taggedValue>
+                            <UML:Association.connection>
+                                <UML:AssociationEnd type="EAID_1593E7F3_7841_43ce_8BA2_04CD7E93638D">
+                                    </UML:AssociationEnd>
+                                <UML:AssociationEnd type="EAID_C87022F2_D0D2_4a18_B9C4_8CF5729E8428">
+                                    </UML:AssociationEnd>
+                            </UML:Association.connection>
+                        </UML:Association>
+                        <UML:Class name="In_E" xmi.id="EAID_18308DDA_7B9B_461d_8324_16B54A23F521" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_E050AA38_C6A0_4e75_B7FE_5FF281991432"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{1B649B86-895C-4921-956A-34B30A2E8D2D}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Association xmi.id="EAID_10FB516B_E9C5_4d83_8906_D7905A5F477F">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_type" value="Connector"/>
+                                <UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+                                <UML:TaggedValue tag="ea_sourceName" value="In_E"/>
+                                <UML:TaggedValue tag="ea_targetName" value="In_E"/>
+                                <UML:TaggedValue tag="ea_sourceType" value="Port"/>
+                                <UML:TaggedValue tag="ea_targetType" value="Port"/>
+                                <UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=0;EY=0;EDGE=2;"/>
+                                </UML:ModelElement.taggedValue>
+                            <UML:Association.connection>
+                                <UML:AssociationEnd type="EAID_21D4DBE3_CD03_486e_AFDE_68E57A274E0B">
+                                    </UML:AssociationEnd>
+                                <UML:AssociationEnd type="EAID_18308DDA_7B9B_461d_8324_16B54A23F521">
+                                    </UML:AssociationEnd>
+                            </UML:Association.connection>
+                        </UML:Association>
+                        <UML:Class name="Out_ME" xmi.id="EAID_18D1846F_5F4E_4cec_A133_7790E04A9D28" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_CD245ED0_CAEE_46fb_AAA0_D92AA21B3403"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{120D3828-DB12-4717-A325-1B262677BDDD}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Association xmi.id="EAID_0CD9F855_453C_434b_B5B6_AF2789BD8A7D">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_type" value="Connector"/>
+                                <UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+                                <UML:TaggedValue tag="ea_sourceName" value="Out_ME"/>
+                                <UML:TaggedValue tag="ea_targetName" value="In_ME"/>
+                                <UML:TaggedValue tag="ea_sourceType" value="Port"/>
+                                <UML:TaggedValue tag="ea_targetType" value="Port"/>
+                                <UML:TaggedValue tag="privatedata5" value="SX=0;SY=-1;EX=0;EY=6;EDGE=2;"/>
+                                </UML:ModelElement.taggedValue>
+                            <UML:Association.connection>
+                                <UML:AssociationEnd type="EAID_18D1846F_5F4E_4cec_A133_7790E04A9D28">
+                                    </UML:AssociationEnd>
+                                <UML:AssociationEnd type="EAID_D89F60ED_CB0C_4260_99F1_42B74E017894">
+                                    </UML:AssociationEnd>
+                            </UML:Association.connection>
+                        </UML:Association>
+                        <UML:Class name="In_ME" xmi.id="EAID_19C16C36_E179_4aba_A7D5_0820B710C09A" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_84B53AFF_0A63_44c4_B4AA_E51DF4F889B3"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="In_E" xmi.id="EAID_1B649B86_895C_4921_956A_34B30A2E8D2D" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_9C4C42BB_2F6F_44ee_8A02_54785F05B861"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Out_ME1" xmi.id="EAID_1B7B87E7_85A1_4644_8B5C_7C4E0C46C89E" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_37BE2849_960D_48ec_861B_70DFDE4C0D4B"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{C8098839-EB90-45da-8295-82975593F53B}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Association xmi.id="EAID_EA03AEA3_FAA0_4b92_BBDF_9DD43E01FD19">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_type" value="Connector"/>
+                                <UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+                                <UML:TaggedValue tag="ea_sourceName" value="Out_ME1"/>
+                                <UML:TaggedValue tag="ea_targetName" value="Out_ME"/>
+                                <UML:TaggedValue tag="ea_sourceType" value="Port"/>
+                                <UML:TaggedValue tag="ea_targetType" value="Port"/>
+                                <UML:TaggedValue tag="privatedata5" value="SX=1;SY=0;EX=0;EY=2;EDGE=2;"/>
+                                </UML:ModelElement.taggedValue>
+                            <UML:Association.connection>
+                                <UML:AssociationEnd type="EAID_1B7B87E7_85A1_4644_8B5C_7C4E0C46C89E">
+                                    </UML:AssociationEnd>
+                                <UML:AssociationEnd type="EAID_DE463415_BD43_48a3_A698_5300B010EA56">
+                                    </UML:AssociationEnd>
+                            </UML:Association.connection>
+                        </UML:Association>
+                        <UML:Class name="Out_ME" xmi.id="EAID_1D5736DD_85D0_4f2f_90B6_DC4463F989BF" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_A8EEFA4F_657D_41ca_8CE2_A42544811834"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Association xmi.id="EAID_997138BC_A318_4bb6_A691_C94FD0768441">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_type" value="Connector"/>
+                                <UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+                                <UML:TaggedValue tag="ea_sourceName" value="Out_ME"/>
+                                <UML:TaggedValue tag="ea_targetName" value="Out_ME"/>
+                                <UML:TaggedValue tag="ea_sourceType" value="Port"/>
+                                <UML:TaggedValue tag="ea_targetType" value="Port"/>
+                                <UML:TaggedValue tag="privatedata5" value="SX=0;SY=6;EX=0;EY=-3;EDGE=2;"/>
+                                </UML:ModelElement.taggedValue>
+                            <UML:Association.connection>
+                                <UML:AssociationEnd type="EAID_BEF5FD99_7EA6_48c3_9502_8712D01428F6">
+                                    </UML:AssociationEnd>
+                                <UML:AssociationEnd type="EAID_1D5736DD_85D0_4f2f_90B6_DC4463F989BF">
+                                    </UML:AssociationEnd>
+                            </UML:Association.connection>
+                        </UML:Association>
+                        <UML:Collaboration xmi.id="EAID_AB78C4E3_C2DD_48d9_884D_31434547872A_Collaboration" name="Collaborations">
+                            <UML:Namespace.ownedElement>
+                                <UML:ClassifierRole name="Resistor" xmi.id="EAID_214601DB_406F_4d3c_A82C_81192FA2A4D5" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+                                    <UML:ModelElement.taggedValue>
+                                        <UML:TaggedValue tag="ea_stype" value="Part"/>
+                                        <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                        <UML:TaggedValue tag="owner" value="EAID_3A613F65_E982_49e5_B6D6_8BCA9E62A202"/>
+                                        <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                        <UML:TaggedValue tag="propertyType" value="{DF88F55E-ADCD-408f-84FC-006F37119E41}"/>
+                                        </UML:ModelElement.taggedValue>
+                                </UML:ClassifierRole>
+                                <UML:ClassifierRole name="Enclosure" xmi.id="EAID_37BE2849_960D_48ec_861B_70DFDE4C0D4B" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+                                    <UML:ModelElement.taggedValue>
+                                        <UML:TaggedValue tag="ea_stype" value="Part"/>
+                                        <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                        <UML:TaggedValue tag="owner" value="EAID_987A7543_953F_4d8b_97CE_033084B1BC71"/>
+                                        <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                        <UML:TaggedValue tag="propertyType" value="{321F247C-AB21-4984-A30C-000C84F6777C}"/>
+                                        </UML:ModelElement.taggedValue>
+                                </UML:ClassifierRole>
+                                <UML:ClassifierRole name="Cone" xmi.id="EAID_54C193DB_8ADA_4a9b_9C58_5234FAE94059" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+                                    <UML:ModelElement.taggedValue>
+                                        <UML:TaggedValue tag="ea_stype" value="Part"/>
+                                        <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                        <UML:TaggedValue tag="owner" value="EAID_FFA4AED9_E1C2_4db9_AF64_7B7CB2D1DF04"/>
+                                        <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                        <UML:TaggedValue tag="propertyType" value="{90812A23-8C0F-4476-B3EA-3D9D77CEEA9D}"/>
+                                        </UML:ModelElement.taggedValue>
+                                </UML:ClassifierRole>
+                                <UML:ClassifierRole name="Voice Coil" xmi.id="EAID_606321F2_F846_4eea_AB1A_61DC1548800D" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+                                    <UML:ModelElement.taggedValue>
+                                        <UML:TaggedValue tag="ea_stype" value="Part"/>
+                                        <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                        <UML:TaggedValue tag="owner" value="EAID_FFA4AED9_E1C2_4db9_AF64_7B7CB2D1DF04"/>
+                                        <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                        <UML:TaggedValue tag="propertyType" value="{84B53AFF-0A63-44c4-B4AA-E51DF4F889B3}"/>
+                                        </UML:ModelElement.taggedValue>
+                                </UML:ClassifierRole>
+                                <UML:ClassifierRole name="Midrange Driver" xmi.id="EAID_90DA4AA6_2982_4161_BA9F_F672C92D08C1" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+                                    <UML:ModelElement.taggedValue>
+                                        <UML:TaggedValue tag="ea_stype" value="Part"/>
+                                        <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                        <UML:TaggedValue tag="owner" value="EAID_321F247C_AB21_4984_A30C_000C84F6777C"/>
+                                        <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                        <UML:TaggedValue tag="propertyType" value="{FFA4AED9-E1C2-4db9-AF64-7B7CB2D1DF04}"/>
+                                        </UML:ModelElement.taggedValue>
+                                </UML:ClassifierRole>
+                                <UML:ClassifierRole name="Woofer Driver" xmi.id="EAID_91E0587C_88B2_456d_8FF9_072EC3B2DF0A" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+                                    <UML:ModelElement.taggedValue>
+                                        <UML:TaggedValue tag="ea_stype" value="Part"/>
+                                        <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                        <UML:TaggedValue tag="owner" value="EAID_321F247C_AB21_4984_A30C_000C84F6777C"/>
+                                        <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                        <UML:TaggedValue tag="propertyType" value="{A8EEFA4F-657D-41ca-8CE2-A42544811834}"/>
+                                        </UML:ModelElement.taggedValue>
+                                </UML:ClassifierRole>
+                                <UML:ClassifierRole name="Inductor" xmi.id="EAID_9C60CE10_3023_4a7b_86D4_FF993385CE7A" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+                                    <UML:ModelElement.taggedValue>
+                                        <UML:TaggedValue tag="ea_stype" value="Part"/>
+                                        <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                        <UML:TaggedValue tag="owner" value="EAID_3A613F65_E982_49e5_B6D6_8BCA9E62A202"/>
+                                        <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                        <UML:TaggedValue tag="propertyType" value="{60D66464-F102-4db1-81C0-9E4BBFF0B3F2}"/>
+                                        </UML:ModelElement.taggedValue>
+                                </UML:ClassifierRole>
+                                <UML:ClassifierRole name="Voice Coil" xmi.id="EAID_BD50AA64_8036_449a_A860_683E06BF87B6" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+                                    <UML:ModelElement.taggedValue>
+                                        <UML:TaggedValue tag="ea_stype" value="Part"/>
+                                        <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                        <UML:TaggedValue tag="owner" value="EAID_58F46EB3_F832_4114_B9D4_5BEED1452FC6"/>
+                                        <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                        <UML:TaggedValue tag="propertyType" value="{84B53AFF-0A63-44c4-B4AA-E51DF4F889B3}"/>
+                                        </UML:ModelElement.taggedValue>
+                                </UML:ClassifierRole>
+                                <UML:ClassifierRole name="Crossover Network" xmi.id="EAID_C76959A9_F807_42f5_9DF1_BC441A647905" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+                                    <UML:ModelElement.taggedValue>
+                                        <UML:TaggedValue tag="ea_stype" value="Part"/>
+                                        <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                        <UML:TaggedValue tag="owner" value="EAID_321F247C_AB21_4984_A30C_000C84F6777C"/>
+                                        <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                        <UML:TaggedValue tag="propertyType" value="{3A613F65-E982-49e5-B6D6-8BCA9E62A202}"/>
+                                        </UML:ModelElement.taggedValue>
+                                </UML:ClassifierRole>
+                                <UML:ClassifierRole name="Tweeter Driver" xmi.id="EAID_C82BAD66_14A9_4360_8038_726BE268F574" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+                                    <UML:ModelElement.taggedValue>
+                                        <UML:TaggedValue tag="ea_stype" value="Part"/>
+                                        <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                        <UML:TaggedValue tag="owner" value="EAID_321F247C_AB21_4984_A30C_000C84F6777C"/>
+                                        <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                        <UML:TaggedValue tag="propertyType" value="{58F46EB3-F832-4114-B9D4-5BEED1452FC6}"/>
+                                        </UML:ModelElement.taggedValue>
+                                </UML:ClassifierRole>
+                                <UML:ClassifierRole name="Capacitor" xmi.id="EAID_CCAE0141_758E_4e43_BCE8_D66D5B7D3955" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+                                    <UML:ModelElement.taggedValue>
+                                        <UML:TaggedValue tag="ea_stype" value="Part"/>
+                                        <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                        <UML:TaggedValue tag="owner" value="EAID_3A613F65_E982_49e5_B6D6_8BCA9E62A202"/>
+                                        <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                        <UML:TaggedValue tag="propertyType" value="{E27712BA-547E-44d4-AC8A-D6BD1F0620CB}"/>
+                                        </UML:ModelElement.taggedValue>
+                                </UML:ClassifierRole>
+                                <UML:ClassifierRole name="Magnet" xmi.id="EAID_CD245ED0_CAEE_46fb_AAA0_D92AA21B3403" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+                                    <UML:ModelElement.taggedValue>
+                                        <UML:TaggedValue tag="ea_stype" value="Part"/>
+                                        <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                        <UML:TaggedValue tag="owner" value="EAID_FFA4AED9_E1C2_4db9_AF64_7B7CB2D1DF04"/>
+                                        <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                        <UML:TaggedValue tag="propertyType" value="{0468774A-3FA0-47dd-922C-7531A4727489}"/>
+                                        </UML:ModelElement.taggedValue>
+                                </UML:ClassifierRole>
+                                <UML:ClassifierRole name="Magnet" xmi.id="EAID_D6B77C4E_58A1_4c29_9E5E_923DF0B7AF99" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+                                    <UML:ModelElement.taggedValue>
+                                        <UML:TaggedValue tag="ea_stype" value="Part"/>
+                                        <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                        <UML:TaggedValue tag="owner" value="EAID_A8EEFA4F_657D_41ca_8CE2_A42544811834"/>
+                                        <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                        <UML:TaggedValue tag="propertyType" value="{0468774A-3FA0-47dd-922C-7531A4727489}"/>
+                                        </UML:ModelElement.taggedValue>
+                                </UML:ClassifierRole>
+                                <UML:ClassifierRole name="Magnet" xmi.id="EAID_D787F607_41DD_4703_8239_0467D7E54670" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+                                    <UML:ModelElement.taggedValue>
+                                        <UML:TaggedValue tag="ea_stype" value="Part"/>
+                                        <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                        <UML:TaggedValue tag="owner" value="EAID_58F46EB3_F832_4114_B9D4_5BEED1452FC6"/>
+                                        <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                        <UML:TaggedValue tag="propertyType" value="{0468774A-3FA0-47dd-922C-7531A4727489}"/>
+                                        </UML:ModelElement.taggedValue>
+                                </UML:ClassifierRole>
+                                <UML:ClassifierRole name="Dome" xmi.id="EAID_D9A418E2_0ACD_4f2a_98ED_105C72376A50" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+                                    <UML:ModelElement.taggedValue>
+                                        <UML:TaggedValue tag="ea_stype" value="Part"/>
+                                        <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                        <UML:TaggedValue tag="owner" value="EAID_58F46EB3_F832_4114_B9D4_5BEED1452FC6"/>
+                                        <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                        <UML:TaggedValue tag="propertyType" value="{D0F320E1-4F00-4425-9C04-6F14EC50BD50}"/>
+                                        </UML:ModelElement.taggedValue>
+                                </UML:ClassifierRole>
+                                <UML:ClassifierRole name="Speaker Terminal" xmi.id="EAID_E050AA38_C6A0_4e75_B7FE_5FF281991432" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+                                    <UML:ModelElement.taggedValue>
+                                        <UML:TaggedValue tag="ea_stype" value="Part"/>
+                                        <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                        <UML:TaggedValue tag="owner" value="EAID_987A7543_953F_4d8b_97CE_033084B1BC71"/>
+                                        <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                        <UML:TaggedValue tag="propertyType" value="{9C4C42BB-2F6F-44ee-8A02-54785F05B861}"/>
+                                        </UML:ModelElement.taggedValue>
+                                </UML:ClassifierRole>
+                                <UML:ClassifierRole name="Voice Coil" xmi.id="EAID_F19F2C88_A6F3_4eec_8F08_8D85D8A19EF9" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+                                    <UML:ModelElement.taggedValue>
+                                        <UML:TaggedValue tag="ea_stype" value="Part"/>
+                                        <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                        <UML:TaggedValue tag="owner" value="EAID_A8EEFA4F_657D_41ca_8CE2_A42544811834"/>
+                                        <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                        <UML:TaggedValue tag="propertyType" value="{84B53AFF-0A63-44c4-B4AA-E51DF4F889B3}"/>
+                                        </UML:ModelElement.taggedValue>
+                                </UML:ClassifierRole>
+                                <UML:ClassifierRole name="Cone" xmi.id="EAID_FF722CFD_3B5A_41bb_9B58_794640D0F9D2" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+                                    <UML:ModelElement.taggedValue>
+                                        <UML:TaggedValue tag="ea_stype" value="Part"/>
+                                        <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                        <UML:TaggedValue tag="owner" value="EAID_A8EEFA4F_657D_41ca_8CE2_A42544811834"/>
+                                        <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                        <UML:TaggedValue tag="propertyType" value="{90812A23-8C0F-4476-B3EA-3D9D77CEEA9D}"/>
+                                        </UML:ModelElement.taggedValue>
+                                </UML:ClassifierRole>
+                            </UML:Namespace.ownedElement>
+                            <UML:Collaboration.interaction/>
+                        </UML:Collaboration>
+                        <UML:Class name="In_E" xmi.id="EAID_21D4DBE3_CD03_486e_AFDE_68E57A274E0B" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_987A7543_953F_4d8b_97CE_033084B1BC71"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Out_E1" xmi.id="EAID_23F25C28_20B4_4129_AC46_3A64061792DA" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_214601DB_406F_4d3c_A82C_81192FA2A4D5"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{89387C58-34D5-4d39-9C50-D5068DF56ADD}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Association xmi.id="EAID_112F71F7_5504_41af_94ED_DACDA3986A54">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_type" value="Connector"/>
+                                <UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+                                <UML:TaggedValue tag="ea_sourceName" value="Out_E1"/>
+                                <UML:TaggedValue tag="ea_targetName" value="In_E2"/>
+                                <UML:TaggedValue tag="ea_sourceType" value="Port"/>
+                                <UML:TaggedValue tag="ea_targetType" value="Port"/>
+                                <UML:TaggedValue tag="privatedata5" value="SX=0;SY=1;EX=0;EY=4;EDGE=2;"/>
+                                </UML:ModelElement.taggedValue>
+                            <UML:Association.connection>
+                                <UML:AssociationEnd type="EAID_23F25C28_20B4_4129_AC46_3A64061792DA">
+                                    </UML:AssociationEnd>
+                                <UML:AssociationEnd type="EAID_60539D46_75A5_45b8_BDE1_54F04009C944">
+                                    </UML:AssociationEnd>
+                            </UML:Association.connection>
+                        </UML:Association>
+                        <UML:Class name="In_ME" xmi.id="EAID_261992E4_FD9B_4127_8D58_3C699EB01668" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_D0F320E1_4F00_4425_9C04_6F14EC50BD50"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Out_ME3" xmi.id="EAID_2B612E5C_27EF_44d4_858C_79ECB8278862" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_37BE2849_960D_48ec_861B_70DFDE4C0D4B"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{7933D518-33BB-4bff-B8CD-1E44F15BD7F8}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Association xmi.id="EAID_D8A5FCFE_70A5_4567_88D7_AF119F8E15B9">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_type" value="Connector"/>
+                                <UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+                                <UML:TaggedValue tag="ea_sourceName" value="Out_ME3"/>
+                                <UML:TaggedValue tag="ea_targetName" value="Out_ME"/>
+                                <UML:TaggedValue tag="ea_sourceType" value="Port"/>
+                                <UML:TaggedValue tag="ea_targetType" value="Port"/>
+                                <UML:TaggedValue tag="privatedata5" value="SX=0;SY=1;EX=0;EY=3;EDGE=2;"/>
+                                </UML:ModelElement.taggedValue>
+                            <UML:Association.connection>
+                                <UML:AssociationEnd type="EAID_2B612E5C_27EF_44d4_858C_79ECB8278862">
+                                    </UML:AssociationEnd>
+                                <UML:AssociationEnd type="EAID_DE463415_BD43_48a3_A698_5300B010EA56">
+                                    </UML:AssociationEnd>
+                            </UML:Association.connection>
+                        </UML:Association>
+                        <UML:Class name="In_E2" xmi.id="EAID_2BC9BB57_CBCF_4e30_A53B_0B0B376BF927" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_E27712BA_547E_44d4_AC8A_D6BD1F0620CB"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="In_E2" xmi.id="EAID_2CE9801B_AAF1_4d9f_9A70_6D12B579883D" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_60D66464_F102_4db1_81C0_9E4BBFF0B3F2"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Out_E1" xmi.id="EAID_31072C8B_7BC1_4183_A898_B82F595F71EE" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_C76959A9_F807_42f5_9DF1_BC441A647905"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{751A3642-0C60-4ba7-AAD3-C36FFFFD7C55}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Association xmi.id="EAID_95B8D850_A5E0_40f3_9AA0_CDB7EEB2FE7F">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_type" value="Connector"/>
+                                <UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+                                <UML:TaggedValue tag="ea_sourceName" value="Out_E1"/>
+                                <UML:TaggedValue tag="ea_targetName" value="In_E"/>
+                                <UML:TaggedValue tag="ea_sourceType" value="Port"/>
+                                <UML:TaggedValue tag="ea_targetType" value="Port"/>
+                                <UML:TaggedValue tag="privatedata5" value="SX=8;SY=0;EX=0;EY=0;EDGE=1;"/>
+                                </UML:ModelElement.taggedValue>
+                            <UML:Association.connection>
+                                <UML:AssociationEnd type="EAID_31072C8B_7BC1_4183_A898_B82F595F71EE">
+                                    </UML:AssociationEnd>
+                                <UML:AssociationEnd type="EAID_455F9DEB_F31B_48b7_B4E9_A794EF04CAF8">
+                                    </UML:AssociationEnd>
+                            </UML:Association.connection>
+                        </UML:Association>
+                        <UML:Class name="Enclosure" xmi.id="EAID_321F247C_AB21_4984_A30C_000C84F6777C" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A" isActive="false">
+                            <UML:ModelElement.stereotype>
+                                <UML:Stereotype name="block"/>
+                            </UML:ModelElement.stereotype>
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Class"/>
+                                <UML:TaggedValue tag="ea_ntype" value="8"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="stereotype" value="block"/>
+                                <UML:TaggedValue tag="styleex" value="ConstructID=0;"/>
+                                <UML:TaggedValue tag="diagram" value="EAID_C326222B_3629_4cb4_8E50_6E37B28DCDDA"/>
+                                <UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={1231F1D7-6C77-49a3-8DBB-E6BBB725DE5D}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=block;FQName=SysML1.4::block;@ENDSTEREO;$DES;$CLT={321F247C-AB21-4984-A30C-000C84F6777C}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={02C09FD8-417C-43de-AD4A-06D399BD5B9D}$XID;$NAM=DefaultDiagram$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$CLT={321F247C-AB21-4984-A30C-000C84F6777C}$CLT;$SUP={C326222B-3629-4cb4-8E50-6E37B28DCDDA}$SUP;$ENDXREF;$XREFPROP=$XID={54B65A15-D1B3-484e-AED0-C4DFFD3B79FE}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=_defaultDiagramType@ENDNAME;@TYPE=string@ENDTYPE;@VALU=SysML1.4::InternalBlock@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={321F247C-AB21-4984-A30C-000C84F6777C}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+                            </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="In_ME" xmi.id="EAID_37C864E7_0031_49f4_AF65_64891169051D" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_CD245ED0_CAEE_46fb_AAA0_D92AA21B3403"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{07D47DA9-1736-4ca8-9341-5CC9284A556B}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Association xmi.id="EAID_EAAC743E_9666_4c99_A24B_91050232ADA0">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_type" value="Connector"/>
+                                <UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+                                <UML:TaggedValue tag="ea_sourceName" value="Out_ME1"/>
+                                <UML:TaggedValue tag="ea_targetName" value="In_ME"/>
+                                <UML:TaggedValue tag="ea_sourceType" value="Port"/>
+                                <UML:TaggedValue tag="ea_targetType" value="Port"/>
+                                <UML:TaggedValue tag="privatedata5" value="SX=0;SY=3;EX=0;EY=7;EDGE=2;"/>
+                                </UML:ModelElement.taggedValue>
+                            <UML:Association.connection>
+                                <UML:AssociationEnd type="EAID_95071F6A_3DB4_4b53_AE82_BCA074E8057F">
+                                    </UML:AssociationEnd>
+                                <UML:AssociationEnd type="EAID_37C864E7_0031_49f4_AF65_64891169051D">
+                                    </UML:AssociationEnd>
+                            </UML:Association.connection>
+                        </UML:Association>
+                        <UML:Class name="In_E1" xmi.id="EAID_38B9B319_4761_45ee_8BBF_8874D8808D64" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_60D66464_F102_4db1_81C0_9E4BBFF0B3F2"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Crossover Network" xmi.id="EAID_3A613F65_E982_49e5_B6D6_8BCA9E62A202" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A" isActive="false">
+                            <UML:ModelElement.stereotype>
+                                <UML:Stereotype name="block"/>
+                            </UML:ModelElement.stereotype>
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Class"/>
+                                <UML:TaggedValue tag="ea_ntype" value="8"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="stereotype" value="block"/>
+                                <UML:TaggedValue tag="styleex" value="ConstructID=0;"/>
+                                <UML:TaggedValue tag="diagram" value="EAID_B83E99D1_3F1F_4afc_AA44_64D42BF739CF"/>
+                                <UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={BE050181-65DC-4d05-941E-E321A4FE31CC}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=block;FQName=SysML1.4::block;@ENDSTEREO;$DES;$CLT={3A613F65-E982-49e5-B6D6-8BCA9E62A202}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={3334DB70-0399-41f5-A386-7E82FDF3B49D}$XID;$NAM=DefaultDiagram$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$CLT={3A613F65-E982-49e5-B6D6-8BCA9E62A202}$CLT;$SUP={B83E99D1-3F1F-4afc-AA44-64D42BF739CF}$SUP;$ENDXREF;$XREFPROP=$XID={B2EA308B-A87F-4ef3-9D30-ADD664328088}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=_defaultDiagramType@ENDNAME;@TYPE=string@ENDTYPE;@VALU=SysML1.4::InternalBlock@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={3A613F65-E982-49e5-B6D6-8BCA9E62A202}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+                            </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="In_ME" xmi.id="EAID_3D5AB316_36BE_4751_B017_931A2DFD6D76" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_D9A418E2_0ACD_4f2a_98ED_105C72376A50"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{261992E4-FD9B-4127-8D58-3C699EB01668}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Association xmi.id="EAID_12DCB98A_F6C2_46a4_AB07_A32CD295A11B">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_type" value="Connector"/>
+                                <UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+                                <UML:TaggedValue tag="ea_sourceName" value="Out_ME2"/>
+                                <UML:TaggedValue tag="ea_targetName" value="In_ME"/>
+                                <UML:TaggedValue tag="ea_sourceType" value="Port"/>
+                                <UML:TaggedValue tag="ea_targetType" value="Port"/>
+                                <UML:TaggedValue tag="privatedata5" value="SX=-7;SY=0;EX=0;EY=3;EDGE=3;"/>
+                                </UML:ModelElement.taggedValue>
+                            <UML:Association.connection>
+                                <UML:AssociationEnd type="EAID_D84750E2_ABE9_4572_B4E9_6E113739F677">
+                                    </UML:AssociationEnd>
+                                <UML:AssociationEnd type="EAID_3D5AB316_36BE_4751_B017_931A2DFD6D76">
+                                    </UML:AssociationEnd>
+                            </UML:Association.connection>
+                        </UML:Association>
+                        <UML:Class name="Out_E2" xmi.id="EAID_3E6C26FB_F4A1_4328_B4E4_06136B38EDAE" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_DF88F55E_ADCD_408f_84FC_006F37119E41"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="In_E" xmi.id="EAID_455F9DEB_F31B_48b7_B4E9_A794EF04CAF8" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_C82BAD66_14A9_4360_8038_726BE268F574"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{8F885D88-2452-48f5-91CF-1A232CEECAD3}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="In_E1" xmi.id="EAID_46952C2D_9497_470c_80FF_8201254A0BAC" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_E27712BA_547E_44d4_AC8A_D6BD1F0620CB"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Out_E2" xmi.id="EAID_4BF2B2E1_30C5_4ea7_8F21_A1BBAC9EB24D" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_3A613F65_E982_49e5_B6D6_8BCA9E62A202"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Out_E1" xmi.id="EAID_4EE6CBBB_DCA4_49b5_A484_7FCEE694D41F" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_60D66464_F102_4db1_81C0_9E4BBFF0B3F2"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="In_ME" xmi.id="EAID_531F2103_A49B_4bab_BB2A_A8ACF62268D0" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_D787F607_41DD_4703_8239_0467D7E54670"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{07D47DA9-1736-4ca8-9341-5CC9284A556B}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Association xmi.id="EAID_F775F683_2D2A_44ec_B235_4C4027D873A2">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_type" value="Connector"/>
+                                <UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+                                <UML:TaggedValue tag="ea_sourceName" value="Out_ME1"/>
+                                <UML:TaggedValue tag="ea_targetName" value="In_ME"/>
+                                <UML:TaggedValue tag="ea_sourceType" value="Port"/>
+                                <UML:TaggedValue tag="ea_targetType" value="Port"/>
+                                <UML:TaggedValue tag="privatedata5" value="SX=0;SY=7;EX=0;EY=0;EDGE=2;"/>
+                                </UML:ModelElement.taggedValue>
+                            <UML:Association.connection>
+                                <UML:AssociationEnd type="EAID_8FFBC8C9_07CD_4243_ACB5_B549F5AA5067">
+                                    </UML:AssociationEnd>
+                                <UML:AssociationEnd type="EAID_531F2103_A49B_4bab_BB2A_A8ACF62268D0">
+                                    </UML:AssociationEnd>
+                            </UML:Association.connection>
+                        </UML:Association>
+                        <UML:Class name="Out_E1" xmi.id="EAID_53627092_8A5F_488e_A934_2525A7C9D709" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_CCAE0141_758E_4e43_BCE8_D66D5B7D3955"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{B60122EA-E3F5-4a3b-B27B-DCF7243028DD}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Association xmi.id="EAID_444C8A30_C5A3_4cad_B26C_75FC763046DF">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_type" value="Connector"/>
+                                <UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+                                <UML:TaggedValue tag="ea_sourceName" value="Out_E1"/>
+                                <UML:TaggedValue tag="ea_targetName" value="In_E1"/>
+                                <UML:TaggedValue tag="ea_sourceType" value="Port"/>
+                                <UML:TaggedValue tag="ea_targetType" value="Port"/>
+                                <UML:TaggedValue tag="privatedata5" value="SX=0;SY=-2;EX=0;EY=7;EDGE=2;"/>
+                                </UML:ModelElement.taggedValue>
+                            <UML:Association.connection>
+                                <UML:AssociationEnd type="EAID_53627092_8A5F_488e_A934_2525A7C9D709">
+                                    </UML:AssociationEnd>
+                                <UML:AssociationEnd type="EAID_80AAA873_F44B_4cc1_A535_47407F6DCE04">
+                                    </UML:AssociationEnd>
+                            </UML:Association.connection>
+                        </UML:Association>
+                        <UML:Class name="Out_E3" xmi.id="EAID_54A6B25B_18A0_4a99_82E0_CC291304109E" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_214601DB_406F_4d3c_A82C_81192FA2A4D5"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{7594CFDE-65D7-404b-9DA1-34F9AC76C1E6}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Association xmi.id="EAID_74D2A2EF_57FB_47eb_825A_1B4071A5B4C8">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_type" value="Connector"/>
+                                <UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+                                <UML:TaggedValue tag="ea_sourceName" value="Out_E3"/>
+                                <UML:TaggedValue tag="ea_targetName" value="Out_E3"/>
+                                <UML:TaggedValue tag="ea_sourceType" value="Port"/>
+                                <UML:TaggedValue tag="ea_targetType" value="Port"/>
+                                <UML:TaggedValue tag="privatedata5" value="SX=0;SY=-7;EX=0;EY=-5;EDGE=2;"/>
+                                </UML:ModelElement.taggedValue>
+                            <UML:Association.connection>
+                                <UML:AssociationEnd type="EAID_54A6B25B_18A0_4a99_82E0_CC291304109E">
+                                    </UML:AssociationEnd>
+                                <UML:AssociationEnd type="EAID_D689F1AD_4ED5_4d00_A41D_08BD306ACD90">
+                                    </UML:AssociationEnd>
+                            </UML:Association.connection>
+                        </UML:Association>
+                        <UML:Class name="Out_E1" xmi.id="EAID_556C97EB_B8EA_483a_A135_3BCE6DDE6F3B" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_9C60CE10_3023_4a7b_86D4_FF993385CE7A"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{4EE6CBBB-DCA4-49b5-A484-7FCEE694D41F}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Association xmi.id="EAID_4FC7E2E1_CE06_4e9b_A565_8390A52C4150">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_type" value="Connector"/>
+                                <UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+                                <UML:TaggedValue tag="ea_sourceName" value="Out_E1"/>
+                                <UML:TaggedValue tag="ea_targetName" value="In_E2"/>
+                                <UML:TaggedValue tag="ea_sourceType" value="Port"/>
+                                <UML:TaggedValue tag="ea_targetType" value="Port"/>
+                                <UML:TaggedValue tag="privatedata5" value="SX=0;SY=-3;EX=0;EY=-8;EDGE=2;"/>
+                                </UML:ModelElement.taggedValue>
+                            <UML:Association.connection>
+                                <UML:AssociationEnd type="EAID_556C97EB_B8EA_483a_A135_3BCE6DDE6F3B">
+                                    </UML:AssociationEnd>
+                                <UML:AssociationEnd type="EAID_7AE55B5E_300A_4de4_8AC9_47236247F457">
+                                    </UML:AssociationEnd>
+                            </UML:Association.connection>
+                        </UML:Association>
+                        <UML:Class name="Tweeter Driver" xmi.id="EAID_58F46EB3_F832_4114_B9D4_5BEED1452FC6" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A" isActive="false">
+                            <UML:ModelElement.stereotype>
+                                <UML:Stereotype name="block"/>
+                            </UML:ModelElement.stereotype>
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Class"/>
+                                <UML:TaggedValue tag="ea_ntype" value="8"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="stereotype" value="block"/>
+                                <UML:TaggedValue tag="styleex" value="ConstructID=0;"/>
+                                <UML:TaggedValue tag="diagram" value="EAID_B333BBE6_089D_48f0_A0EB_B975B6AD62D3"/>
+                                <UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={A04DA593-61BE-4afd-B155-44A2D4031B98}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=block;FQName=SysML1.4::block;@ENDSTEREO;$DES;$CLT={58F46EB3-F832-4114-B9D4-5BEED1452FC6}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={C704C72B-C77D-4321-8E86-CF495BD1E240}$XID;$NAM=DefaultDiagram$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$CLT={58F46EB3-F832-4114-B9D4-5BEED1452FC6}$CLT;$SUP={B333BBE6-089D-48f0-A0EB-B975B6AD62D3}$SUP;$ENDXREF;$XREFPROP=$XID={96261D3D-AB6D-44d8-948C-60C9B3B442CE}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=_defaultDiagramType@ENDNAME;@TYPE=string@ENDTYPE;@VALU=SysML1.4::InternalBlock@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={58F46EB3-F832-4114-B9D4-5BEED1452FC6}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+                            </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="In_E" xmi.id="EAID_5CF83D12_5CFC_4f54_8F79_22C525A8273E" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_321F247C_AB21_4984_A30C_000C84F6777C"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Association xmi.id="EAID_BAAD66A4_BFC5_40ec_A4D3_5A860EFE77F7">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_type" value="Connector"/>
+                                <UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+                                <UML:TaggedValue tag="ea_sourceName" value="In_E"/>
+                                <UML:TaggedValue tag="ea_targetName" value="In_E"/>
+                                <UML:TaggedValue tag="ea_sourceType" value="Port"/>
+                                <UML:TaggedValue tag="ea_targetType" value="Port"/>
+                                <UML:TaggedValue tag="privatedata5" value="SX=0;SY=1;EX=0;EY=-8;EDGE=2;"/>
+                                </UML:ModelElement.taggedValue>
+                            <UML:Association.connection>
+                                <UML:AssociationEnd type="EAID_5CF83D12_5CFC_4f54_8F79_22C525A8273E">
+                                    </UML:AssociationEnd>
+                                <UML:AssociationEnd type="EAID_6AFC7C57_2BFC_49af_BA19_6F99F1157E78">
+                                    </UML:AssociationEnd>
+                            </UML:Association.connection>
+                        </UML:Association>
+                        <UML:Class name="In_E2" xmi.id="EAID_60539D46_75A5_45b8_BDE1_54F04009C944" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_CCAE0141_758E_4e43_BCE8_D66D5B7D3955"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{2BC9BB57-CBCF-4e30-A53B-0B0B376BF927}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Inductor" xmi.id="EAID_60D66464_F102_4db1_81C0_9E4BBFF0B3F2" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A" isActive="false">
+                            <UML:ModelElement.stereotype>
+                                <UML:Stereotype name="block"/>
+                            </UML:ModelElement.stereotype>
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Class"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="stereotype" value="block"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Out_ME" xmi.id="EAID_6148DD38_A49B_45d6_B05D_7EB20D12D34A" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_D9A418E2_0ACD_4f2a_98ED_105C72376A50"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{C5F5E1D9-A186-4cf9-BB9F-2C68C6C25D2E}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Association xmi.id="EAID_9131EB3B_B97B_4d80_946D_A249860D3052">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_type" value="Connector"/>
+                                <UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+                                <UML:TaggedValue tag="ea_sourceName" value="Out_ME"/>
+                                <UML:TaggedValue tag="ea_targetName" value="Out_ME"/>
+                                <UML:TaggedValue tag="ea_sourceType" value="Port"/>
+                                <UML:TaggedValue tag="ea_targetType" value="Port"/>
+                                <UML:TaggedValue tag="privatedata5" value="SX=0;SY=-8;EX=0;EY=-4;EDGE=2;"/>
+                                </UML:ModelElement.taggedValue>
+                            <UML:Association.connection>
+                                <UML:AssociationEnd type="EAID_6148DD38_A49B_45d6_B05D_7EB20D12D34A">
+                                    </UML:AssociationEnd>
+                                <UML:AssociationEnd type="EAID_A72ACE7A_9F2E_4738_8634_FDDE441CBCAB">
+                                    </UML:AssociationEnd>
+                            </UML:Association.connection>
+                        </UML:Association>
+                        <UML:Class name="In_E" xmi.id="EAID_635FB072_8440_49ed_B167_6F3F1540244B" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_FFA4AED9_E1C2_4db9_AF64_7B7CB2D1DF04"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Association xmi.id="EAID_9DE47787_D8A8_435b_8D00_19FDDA08EABF">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_type" value="Connector"/>
+                                <UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+                                <UML:TaggedValue tag="ea_sourceName" value="In_E"/>
+                                <UML:TaggedValue tag="ea_targetName" value="In_E"/>
+                                <UML:TaggedValue tag="ea_sourceType" value="Port"/>
+                                <UML:TaggedValue tag="ea_targetType" value="Port"/>
+                                <UML:TaggedValue tag="privatedata5" value="SX=0;SY=7;EX=0;EY=-8;EDGE=2;"/>
+                                </UML:ModelElement.taggedValue>
+                            <UML:Association.connection>
+                                <UML:AssociationEnd type="EAID_635FB072_8440_49ed_B167_6F3F1540244B">
+                                    </UML:AssociationEnd>
+                                <UML:AssociationEnd type="EAID_C0AB9FAD_6592_4131_BE1B_40B7BD9D5564">
+                                    </UML:AssociationEnd>
+                            </UML:Association.connection>
+                        </UML:Association>
+                        <UML:Class name="Out_ME2" xmi.id="EAID_6434C7FA_1B90_466a_ABA2_98C56F9F27A3" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_321F247C_AB21_4984_A30C_000C84F6777C"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Association xmi.id="EAID_5B4E51D4_D6C3_4776_B9C5_768E0C747EAD">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_type" value="Connector"/>
+                                <UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+                                <UML:TaggedValue tag="ea_sourceName" value="Out_ME"/>
+                                <UML:TaggedValue tag="ea_targetName" value="Out_ME2"/>
+                                <UML:TaggedValue tag="ea_sourceType" value="Port"/>
+                                <UML:TaggedValue tag="ea_targetType" value="Port"/>
+                                <UML:TaggedValue tag="privatedata5" value="SX=8;SY=0;EX=0;EY=-3;EDGE=3;"/>
+                                </UML:ModelElement.taggedValue>
+                            <UML:Association.connection>
+                                <UML:AssociationEnd type="EAID_A2DC971C_DB52_4e0e_A594_5E360D36AE91">
+                                    </UML:AssociationEnd>
+                                <UML:AssociationEnd type="EAID_6434C7FA_1B90_466a_ABA2_98C56F9F27A3">
+                                    </UML:AssociationEnd>
+                            </UML:Association.connection>
+                        </UML:Association>
+                        <UML:Class name="In_E1" xmi.id="EAID_6643DF04_E128_486b_9278_AD484C9A06D3" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_DF88F55E_ADCD_408f_84FC_006F37119E41"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Out_ME" xmi.id="EAID_67F76032_35EF_461b_9349_B77AE408B783" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_C82BAD66_14A9_4360_8038_726BE268F574"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{A72ACE7A-9F2E-4738-8634-FDDE441CBCAB}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Association xmi.id="EAID_958BA38C_A3CC_489b_9665_E530C665E8B3">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_type" value="Connector"/>
+                                <UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+                                <UML:TaggedValue tag="ea_sourceName" value="Out_ME"/>
+                                <UML:TaggedValue tag="ea_targetName" value="Out_ME1"/>
+                                <UML:TaggedValue tag="ea_sourceType" value="Port"/>
+                                <UML:TaggedValue tag="ea_targetType" value="Port"/>
+                                <UML:TaggedValue tag="privatedata5" value="SX=8;SY=0;EX=0;EY=2;EDGE=3;"/>
+                                </UML:ModelElement.taggedValue>
+                            <UML:Association.connection>
+                                <UML:AssociationEnd type="EAID_67F76032_35EF_461b_9349_B77AE408B783">
+                                    </UML:AssociationEnd>
+                                <UML:AssociationEnd type="EAID_C8098839_EB90_45da_8295_82975593F53B">
+                                    </UML:AssociationEnd>
+                            </UML:Association.connection>
+                        </UML:Association>
+                        <UML:Class name="In_E" xmi.id="EAID_6AFC7C57_2BFC_49af_BA19_6F99F1157E78" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_C76959A9_F807_42f5_9DF1_BC441A647905"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{FF61F9C7-5C79-4b80-B586-D9D2A9130E68}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="In_E2" xmi.id="EAID_7034A49A_C9D0_4225_B73C_305FFB6DF60A" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_9C60CE10_3023_4a7b_86D4_FF993385CE7A"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{2CE9801B-AAF1-4d9f-9A70-6D12B579883D}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Association xmi.id="EAID_7CF7C4A5_3EA7_495a_AF0B_8CD9BF3039D9">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_type" value="Connector"/>
+                                <UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+                                <UML:TaggedValue tag="ea_sourceName" value="Out_E2"/>
+                                <UML:TaggedValue tag="ea_targetName" value="In_E2"/>
+                                <UML:TaggedValue tag="ea_sourceType" value="Port"/>
+                                <UML:TaggedValue tag="ea_targetType" value="Port"/>
+                                <UML:TaggedValue tag="privatedata5" value="SX=0;SY=-3;EX=0;EY=-8;EDGE=2;"/>
+                                </UML:ModelElement.taggedValue>
+                            <UML:Association.connection>
+                                <UML:AssociationEnd type="EAID_9B7057C4_1EBF_4dc7_ACDA_0F3D36E14DFB">
+                                    </UML:AssociationEnd>
+                                <UML:AssociationEnd type="EAID_7034A49A_C9D0_4225_B73C_305FFB6DF60A">
+                                    </UML:AssociationEnd>
+                            </UML:Association.connection>
+                        </UML:Association>
+                        <UML:Class name="Out_E1" xmi.id="EAID_751A3642_0C60_4ba7_AAD3_C36FFFFD7C55" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_3A613F65_E982_49e5_B6D6_8BCA9E62A202"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Association xmi.id="EAID_98C9232A_0189_45e3_9B2A_4DAFD0BC3067">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_type" value="Connector"/>
+                                <UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+                                <UML:TaggedValue tag="ea_sourceName" value="Out_E2"/>
+                                <UML:TaggedValue tag="ea_targetName" value="Out_E1"/>
+                                <UML:TaggedValue tag="ea_sourceType" value="Port"/>
+                                <UML:TaggedValue tag="ea_targetType" value="Port"/>
+                                <UML:TaggedValue tag="privatedata5" value="SX=0;SY=7;EX=0;EY=7;EDGE=2;"/>
+                                </UML:ModelElement.taggedValue>
+                            <UML:Association.connection>
+                                <UML:AssociationEnd type="EAID_836A6BED_8423_423e_941A_D3F845289C7A">
+                                    </UML:AssociationEnd>
+                                <UML:AssociationEnd type="EAID_751A3642_0C60_4ba7_AAD3_C36FFFFD7C55">
+                                    </UML:AssociationEnd>
+                            </UML:Association.connection>
+                        </UML:Association>
+                        <UML:Class name="Out_E3" xmi.id="EAID_7594CFDE_65D7_404b_9DA1_34F9AC76C1E6" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_DF88F55E_ADCD_408f_84FC_006F37119E41"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Out_ME3" xmi.id="EAID_7933D518_33BB_4bff_B8CD_1E44F15BD7F8" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_321F247C_AB21_4984_A30C_000C84F6777C"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Association xmi.id="EAID_76BBF74A_AAE1_4d0a_9A3F_8129C7FA37AF">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_type" value="Connector"/>
+                                <UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+                                <UML:TaggedValue tag="ea_sourceName" value="Out_ME"/>
+                                <UML:TaggedValue tag="ea_targetName" value="Out_ME3"/>
+                                <UML:TaggedValue tag="ea_sourceType" value="Port"/>
+                                <UML:TaggedValue tag="ea_targetType" value="Port"/>
+                                <UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=0;EY=0;EDGE=2;"/>
+                                </UML:ModelElement.taggedValue>
+                            <UML:Association.connection>
+                                <UML:AssociationEnd type="EAID_C417C9CE_D3C6_48c4_9D00_FEB61643E5AD">
+                                    </UML:AssociationEnd>
+                                <UML:AssociationEnd type="EAID_7933D518_33BB_4bff_B8CD_1E44F15BD7F8">
+                                    </UML:AssociationEnd>
+                            </UML:Association.connection>
+                        </UML:Association>
+                        <UML:Class name="In_E2" xmi.id="EAID_7AE55B5E_300A_4de4_8AC9_47236247F457" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_214601DB_406F_4d3c_A82C_81192FA2A4D5"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{8CD94FA4-06C2-461a-ACFD-2B1E190B566A}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="In_E1" xmi.id="EAID_80AAA873_F44B_4cc1_A535_47407F6DCE04" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_214601DB_406F_4d3c_A82C_81192FA2A4D5"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{6643DF04-E128-486b-9278-AD484C9A06D3}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Out_E" xmi.id="EAID_82138188_67C6_42dd_A380_73F90590337C" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_E050AA38_C6A0_4e75_B7FE_5FF281991432"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{E60DB387-BC8D-4489-8C26-B128A114BD23}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Association xmi.id="EAID_5DCB1F2C_4E41_44cc_BEC2_DA8EB6E05438">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_type" value="Connector"/>
+                                <UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+                                <UML:TaggedValue tag="ea_sourceName" value="Out_E"/>
+                                <UML:TaggedValue tag="ea_targetName" value="In_E"/>
+                                <UML:TaggedValue tag="ea_sourceType" value="Port"/>
+                                <UML:TaggedValue tag="ea_targetType" value="Port"/>
+                                <UML:TaggedValue tag="privatedata5" value="SX=0;SY=-1;EX=0;EY=0;EDGE=2;"/>
+                                </UML:ModelElement.taggedValue>
+                            <UML:Association.connection>
+                                <UML:AssociationEnd type="EAID_82138188_67C6_42dd_A380_73F90590337C">
+                                    </UML:AssociationEnd>
+                                <UML:AssociationEnd type="EAID_CEE12ED6_1160_4740_BDCB_A96F605CAA10">
+                                    </UML:AssociationEnd>
+                            </UML:Association.connection>
+                        </UML:Association>
+                        <UML:Class name="Out_E2" xmi.id="EAID_836A6BED_8423_423e_941A_D3F845289C7A" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_CCAE0141_758E_4e43_BCE8_D66D5B7D3955"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{A675C6F1-B411-4ee0-AECE-21CB4A1A4696}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Voice Coil " xmi.id="EAID_84B53AFF_0A63_44c4_B4AA_E51DF4F889B3" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A" isActive="false">
+                            <UML:ModelElement.stereotype>
+                                <UML:Stereotype name="block"/>
+                            </UML:ModelElement.stereotype>
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Class"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="stereotype" value="block"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Out_ME" xmi.id="EAID_88DF9B40_403A_4410_AD2A_87361ADD07D0" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_90812A23_8C0F_4476_B3EA_3D9D77CEEA9D"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Out_E1" xmi.id="EAID_89387C58_34D5_4d39_9C50_D5068DF56ADD" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_DF88F55E_ADCD_408f_84FC_006F37119E41"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="In_ME" xmi.id="EAID_89D53520_3770_42a1_8318_772F12066B69" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_54C193DB_8ADA_4a9b_9C58_5234FAE94059"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{DE275B25-59C2-4ed7-B920-8388AB62537F}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Association xmi.id="EAID_7B8BCF69_655B_4f33_9146_1CAA7D77ABF6">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_type" value="Connector"/>
+                                <UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+                                <UML:TaggedValue tag="ea_sourceName" value="Out_ME2"/>
+                                <UML:TaggedValue tag="ea_targetName" value="In_ME"/>
+                                <UML:TaggedValue tag="ea_sourceType" value="Port"/>
+                                <UML:TaggedValue tag="ea_targetType" value="Port"/>
+                                <UML:TaggedValue tag="privatedata5" value="SX=3;SY=0;EX=0;EY=6;EDGE=3;"/>
+                                </UML:ModelElement.taggedValue>
+                            <UML:Association.connection>
+                                <UML:AssociationEnd type="EAID_D852B4D6_37A7_4267_A173_F272D5D933F8">
+                                    </UML:AssociationEnd>
+                                <UML:AssociationEnd type="EAID_89D53520_3770_42a1_8318_772F12066B69">
+                                    </UML:AssociationEnd>
+                            </UML:Association.connection>
+                        </UML:Association>
+                        <UML:Class name="In_E2" xmi.id="EAID_8CD94FA4_06C2_461a_ACFD_2B1E190B566A" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_DF88F55E_ADCD_408f_84FC_006F37119E41"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Out_ME2" xmi.id="EAID_8ECB0BDB_1D54_4f11_912F_58198599E55B" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_F19F2C88_A6F3_4eec_8F08_8D85D8A19EF9"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{CC49809C-570D-4820-A3C4-DE6D20BAE6C4}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Association xmi.id="EAID_A814B360_9E07_41fe_AC46_D6ECD2D984D4">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_type" value="Connector"/>
+                                <UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+                                <UML:TaggedValue tag="ea_sourceName" value="Out_ME2"/>
+                                <UML:TaggedValue tag="ea_targetName" value="In_ME"/>
+                                <UML:TaggedValue tag="ea_sourceType" value="Port"/>
+                                <UML:TaggedValue tag="ea_targetType" value="Port"/>
+                                <UML:TaggedValue tag="privatedata5" value="SX=-4;SY=0;EX=0;EY=4;EDGE=3;"/>
+                                </UML:ModelElement.taggedValue>
+                            <UML:Association.connection>
+                                <UML:AssociationEnd type="EAID_8ECB0BDB_1D54_4f11_912F_58198599E55B">
+                                    </UML:AssociationEnd>
+                                <UML:AssociationEnd type="EAID_92652F3F_4D13_4f28_B882_BF2045B6598B">
+                                    </UML:AssociationEnd>
+                            </UML:Association.connection>
+                        </UML:Association>
+                        <UML:Class name="In_E" xmi.id="EAID_8F885D88_2452_48f5_91CF_1A232CEECAD3" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_58F46EB3_F832_4114_B9D4_5BEED1452FC6"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Out_ME1" xmi.id="EAID_8FFBC8C9_07CD_4243_ACB5_B549F5AA5067" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_BD50AA64_8036_449a_A860_683E06BF87B6"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{F9E7227B-3142-42ce-9892-A52BCB7BA579}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Cone" xmi.id="EAID_90812A23_8C0F_4476_B3EA_3D9D77CEEA9D" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A" isActive="false">
+                            <UML:ModelElement.stereotype>
+                                <UML:Stereotype name="block"/>
+                            </UML:ModelElement.stereotype>
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Class"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="stereotype" value="block"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="In_ME" xmi.id="EAID_92652F3F_4D13_4f28_B882_BF2045B6598B" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_FF722CFD_3B5A_41bb_9B58_794640D0F9D2"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{DE275B25-59C2-4ed7-B920-8388AB62537F}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Out_E2" xmi.id="EAID_938FB4D9_B7FD_4c86_9541_CBFC290FD92D" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_C76959A9_F807_42f5_9DF1_BC441A647905"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{4BF2B2E1-30C5-4ea7-8F21-A1BBAC9EB24D}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Association xmi.id="EAID_E0201590_7A30_44b3_8CA5_C22A2D0C44D0">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_type" value="Connector"/>
+                                <UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+                                <UML:TaggedValue tag="ea_sourceName" value="Out_E2"/>
+                                <UML:TaggedValue tag="ea_targetName" value="In_E"/>
+                                <UML:TaggedValue tag="ea_sourceType" value="Port"/>
+                                <UML:TaggedValue tag="ea_targetType" value="Port"/>
+                                <UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=0;EY=0;EDGE=2;"/>
+                                </UML:ModelElement.taggedValue>
+                            <UML:Association.connection>
+                                <UML:AssociationEnd type="EAID_938FB4D9_B7FD_4c86_9541_CBFC290FD92D">
+                                    </UML:AssociationEnd>
+                                <UML:AssociationEnd type="EAID_9A96F2E4_6D4E_4b77_94F4_B5354BF04ADF">
+                                    </UML:AssociationEnd>
+                            </UML:Association.connection>
+                        </UML:Association>
+                        <UML:Class name="Out_ME1" xmi.id="EAID_95071F6A_3DB4_4b53_AE82_BCA074E8057F" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_606321F2_F846_4eea_AB1A_61DC1548800D"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{F9E7227B-3142-42ce-9892-A52BCB7BA579}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Speaker" xmi.id="EAID_987A7543_953F_4d8b_97CE_033084B1BC71" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A" isActive="false">
+                            <UML:ModelElement.stereotype>
+                                <UML:Stereotype name="block"/>
+                            </UML:ModelElement.stereotype>
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Class"/>
+                                <UML:TaggedValue tag="ea_ntype" value="8"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="stereotype" value="block"/>
+                                <UML:TaggedValue tag="styleex" value="ConstructID=0;"/>
+                                <UML:TaggedValue tag="diagram" value="EAID_6D38C88D_EAA2_4ab5_AF87_C80E08D62F86"/>
+                                <UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={0171E63E-1A35-4d07-B3F9-A56A5B7734F4}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=block;FQName=SysML1.4::block;@ENDSTEREO;$DES;$CLT={987A7543-953F-4d8b-97CE-033084B1BC71}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={0FE0FD75-DF80-4103-A19B-FD3A6B2C0A1F}$XID;$NAM=DefaultDiagram$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$CLT={987A7543-953F-4d8b-97CE-033084B1BC71}$CLT;$SUP={6D38C88D-EAA2-4ab5-AF87-C80E08D62F86}$SUP;$ENDXREF;$XREFPROP=$XID={FC757FCB-C656-476e-8498-7B9DD30447B9}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=_defaultDiagramType@ENDNAME;@TYPE=string@ENDTYPE;@VALU=SysML1.4::InternalBlock@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={987A7543-953F-4d8b-97CE-033084B1BC71}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+                            </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="In_E" xmi.id="EAID_9A96F2E4_6D4E_4b77_94F4_B5354BF04ADF" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_90DA4AA6_2982_4161_BA9F_F672C92D08C1"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{635FB072-8440-49ed-B167-6F3F1540244B}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Out_E2" xmi.id="EAID_9B7057C4_1EBF_4dc7_ACDA_0F3D36E14DFB" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_214601DB_406F_4d3c_A82C_81192FA2A4D5"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{3E6C26FB-F4A1-4328-B4E4-06136B38EDAE}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Speaker Terminal" xmi.id="EAID_9C4C42BB_2F6F_44ee_8A02_54785F05B861" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A" isActive="false">
+                            <UML:ModelElement.stereotype>
+                                <UML:Stereotype name="block"/>
+                            </UML:ModelElement.stereotype>
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Class"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="stereotype" value="block"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Out_ME" xmi.id="EAID_A23901D5_B081_4335_910E_8210ECD88D3B" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_FFA4AED9_E1C2_4db9_AF64_7B7CB2D1DF04"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Association xmi.id="EAID_0988CFD8_4ED6_48c6_9E6E_4923C7A753EB">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_type" value="Connector"/>
+                                <UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+                                <UML:TaggedValue tag="ea_sourceName" value="Out_ME"/>
+                                <UML:TaggedValue tag="ea_targetName" value="Out_ME"/>
+                                <UML:TaggedValue tag="ea_sourceType" value="Port"/>
+                                <UML:TaggedValue tag="ea_targetType" value="Port"/>
+                                <UML:TaggedValue tag="privatedata5" value="SX=0;SY=-2;EX=0;EY=-7;EDGE=2;"/>
+                                </UML:ModelElement.taggedValue>
+                            <UML:Association.connection>
+                                <UML:AssociationEnd type="EAID_AA2653CA_9593_4821_BC23_D770C2D2A605">
+                                    </UML:AssociationEnd>
+                                <UML:AssociationEnd type="EAID_A23901D5_B081_4335_910E_8210ECD88D3B">
+                                    </UML:AssociationEnd>
+                            </UML:Association.connection>
+                        </UML:Association>
+                        <UML:Class name="Out_ME" xmi.id="EAID_A2DC971C_DB52_4e0e_A594_5E360D36AE91" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_90DA4AA6_2982_4161_BA9F_F672C92D08C1"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{A23901D5-B081-4335-910E-8210ECD88D3B}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Out_E2" xmi.id="EAID_A675C6F1_B411_4ee0_AECE_21CB4A1A4696" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_E27712BA_547E_44d4_AC8A_D6BD1F0620CB"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Out_ME" xmi.id="EAID_A72ACE7A_9F2E_4738_8634_FDDE441CBCAB" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_58F46EB3_F832_4114_B9D4_5BEED1452FC6"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Woofer Driver" xmi.id="EAID_A8EEFA4F_657D_41ca_8CE2_A42544811834" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A" isActive="false">
+                            <UML:ModelElement.stereotype>
+                                <UML:Stereotype name="block"/>
+                            </UML:ModelElement.stereotype>
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Class"/>
+                                <UML:TaggedValue tag="ea_ntype" value="8"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="stereotype" value="block"/>
+                                <UML:TaggedValue tag="styleex" value="ConstructID=0;"/>
+                                <UML:TaggedValue tag="diagram" value="EAID_6580EB60_4D73_42c8_BDC4_300544F01CE3"/>
+                                <UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={9E47E0B1-9CA4-4cba-B5C5-878CAEE95B18}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=block;FQName=SysML1.4::block;@ENDSTEREO;$DES;$CLT={A8EEFA4F-657D-41ca-8CE2-A42544811834}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={37FEEE54-CBD3-4794-BBCD-9B4C987B542E}$XID;$NAM=DefaultDiagram$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$CLT={A8EEFA4F-657D-41ca-8CE2-A42544811834}$CLT;$SUP={6580EB60-4D73-42c8-BDC4-300544F01CE3}$SUP;$ENDXREF;$XREFPROP=$XID={8F5DA2D8-52D3-4d4f-86BF-9A38E18157DE}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=_defaultDiagramType@ENDNAME;@TYPE=string@ENDTYPE;@VALU=SysML1.4::InternalBlock@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={A8EEFA4F-657D-41ca-8CE2-A42544811834}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+                            </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="In_E1" xmi.id="EAID_AA0DEA8B_CF66_422c_8FAF_949305BC73D2" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_CCAE0141_758E_4e43_BCE8_D66D5B7D3955"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{46952C2D-9497-470c-80FF-8201254A0BAC}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Association xmi.id="EAID_5F91E86E_4C1C_43f8_AFF1_75D24B6BBDCC">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_type" value="Connector"/>
+                                <UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+                                <UML:TaggedValue tag="ea_sourceName" value="In_E"/>
+                                <UML:TaggedValue tag="ea_targetName" value="In_E1"/>
+                                <UML:TaggedValue tag="ea_sourceType" value="Port"/>
+                                <UML:TaggedValue tag="ea_targetType" value="Port"/>
+                                <UML:TaggedValue tag="privatedata5" value="SX=0;SY=-5;EX=0;EY=2;EDGE=2;"/>
+                                </UML:ModelElement.taggedValue>
+                            <UML:Association.connection>
+                                <UML:AssociationEnd type="EAID_FF61F9C7_5C79_4b80_B586_D9D2A9130E68">
+                                    </UML:AssociationEnd>
+                                <UML:AssociationEnd type="EAID_AA0DEA8B_CF66_422c_8FAF_949305BC73D2">
+                                    </UML:AssociationEnd>
+                            </UML:Association.connection>
+                        </UML:Association>
+                        <UML:Class name="Out_ME" xmi.id="EAID_AA2653CA_9593_4821_BC23_D770C2D2A605" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_54C193DB_8ADA_4a9b_9C58_5234FAE94059"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{88DF9B40-403A-4410-AD2A-87361ADD07D0}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Out_ME2" xmi.id="EAID_ABCFB8AD_C4F4_4e57_A999_616087462D02" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_37BE2849_960D_48ec_861B_70DFDE4C0D4B"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{6434C7FA-1B90-466a-ABA2-98C56F9F27A3}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Association xmi.id="EAID_8E2D713C_703F_420d_8CDC_7BF8D8AAAC52">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_type" value="Connector"/>
+                                <UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+                                <UML:TaggedValue tag="ea_sourceName" value="Out_ME2"/>
+                                <UML:TaggedValue tag="ea_targetName" value="Out_ME"/>
+                                <UML:TaggedValue tag="ea_sourceType" value="Port"/>
+                                <UML:TaggedValue tag="ea_targetType" value="Port"/>
+                                <UML:TaggedValue tag="privatedata5" value="SX=0;SY=-3;EX=0;EY=2;EDGE=2;"/>
+                                </UML:ModelElement.taggedValue>
+                            <UML:Association.connection>
+                                <UML:AssociationEnd type="EAID_ABCFB8AD_C4F4_4e57_A999_616087462D02">
+                                    </UML:AssociationEnd>
+                                <UML:AssociationEnd type="EAID_DE463415_BD43_48a3_A698_5300B010EA56">
+                                    </UML:AssociationEnd>
+                            </UML:Association.connection>
+                        </UML:Association>
+                        <UML:Class name="Out_ME" xmi.id="EAID_AF832A55_87CB_4a2d_AD1E_8D1C3241BE91" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_D787F607_41DD_4703_8239_0467D7E54670"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{120D3828-DB12-4717-A325-1B262677BDDD}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Out_E1" xmi.id="EAID_B60122EA_E3F5_4a3b_B27B_DCF7243028DD" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_E27712BA_547E_44d4_AC8A_D6BD1F0620CB"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="In_E" xmi.id="EAID_BC897B5A_2CA3_498d_80AA_E631F06EAC93" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_84B53AFF_0A63_44c4_B4AA_E51DF4F889B3"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Out_ME" xmi.id="EAID_BEF5FD99_7EA6_48c3_9502_8712D01428F6" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_FF722CFD_3B5A_41bb_9B58_794640D0F9D2"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{88DF9B40-403A-4410-AD2A-87361ADD07D0}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="In_E" xmi.id="EAID_C0AB9FAD_6592_4131_BE1B_40B7BD9D5564" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_606321F2_F846_4eea_AB1A_61DC1548800D"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{BC897B5A-2CA3-498d-80AA-E631F06EAC93}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Out_ME" xmi.id="EAID_C417C9CE_D3C6_48c4_9D00_FEB61643E5AD" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_91E0587C_88B2_456d_8FF9_072EC3B2DF0A"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{1D5736DD-85D0-4f2f-90B6-DC4463F989BF}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Out_ME" xmi.id="EAID_C5F5E1D9_A186_4cf9_BB9F_2C68C6C25D2E" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_D0F320E1_4F00_4425_9C04_6F14EC50BD50"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Out_ME1" xmi.id="EAID_C8098839_EB90_45da_8295_82975593F53B" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_321F247C_AB21_4984_A30C_000C84F6777C"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="In_ME" xmi.id="EAID_C87022F2_D0D2_4a18_B9C4_8CF5729E8428" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_D6B77C4E_58A1_4c29_9E5E_923DF0B7AF99"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{07D47DA9-1736-4ca8-9341-5CC9284A556B}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Out_ME2" xmi.id="EAID_CC49809C_570D_4820_A3C4_DE6D20BAE6C4" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_84B53AFF_0A63_44c4_B4AA_E51DF4F889B3"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="In_E" xmi.id="EAID_CEE12ED6_1160_4740_BDCB_A96F605CAA10" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_37BE2849_960D_48ec_861B_70DFDE4C0D4B"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{5CF83D12-5CFC-4f54-8F79-22C525A8273E}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Dome" xmi.id="EAID_D0F320E1_4F00_4425_9C04_6F14EC50BD50" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A" isActive="false">
+                            <UML:ModelElement.stereotype>
+                                <UML:Stereotype name="block"/>
+                            </UML:ModelElement.stereotype>
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Class"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="stereotype" value="block"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="In_E" xmi.id="EAID_D5E9F8B8_32CC_49a0_9FB1_419838CB09D1" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_A8EEFA4F_657D_41ca_8CE2_A42544811834"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Association xmi.id="EAID_55122766_C1B6_4aa3_8446_533BFD7FD331">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_type" value="Connector"/>
+                                <UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+                                <UML:TaggedValue tag="ea_sourceName" value="In_E"/>
+                                <UML:TaggedValue tag="ea_targetName" value="In_E"/>
+                                <UML:TaggedValue tag="ea_sourceType" value="Port"/>
+                                <UML:TaggedValue tag="ea_targetType" value="Port"/>
+                                <UML:TaggedValue tag="privatedata5" value="SX=6;SY=0;EX=0;EY=-5;EDGE=1;"/>
+                                </UML:ModelElement.taggedValue>
+                            <UML:Association.connection>
+                                <UML:AssociationEnd type="EAID_D5E9F8B8_32CC_49a0_9FB1_419838CB09D1">
+                                    </UML:AssociationEnd>
+                                <UML:AssociationEnd type="EAID_E01BF2C2_3AB5_452e_BC2A_F9FD0CBEE796">
+                                    </UML:AssociationEnd>
+                            </UML:Association.connection>
+                        </UML:Association>
+                        <UML:Class name="Out_E3" xmi.id="EAID_D689F1AD_4ED5_4d00_A41D_08BD306ACD90" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_3A613F65_E982_49e5_B6D6_8BCA9E62A202"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Out_ME2" xmi.id="EAID_D84750E2_ABE9_4572_B4E9_6E113739F677" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_BD50AA64_8036_449a_A860_683E06BF87B6"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{CC49809C-570D-4820-A3C4-DE6D20BAE6C4}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Out_ME2" xmi.id="EAID_D852B4D6_37A7_4267_A173_F272D5D933F8" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_606321F2_F846_4eea_AB1A_61DC1548800D"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{CC49809C-570D-4820-A3C4-DE6D20BAE6C4}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="In_ME" xmi.id="EAID_D89F60ED_CB0C_4260_99F1_42B74E017894" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_606321F2_F846_4eea_AB1A_61DC1548800D"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{19C16C36-E179-4aba-A7D5-0820B710C09A}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="In_ME" xmi.id="EAID_DE275B25_59C2_4ed7_B920_8388AB62537F" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_90812A23_8C0F_4476_B3EA_3D9D77CEEA9D"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Out_ME" xmi.id="EAID_DE463415_BD43_48a3_A698_5300B010EA56" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_987A7543_953F_4d8b_97CE_033084B1BC71"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Resistor" xmi.id="EAID_DF88F55E_ADCD_408f_84FC_006F37119E41" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A" isActive="false">
+                            <UML:ModelElement.stereotype>
+                                <UML:Stereotype name="block"/>
+                            </UML:ModelElement.stereotype>
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Class"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="stereotype" value="block"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="In_E" xmi.id="EAID_E01BF2C2_3AB5_452e_BC2A_F9FD0CBEE796" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_F19F2C88_A6F3_4eec_8F08_8D85D8A19EF9"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{BC897B5A-2CA3-498d-80AA-E631F06EAC93}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Out_E2" xmi.id="EAID_E26A5C0A_0629_4f11_9514_E1841B6B81CE" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_60D66464_F102_4db1_81C0_9E4BBFF0B3F2"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Capacitor" xmi.id="EAID_E27712BA_547E_44d4_AC8A_D6BD1F0620CB" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A" isActive="false">
+                            <UML:ModelElement.stereotype>
+                                <UML:Stereotype name="block"/>
+                            </UML:ModelElement.stereotype>
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Class"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="stereotype" value="block"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Out_E" xmi.id="EAID_E60DB387_BC8D_4489_8C26_B128A114BD23" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_9C4C42BB_2F6F_44ee_8A02_54785F05B861"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="In_E1" xmi.id="EAID_F1CDE3C4_99AB_46d5_BEFA_318098A6B6C3" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_9C60CE10_3023_4a7b_86D4_FF993385CE7A"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{38B9B319-4761-45ee-8BBF-8874D8808D64}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Association xmi.id="EAID_71CAED93_3B73_455c_88FA_F7759067D1FF">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_type" value="Connector"/>
+                                <UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+                                <UML:TaggedValue tag="ea_sourceName" value="In_E"/>
+                                <UML:TaggedValue tag="ea_targetName" value="In_E1"/>
+                                <UML:TaggedValue tag="ea_sourceType" value="Port"/>
+                                <UML:TaggedValue tag="ea_targetType" value="Port"/>
+                                <UML:TaggedValue tag="privatedata5" value="SX=0;SY=-7;EX=0;EY=-3;EDGE=2;"/>
+                                </UML:ModelElement.taggedValue>
+                            <UML:Association.connection>
+                                <UML:AssociationEnd type="EAID_FF61F9C7_5C79_4b80_B586_D9D2A9130E68">
+                                    </UML:AssociationEnd>
+                                <UML:AssociationEnd type="EAID_F1CDE3C4_99AB_46d5_BEFA_318098A6B6C3">
+                                    </UML:AssociationEnd>
+                            </UML:Association.connection>
+                        </UML:Association>
+                        <UML:Class name="Out_ME" xmi.id="EAID_F394BBBB_CC16_4183_9324_367FCE611128" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_D6B77C4E_58A1_4c29_9E5E_923DF0B7AF99"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="reusesProperty" value="{120D3828-DB12-4717-A325-1B262677BDDD}"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Out_ME1" xmi.id="EAID_F9E7227B_3142_42ce_9892_A52BCB7BA579" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_84B53AFF_0A63_44c4_B4AA_E51DF4F889B3"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="In_E" xmi.id="EAID_FF61F9C7_5C79_4b80_B586_D9D2A9130E68" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A">
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Port"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="owner" value="EAID_3A613F65_E982_49e5_B6D6_8BCA9E62A202"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                        <UML:Class name="Midrange Driver" xmi.id="EAID_FFA4AED9_E1C2_4db9_AF64_7B7CB2D1DF04" namespace="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A" isActive="false">
+                            <UML:ModelElement.stereotype>
+                                <UML:Stereotype name="block"/>
+                            </UML:ModelElement.stereotype>
+                            <UML:ModelElement.taggedValue>
+                                <UML:TaggedValue tag="ea_stype" value="Class"/>
+                                <UML:TaggedValue tag="ea_ntype" value="8"/>
+                                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                                <UML:TaggedValue tag="package_name" value="Speaker"/>
+                                <UML:TaggedValue tag="stereotype" value="block"/>
+                                <UML:TaggedValue tag="styleex" value="ConstructID=0;"/>
+                                <UML:TaggedValue tag="diagram" value="EAID_FAEE9B5B_F060_4c72_9553_E2204BE92860"/>
+                                <UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={6148B129-1720-4e4b-9012-D8E1ABA0EC4D}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=block;FQName=SysML1.4::block;@ENDSTEREO;$DES;$CLT={FFA4AED9-E1C2-4db9-AF64-7B7CB2D1DF04}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={5743CD9B-505D-4849-84D8-9ED7B1962500}$XID;$NAM=DefaultDiagram$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$CLT={FFA4AED9-E1C2-4db9-AF64-7B7CB2D1DF04}$CLT;$SUP={FAEE9B5B-F060-4c72-9553-E2204BE92860}$SUP;$ENDXREF;$XREFPROP=$XID={F079524A-6975-4823-A19A-E51EE98BFD80}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=_defaultDiagramType@ENDNAME;@TYPE=string@ENDTYPE;@VALU=SysML1.4::InternalBlock@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={FFA4AED9-E1C2-4db9-AF64-7B7CB2D1DF04}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+                            </UML:ModelElement.taggedValue>
+                        </UML:Class>
+                    </UML:Namespace.ownedElement>
+                </UML:Package>
+            </UML:Namespace.ownedElement>
+        </UML:Model>
+        <UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_80D5_08F1BD02CB27" value="#NOTES#Values: true,false&#10;" modelElement="EAID_0468774A_3FA0_47dd_922C_7531A4727489"/>
+        <UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_8E9D_31128315E083" value="#NOTES#Values: true,false&#10;" modelElement="EAID_321F247C_AB21_4984_A30C_000C84F6777C"/>
+        <UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_BA81_F78C4F9044F9" value="#NOTES#Values: true,false&#10;" modelElement="EAID_3A613F65_E982_49e5_B6D6_8BCA9E62A202"/>
+        <UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_B365_CF356330239E" value="#NOTES#Values: true,false&#10;" modelElement="EAID_58F46EB3_F832_4114_B9D4_5BEED1452FC6"/>
+        <UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_B652_C7E75D841513" value="#NOTES#Values: true,false&#10;" modelElement="EAID_60D66464_F102_4db1_81C0_9E4BBFF0B3F2"/>
+        <UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_9EBC_E4E9D253A226" value="#NOTES#Values: true,false&#10;" modelElement="EAID_84B53AFF_0A63_44c4_B4AA_E51DF4F889B3"/>
+        <UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_BD19_E5FCC65A40A5" value="#NOTES#Values: true,false&#10;" modelElement="EAID_90812A23_8C0F_4476_B3EA_3D9D77CEEA9D"/>
+        <UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_BDA5_1D318CCAE176" value="#NOTES#Values: true,false&#10;" modelElement="EAID_987A7543_953F_4d8b_97CE_033084B1BC71"/>
+        <UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_B15D_EDD7910DA821" value="#NOTES#Values: true,false&#10;" modelElement="EAID_9C4C42BB_2F6F_44ee_8A02_54785F05B861"/>
+        <UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_82DB_9E07039C8959" value="#NOTES#Values: true,false&#10;" modelElement="EAID_A8EEFA4F_657D_41ca_8CE2_A42544811834"/>
+        <UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_BBC1_C182EA30E48A" value="#NOTES#Values: true,false&#10;" modelElement="EAID_D0F320E1_4F00_4425_9C04_6F14EC50BD50"/>
+        <UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_B27E_FE594BD70E93" value="#NOTES#Values: true,false&#10;" modelElement="EAID_DF88F55E_ADCD_408f_84FC_006F37119E41"/>
+        <UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_87FF_58CFE5BE3D03" value="#NOTES#Values: true,false&#10;" modelElement="EAID_E27712BA_547E_44d4_AC8A_D6BD1F0620CB"/>
+        <UML:TaggedValue tag="isEncapsulated" xmi.id="EAID_501B1315_B5D3_0eb5_9AAF_BF88B33045E7" value="#NOTES#Values: true,false&#10;" modelElement="EAID_FFA4AED9_E1C2_4db9_AF64_7B7CB2D1DF04"/>
+        <UML:Diagram name="One Level Block Hierarchy" xmi.id="EAID_C405DB2D_0358_461f_9C38_5C51BE0119A5" diagramType="ClassDiagram" owner="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A" toolName="Enterprise Architect 2.5">
+            <UML:ModelElement.taggedValue>
+                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                <UML:TaggedValue tag="styleex" value="MDGDgm=SysML1.4::BlockDefinition;SF=1;"/>
+            </UML:ModelElement.taggedValue>
+            <UML:Diagram.element>
+                <UML:DiagramElement geometry="Left=840;Top=1106;Right=855;Bottom=1121;" subject="EAID_7594CFDE_65D7_404b_9DA1_34F9AC76C1E6"/>
+                <UML:DiagramElement geometry="Left=840;Top=1074;Right=855;Bottom=1089;" subject="EAID_3E6C26FB_F4A1_4328_B4E4_06136B38EDAE"/>
+                <UML:DiagramElement geometry="Left=728;Top=1093;Right=743;Bottom=1108;" subject="EAID_8CD94FA4_06C2_461a_ACFD_2B1E190B566A"/>
+                <UML:DiagramElement geometry="Left=840;Top=1044;Right=855;Bottom=1059;" subject="EAID_89387C58_34D5_4d39_9C50_D5068DF56ADD"/>
+                <UML:DiagramElement geometry="Left=728;Top=1054;Right=743;Bottom=1069;" subject="EAID_6643DF04_E128_486b_9278_AD484C9A06D3"/>
+                <UML:DiagramElement geometry="Left=735;Top=1022;Right=847;Bottom=1125;" subject="EAID_DF88F55E_ADCD_408f_84FC_006F37119E41"/>
+                <UML:DiagramElement geometry="Left=839;Top=939;Right=854;Bottom=954;" subject="EAID_E26A5C0A_0629_4f11_9514_E1841B6B81CE"/>
+                <UML:DiagramElement geometry="Left=730;Top=935;Right=745;Bottom=950;" subject="EAID_2CE9801B_AAF1_4d9f_9A70_6D12B579883D"/>
+                <UML:DiagramElement geometry="Left=839;Top=904;Right=854;Bottom=919;" subject="EAID_4EE6CBBB_DCA4_49b5_A484_7FCEE694D41F"/>
+                <UML:DiagramElement geometry="Left=730;Top=904;Right=745;Bottom=919;" subject="EAID_38B9B319_4761_45ee_8BBF_8874D8808D64"/>
+                <UML:DiagramElement geometry="Left=737;Top=873;Right=846;Bottom=972;" subject="EAID_60D66464_F102_4db1_81C0_9E4BBFF0B3F2"/>
+                <UML:DiagramElement geometry="Left=849;Top=790;Right=864;Bottom=805;" subject="EAID_A675C6F1_B411_4ee0_AECE_21CB4A1A4696"/>
+                <UML:DiagramElement geometry="Left=849;Top=754;Right=864;Bottom=769;" subject="EAID_B60122EA_E3F5_4a3b_B27B_DCF7243028DD"/>
+                <UML:DiagramElement geometry="Left=727;Top=789;Right=742;Bottom=804;" subject="EAID_2BC9BB57_CBCF_4e30_A53B_0B0B376BF927"/>
+                <UML:DiagramElement geometry="Left=727;Top=749;Right=742;Bottom=764;" subject="EAID_46952C2D_9497_470c_80FF_8201254A0BAC"/>
+                <UML:DiagramElement geometry="Left=734;Top=718;Right=856;Bottom=818;" subject="EAID_E27712BA_547E_44d4_AC8A_D6BD1F0620CB"/>
+                <UML:DiagramElement geometry="Left=591;Top=787;Right=606;Bottom=802;" subject="EAID_120D3828_DB12_4717_A325_1B262677BDDD"/>
+                <UML:DiagramElement geometry="Left=501;Top=782;Right=516;Bottom=797;" subject="EAID_07D47DA9_1736_4ca8_9341_5CC9284A556B"/>
+                <UML:DiagramElement geometry="Left=508;Top=750;Right=598;Bottom=820;" subject="EAID_0468774A_3FA0_47dd_922C_7531A4727489"/>
+                <UML:DiagramElement geometry="Left=597;Top=649;Right=612;Bottom=664;" subject="EAID_88DF9B40_403A_4410_AD2A_87361ADD07D0"/>
+                <UML:DiagramElement geometry="Left=507;Top=652;Right=522;Bottom=667;" subject="EAID_DE275B25_59C2_4ed7_B920_8388AB62537F"/>
+                <UML:DiagramElement geometry="Left=514;Top=619;Right=604;Bottom=689;" subject="EAID_90812A23_8C0F_4476_B3EA_3D9D77CEEA9D"/>
+                <UML:DiagramElement geometry="Left=607;Top=1104;Right=622;Bottom=1119;" subject="EAID_CC49809C_570D_4820_A3C4_DE6D20BAE6C4"/>
+                <UML:DiagramElement geometry="Left=485;Top=1106;Right=500;Bottom=1121;" subject="EAID_19C16C36_E179_4aba_A7D5_0820B710C09A"/>
+                <UML:DiagramElement geometry="Left=607;Top=1069;Right=622;Bottom=1084;" subject="EAID_F9E7227B_3142_42ce_9892_A52BCB7BA579"/>
+                <UML:DiagramElement geometry="Left=485;Top=1072;Right=500;Bottom=1087;" subject="EAID_BC897B5A_2CA3_498d_80AA_E631F06EAC93"/>
+                <UML:DiagramElement geometry="Left=492;Top=1037;Right=614;Bottom=1131;" subject="EAID_84B53AFF_0A63_44c4_B4AA_E51DF4F889B3"/>
+                <UML:DiagramElement geometry="Left=591;Top=922;Right=606;Bottom=937;" subject="EAID_C5F5E1D9_A186_4cf9_BB9F_2C68C6C25D2E"/>
+                <UML:DiagramElement geometry="Left=501;Top=924;Right=516;Bottom=939;" subject="EAID_261992E4_FD9B_4127_8D58_3C699EB01668"/>
+                <UML:DiagramElement geometry="Left=508;Top=892;Right=598;Bottom=962;" subject="EAID_D0F320E1_4F00_4425_9C04_6F14EC50BD50"/>
+                <UML:DiagramElement geometry="Left=364;Top=1034;Right=379;Bottom=1049;" subject="EAID_A23901D5_B081_4335_910E_8210ECD88D3B"/>
+                <UML:DiagramElement geometry="Left=178;Top=1039;Right=193;Bottom=1054;" subject="EAID_635FB072_8440_49ed_B167_6F3F1540244B"/>
+                <UML:DiagramElement geometry="Left=185;Top=934;Right=371;Bottom=1081;" subject="EAID_FFA4AED9_E1C2_4db9_AF64_7B7CB2D1DF04"/>
+                <UML:DiagramElement geometry="Left=1302;Top=366;Right=1317;Bottom=381;" subject="EAID_E60DB387_BC8D_4489_8C26_B128A114BD23"/>
+                <UML:DiagramElement geometry="Left=1113;Top=371;Right=1128;Bottom=386;" subject="EAID_1B649B86_895C_4921_956A_34B30A2E8D2D"/>
+                <UML:DiagramElement geometry="Left=1120;Top=270;Right=1309;Bottom=445;" subject="EAID_9C4C42BB_2F6F_44ee_8A02_54785F05B861"/>
+                <UML:DiagramElement geometry="Left=364;Top=834;Right=379;Bottom=849;" subject="EAID_1D5736DD_85D0_4f2f_90B6_DC4463F989BF"/>
+                <UML:DiagramElement geometry="Left=180;Top=837;Right=195;Bottom=852;" subject="EAID_D5E9F8B8_32CC_49a0_9FB1_419838CB09D1"/>
+                <UML:DiagramElement geometry="Left=187;Top=733;Right=371;Bottom=883;" subject="EAID_A8EEFA4F_657D_41ca_8CE2_A42544811834"/>
+                <UML:DiagramElement geometry="Left=872;Top=634;Right=887;Bottom=649;" subject="EAID_D689F1AD_4ED5_4d00_A41D_08BD306ACD90"/>
+                <UML:DiagramElement geometry="Left=872;Top=572;Right=887;Bottom=587;" subject="EAID_751A3642_0C60_4ba7_AAD3_C36FFFFD7C55"/>
+                <UML:DiagramElement geometry="Left=872;Top=604;Right=887;Bottom=619;" subject="EAID_4BF2B2E1_30C5_4ea7_8F21_A1BBAC9EB24D"/>
+                <UML:DiagramElement geometry="Left=695;Top=628;Right=710;Bottom=643;" subject="EAID_FF61F9C7_5C79_4b80_B586_D9D2A9130E68"/>
+                <UML:DiagramElement geometry="Left=702;Top=522;Right=879;Bottom=681;" subject="EAID_3A613F65_E982_49e5_B6D6_8BCA9E62A202"/>
+                <UML:DiagramElement geometry="Left=363;Top=639;Right=378;Bottom=654;" subject="EAID_A72ACE7A_9F2E_4738_8634_FDDE441CBCAB"/>
+                <UML:DiagramElement geometry="Left=179;Top=639;Right=194;Bottom=654;" subject="EAID_8F885D88_2452_48f5_91CF_1A232CEECAD3"/>
+                <UML:DiagramElement geometry="Left=186;Top=528;Right=370;Bottom=683;" subject="EAID_58F46EB3_F832_4114_B9D4_5BEED1452FC6"/>
+                <UML:DiagramElement geometry="Left=742;Top=434;Right=757;Bottom=449;" subject="EAID_7933D518_33BB_4bff_B8CD_1E44F15BD7F8"/>
+                <UML:DiagramElement geometry="Left=742;Top=392;Right=757;Bottom=407;" subject="EAID_6434C7FA_1B90_466a_ABA2_98C56F9F27A3"/>
+                <UML:DiagramElement geometry="Left=742;Top=357;Right=757;Bottom=372;" subject="EAID_C8098839_EB90_45da_8295_82975593F53B"/>
+                <UML:DiagramElement geometry="Left=451;Top=394;Right=466;Bottom=409;" subject="EAID_5CF83D12_5CFC_4f54_8F79_22C525A8273E"/>
+                <UML:DiagramElement geometry="Left=458;Top=279;Right=749;Bottom=468;" subject="EAID_321F247C_AB21_4984_A30C_000C84F6777C"/>
+                <UML:DiagramElement geometry="Left=1115;Top=163;Right=1130;Bottom=178;" subject="EAID_DE463415_BD43_48a3_A698_5300B010EA56"/>
+                <UML:DiagramElement geometry="Left=859;Top=168;Right=874;Bottom=183;" subject="EAID_21D4DBE3_CD03_486e_AFDE_68E57A274E0B"/>
+                <UML:DiagramElement geometry="Left=866;Top=44;Right=1122;Bottom=239;" subject="EAID_987A7543_953F_4d8b_97CE_033084B1BC71"/>
+                <UML:DiagramElement geometry="Left=10;Top=10;Right=1708;Bottom=1169;" subject="EAID_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+            </UML:Diagram.element>
+        </UML:Diagram>
+        <UML:Diagram name="Speaker" xmi.id="EAID_6D38C88D_EAA2_4ab5_AF87_C80E08D62F86" diagramType="CompositeStructureDiagram" owner="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A" toolName="Enterprise Architect 2.5">
+            <UML:ModelElement.taggedValue>
+                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                <UML:TaggedValue tag="type" value="CompositeStructure"/>
+                <UML:TaggedValue tag="ea_localid" value="2"/>
+                <UML:TaggedValue tag="parent" value="EAID_987A7543_953F_4d8b_97CE_033084B1BC71"/>
+                <UML:TaggedValue tag="styleex" value="MDGDgm=SysML1.4::InternalBlock;SF=1;"/>
+            </UML:ModelElement.taggedValue>
+            <UML:Diagram.element>
+                <UML:DiagramElement geometry="Left=263;Top=139;Right=278;Bottom=154;" subject="EAID_82138188_67C6_42dd_A380_73F90590337C"/>
+                <UML:DiagramElement geometry="Left=126;Top=139;Right=141;Bottom=154;" subject="EAID_18308DDA_7B9B_461d_8324_16B54A23F521"/>
+                <UML:DiagramElement geometry="Left=133;Top=88;Right=270;Bottom=193;" subject="EAID_E050AA38_C6A0_4e75_B7FE_5FF281991432"/>
+                <UML:DiagramElement geometry="Left=546;Top=172;Right=561;Bottom=187;" subject="EAID_ABCFB8AD_C4F4_4e57_A999_616087462D02"/>
+                <UML:DiagramElement geometry="Left=546;Top=92;Right=561;Bottom=107;" subject="EAID_2B612E5C_27EF_44d4_858C_79ECB8278862"/>
+                <UML:DiagramElement geometry="Left=546;Top=137;Right=561;Bottom=152;" subject="EAID_1B7B87E7_85A1_4644_8B5C_7C4E0C46C89E"/>
+                <UML:DiagramElement geometry="Left=397;Top=142;Right=412;Bottom=157;" subject="EAID_CEE12ED6_1160_4740_BDCB_A96F605CAA10"/>
+                <UML:DiagramElement geometry="Left=404;Top=93;Right=553;Bottom=216;" subject="EAID_37BE2849_960D_48ec_861B_70DFDE4C0D4B"/>
+                <UML:DiagramElement geometry="Left=632;Top=143;Right=647;Bottom=158;" subject="EAID_DE463415_BD43_48a3_A698_5300B010EA56"/>
+                <UML:DiagramElement geometry="Left=12;Top=143;Right=27;Bottom=158;" subject="EAID_21D4DBE3_CD03_486e_AFDE_68E57A274E0B"/>
+                <UML:DiagramElement geometry="Left=20;Top=20;Right=641;Bottom=253;" subject="EAID_987A7543_953F_4d8b_97CE_033084B1BC71"/>
+                <UML:DiagramElement geometry="SX=0;SY=-3;EX=0;EY=2;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=588:-182$588:-148$;" subject="EAID_8E2D713C_703F_420d_8CDC_7BF8D8AAAC52"/>
+                <UML:DiagramElement geometry="SX=0;SY=1;EX=0;EY=3;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=611:-98$611:-147$;" subject="EAID_D8A5FCFE_70A5_4567_88D7_AF119F8E15B9"/>
+                <UML:DiagramElement geometry="SX=1;SY=0;EX=0;EY=2;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_EA03AEA3_FAA0_4b92_BBDF_9DD43E01FD19"/>
+                <UML:DiagramElement geometry="SX=0;SY=-1;EX=0;EY=0;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_5DCB1F2C_4E41_44cc_BEC2_DA8EB6E05438"/>
+                <UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_10FB516B_E9C5_4d83_8906_D7905A5F477F"/>
+            </UML:Diagram.element>
+        </UML:Diagram>
+        <UML:Diagram name="Crossover Network" xmi.id="EAID_B83E99D1_3F1F_4afc_AA44_64D42BF739CF" diagramType="CompositeStructureDiagram" owner="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A" toolName="Enterprise Architect 2.5">
+            <UML:ModelElement.taggedValue>
+                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                <UML:TaggedValue tag="type" value="CompositeStructure"/>
+                <UML:TaggedValue tag="ea_localid" value="3"/>
+                <UML:TaggedValue tag="parent" value="EAID_3A613F65_E982_49e5_B6D6_8BCA9E62A202"/>
+                <UML:TaggedValue tag="styleex" value="MDGDgm=SysML1.4::InternalBlock;SF=1;"/>
+            </UML:ModelElement.taggedValue>
+            <UML:Diagram.element>
+                <UML:DiagramElement geometry="Left=244;Top=385;Right=259;Bottom=400;" subject="EAID_0EBBDD8C_E841_411c_A4CC_0328381419DD"/>
+                <UML:DiagramElement geometry="Left=98;Top=379;Right=113;Bottom=394;" subject="EAID_7034A49A_C9D0_4225_B73C_305FFB6DF60A"/>
+                <UML:DiagramElement geometry="Left=244;Top=349;Right=259;Bottom=364;" subject="EAID_556C97EB_B8EA_483a_A135_3BCE6DDE6F3B"/>
+                <UML:DiagramElement geometry="Left=98;Top=341;Right=113;Bottom=356;" subject="EAID_F1CDE3C4_99AB_46d5_BEFA_318098A6B6C3"/>
+                <UML:DiagramElement geometry="Left=105;Top=299;Right=251;Bottom=438;" subject="EAID_9C60CE10_3023_4a7b_86D4_FF993385CE7A"/>
+                <UML:DiagramElement geometry="Left=231;Top=173;Right=246;Bottom=188;" subject="EAID_836A6BED_8423_423e_941A_D3F845289C7A"/>
+                <UML:DiagramElement geometry="Left=231;Top=128;Right=246;Bottom=143;" subject="EAID_53627092_8A5F_488e_A934_2525A7C9D709"/>
+                <UML:DiagramElement geometry="Left=92;Top=171;Right=107;Bottom=186;" subject="EAID_60539D46_75A5_45b8_BDE1_54F04009C944"/>
+                <UML:DiagramElement geometry="Left=92;Top=133;Right=107;Bottom=148;" subject="EAID_AA0DEA8B_CF66_422c_8FAF_949305BC73D2"/>
+                <UML:DiagramElement geometry="Left=100;Top=94;Right=238;Bottom=221;" subject="EAID_CCAE0141_758E_4e43_BCE8_D66D5B7D3955"/>
+                <UML:DiagramElement geometry="Left=520;Top=292;Right=535;Bottom=307;" subject="EAID_54A6B25B_18A0_4a99_82E0_CC291304109E"/>
+                <UML:DiagramElement geometry="Left=520;Top=249;Right=535;Bottom=264;" subject="EAID_9B7057C4_1EBF_4dc7_ACDA_0F3D36E14DFB"/>
+                <UML:DiagramElement geometry="Left=372;Top=263;Right=387;Bottom=278;" subject="EAID_7AE55B5E_300A_4de4_8AC9_47236247F457"/>
+                <UML:DiagramElement geometry="Left=520;Top=195;Right=535;Bottom=210;" subject="EAID_23F25C28_20B4_4129_AC46_3A64061792DA"/>
+                <UML:DiagramElement geometry="Left=372;Top=225;Right=387;Bottom=240;" subject="EAID_80AAA873_F44B_4cc1_A535_47407F6DCE04"/>
+                <UML:DiagramElement geometry="Left=379;Top=184;Right=527;Bottom=324;" subject="EAID_214601DB_406F_4d3c_A82C_81192FA2A4D5"/>
+                <UML:DiagramElement geometry="Left=602;Top=294;Right=617;Bottom=309;" subject="EAID_D689F1AD_4ED5_4d00_A41D_08BD306ACD90"/>
+                <UML:DiagramElement geometry="Left=601;Top=133;Right=616;Bottom=148;" subject="EAID_751A3642_0C60_4ba7_AAD3_C36FFFFD7C55"/>
+                <UML:DiagramElement geometry="Left=601;Top=391;Right=616;Bottom=406;" subject="EAID_4BF2B2E1_30C5_4ea7_8F21_A1BBAC9EB24D"/>
+                <UML:DiagramElement geometry="Left=12;Top=231;Right=27;Bottom=246;" subject="EAID_FF61F9C7_5C79_4b80_B586_D9D2A9130E68"/>
+                <UML:DiagramElement geometry="Left=10;Top=20;Right=610;Bottom=475;" subject="EAID_3A613F65_E982_49e5_B6D6_8BCA9E62A202"/>
+                <UML:DiagramElement geometry="SX=0;SY=-7;EX=0;EY=-5;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_74D2A2EF_57FB_47eb_825A_1B4071A5B4C8"/>
+                <UML:DiagramElement geometry="SX=0;SY=-3;EX=0;EY=-8;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=555:-259$555:-457$43:-457$43:-394$;" subject="EAID_7CF7C4A5_3EA7_495a_AF0B_8CD9BF3039D9"/>
+                <UML:DiagramElement geometry="SX=0;SY=1;EX=0;EY=4;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=601:-201$601:-51$24:-51$24:-174$;" subject="EAID_112F71F7_5504_41af_94ED_DACDA3986A54"/>
+                <UML:DiagramElement geometry="SX=0;SY=0;EX=-6;EY=1;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_94AD0135_F95F_4db6_A7E3_73AAA112A3B0"/>
+                <UML:DiagramElement geometry="SX=0;SY=-3;EX=0;EY=-8;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=334:-359$334:-278$;" subject="EAID_4FC7E2E1_CE06_4e9b_A565_8390A52C4150"/>
+                <UML:DiagramElement geometry="SX=0;SY=7;EX=0;EY=7;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=294:-173$294:-94$532:-94$532:-133$;" subject="EAID_98C9232A_0189_45e3_9B2A_4DAFD0BC3067"/>
+                <UML:DiagramElement geometry="SX=0;SY=-2;EX=0;EY=7;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=333:-137$333:-225$;" subject="EAID_444C8A30_C5A3_4cad_B26C_75FC763046DF"/>
+                <UML:DiagramElement geometry="SX=0;SY=-7;EX=0;EY=-3;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=42:-245$42:-351$;" subject="EAID_71CAED93_3B73_455c_88FA_F7759067D1FF"/>
+                <UML:DiagramElement geometry="SX=0;SY=-5;EX=0;EY=2;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=42:-243$42:-138$;" subject="EAID_5F91E86E_4C1C_43f8_AFF1_75D24B6BBDCC"/>
+            </UML:Diagram.element>
+        </UML:Diagram>
+        <UML:Diagram name="Tweeter Driver" xmi.id="EAID_B333BBE6_089D_48f0_A0EB_B975B6AD62D3" diagramType="CompositeStructureDiagram" owner="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A" toolName="Enterprise Architect 2.5">
+            <UML:ModelElement.taggedValue>
+                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                <UML:TaggedValue tag="type" value="CompositeStructure"/>
+                <UML:TaggedValue tag="ea_localid" value="4"/>
+                <UML:TaggedValue tag="parent" value="EAID_58F46EB3_F832_4114_B9D4_5BEED1452FC6"/>
+                <UML:TaggedValue tag="styleex" value="MDGDgm=SysML1.4::InternalBlock;SF=1;"/>
+            </UML:ModelElement.taggedValue>
+            <UML:Diagram.element>
+                <UML:DiagramElement geometry="Left=500;Top=123;Right=515;Bottom=138;" subject="EAID_AF832A55_87CB_4a2d_AD1E_8D1C3241BE91"/>
+                <UML:DiagramElement geometry="Left=381;Top=121;Right=396;Bottom=136;" subject="EAID_531F2103_A49B_4bab_BB2A_A8ACF62268D0"/>
+                <UML:DiagramElement geometry="Left=388;Top=84;Right=507;Bottom=176;" subject="EAID_D787F607_41DD_4703_8239_0467D7E54670"/>
+                <UML:DiagramElement geometry="Left=200;Top=171;Right=215;Bottom=186;" subject="EAID_D84750E2_ABE9_4572_B4E9_6E113739F677"/>
+                <UML:DiagramElement geometry="Left=64;Top=121;Right=79;Bottom=136;" subject="EAID_0685472C_D405_49b3_82C1_7BFB86C3B742"/>
+                <UML:DiagramElement geometry="Left=205;Top=128;Right=220;Bottom=143;" subject="EAID_8FFBC8C9_07CD_4243_ACB5_B549F5AA5067"/>
+                <UML:DiagramElement geometry="Left=64;Top=159;Right=79;Bottom=174;" subject="EAID_0A6C3959_1900_4bf7_B98A_D38759BD0D89"/>
+                <UML:DiagramElement geometry="Left=71;Top=84;Right=212;Bottom=178;" subject="EAID_BD50AA64_8036_449a_A860_683E06BF87B6"/>
+                <UML:DiagramElement geometry="Left=449;Top=311;Right=464;Bottom=326;" subject="EAID_6148DD38_A49B_45d6_B05D_7EB20D12D34A"/>
+                <UML:DiagramElement geometry="Left=317;Top=312;Right=332;Bottom=327;" subject="EAID_3D5AB316_36BE_4751_B017_931A2DFD6D76"/>
+                <UML:DiagramElement geometry="Left=324;Top=270;Right=456;Bottom=363;" subject="EAID_D9A418E2_0ACD_4f2a_98ED_105C72376A50"/>
+                <UML:DiagramElement geometry="Left=571;Top=235;Right=586;Bottom=250;" subject="EAID_A72ACE7A_9F2E_4738_8634_FDDE441CBCAB"/>
+                <UML:DiagramElement geometry="Left=2;Top=212;Right=17;Bottom=227;" subject="EAID_8F885D88_2452_48f5_91CF_1A232CEECAD3"/>
+                <UML:DiagramElement geometry="Left=10;Top=20;Right=578;Bottom=400;" subject="EAID_58F46EB3_F832_4114_B9D4_5BEED1452FC6"/>
+                <UML:DiagramElement geometry="SX=-7;SY=0;EX=0;EY=3;EDGE=3;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=200:-316$;" subject="EAID_12DCB98A_F6C2_46a4_AB07_A32CD295A11B"/>
+                <UML:DiagramElement geometry="SX=0;SY=1;EX=0;EY=0;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=529:-129$529:-62$39:-62$39:-128$;" subject="EAID_B59EB2BA_BF29_4529_AEC5_D4EB49FD9026"/>
+                <UML:DiagramElement geometry="SX=0;SY=7;EX=0;EY=0;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_F775F683_2D2A_44ec_B235_4C4027D873A2"/>
+                <UML:DiagramElement geometry="SX=0;SY=-8;EX=0;EY=-4;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=540:-326$540:-246$;" subject="EAID_9131EB3B_B97B_4d80_946D_A249860D3052"/>
+                <UML:DiagramElement geometry="SX=0;SY=-7;EX=2;EY=0;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=73:-226$;" subject="EAID_7205D04E_61C2_4fda_8EBB_93EBCDA6DE19"/>
+            </UML:Diagram.element>
+        </UML:Diagram>
+        <UML:Diagram name="Woofer Driver" xmi.id="EAID_6580EB60_4D73_42c8_BDC4_300544F01CE3" diagramType="CompositeStructureDiagram" owner="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A" toolName="Enterprise Architect 2.5">
+            <UML:ModelElement.taggedValue>
+                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                <UML:TaggedValue tag="type" value="CompositeStructure"/>
+                <UML:TaggedValue tag="ea_localid" value="5"/>
+                <UML:TaggedValue tag="parent" value="EAID_A8EEFA4F_657D_41ca_8CE2_A42544811834"/>
+                <UML:TaggedValue tag="styleex" value="MDGDgm=SysML1.4::InternalBlock;SF=1;"/>
+            </UML:ModelElement.taggedValue>
+            <UML:Diagram.element>
+                <UML:DiagramElement geometry="Left=305;Top=137;Right=320;Bottom=152;" subject="EAID_C87022F2_D0D2_4a18_B9C4_8CF5729E8428"/>
+                <UML:DiagramElement geometry="Left=435;Top=142;Right=450;Bottom=157;" subject="EAID_F394BBBB_CC16_4183_9324_367FCE611128"/>
+                <UML:DiagramElement geometry="Left=312;Top=92;Right=442;Bottom=198;" subject="EAID_D6B77C4E_58A1_4c29_9E5E_923DF0B7AF99"/>
+                <UML:DiagramElement geometry="Left=185;Top=164;Right=200;Bottom=179;" subject="EAID_8ECB0BDB_1D54_4f11_912F_58198599E55B"/>
+                <UML:DiagramElement geometry="Left=63;Top=125;Right=78;Bottom=140;" subject="EAID_E01BF2C2_3AB5_452e_BC2A_F9FD0CBEE796"/>
+                <UML:DiagramElement geometry="Left=62;Top=173;Right=77;Bottom=188;" subject="EAID_0A37FAFB_1FE8_45df_9D6D_2E794F3556BF"/>
+                <UML:DiagramElement geometry="Left=185;Top=124;Right=200;Bottom=139;" subject="EAID_1593E7F3_7841_43ce_8BA2_04CD7E93638D"/>
+                <UML:DiagramElement geometry="Left=70;Top=92;Right=192;Bottom=195;" subject="EAID_F19F2C88_A6F3_4eec_8F08_8D85D8A19EF9"/>
+                <UML:DiagramElement geometry="Left=288;Top=319;Right=303;Bottom=334;" subject="EAID_92652F3F_4D13_4f28_B882_BF2045B6598B"/>
+                <UML:DiagramElement geometry="Left=418;Top=332;Right=433;Bottom=347;" subject="EAID_BEF5FD99_7EA6_48c3_9502_8712D01428F6"/>
+                <UML:DiagramElement geometry="Left=295;Top=275;Right=425;Bottom=391;" subject="EAID_FF722CFD_3B5A_41bb_9B58_794640D0F9D2"/>
+                <UML:DiagramElement geometry="Left=509;Top=240;Right=524;Bottom=255;" subject="EAID_1D5736DD_85D0_4f2f_90B6_DC4463F989BF"/>
+                <UML:DiagramElement geometry="Left=12;Top=247;Right=27;Bottom=262;" subject="EAID_D5E9F8B8_32CC_49a0_9FB1_419838CB09D1"/>
+                <UML:DiagramElement geometry="Left=20;Top=20;Right=516;Bottom=428;" subject="EAID_A8EEFA4F_657D_41ca_8CE2_A42544811834"/>
+                <UML:DiagramElement geometry="SX=0;SY=6;EX=0;EY=-3;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=440:-333$440:-250$;" subject="EAID_997138BC_A318_4bb6_A691_C94FD0768441"/>
+                <UML:DiagramElement geometry="SX=0;SY=2;EX=0;EY=7;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=486:-147$486:-65$41:-65$41:-173$;" subject="EAID_67B8F35B_FD74_4a42_A26A_B723E4372374"/>
+                <UML:DiagramElement geometry="SX=-4;SY=0;EX=0;EY=4;EDGE=3;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=188:-322$;" subject="EAID_A814B360_9E07_41fe_AC46_D6ECD2D984D4"/>
+                <UML:DiagramElement geometry="SX=0;SY=-6;EX=0;EY=7;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_23D913D8_3172_4ef4_BC75_076332EAE196"/>
+                <UML:DiagramElement geometry="SX=6;SY=0;EX=0;EY=-5;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=25:-137$;" subject="EAID_55122766_C1B6_4aa3_8446_533BFD7FD331"/>
+            </UML:Diagram.element>
+        </UML:Diagram>
+        <UML:Diagram name="Midrange Driver" xmi.id="EAID_FAEE9B5B_F060_4c72_9553_E2204BE92860" diagramType="CompositeStructureDiagram" owner="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A" toolName="Enterprise Architect 2.5">
+            <UML:ModelElement.taggedValue>
+                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                <UML:TaggedValue tag="type" value="CompositeStructure"/>
+                <UML:TaggedValue tag="ea_localid" value="6"/>
+                <UML:TaggedValue tag="parent" value="EAID_FFA4AED9_E1C2_4db9_AF64_7B7CB2D1DF04"/>
+                <UML:TaggedValue tag="styleex" value="MDGDgm=SysML1.4::InternalBlock;SF=1;"/>
+            </UML:ModelElement.taggedValue>
+            <UML:Diagram.element>
+                <UML:DiagramElement geometry="Left=60;Top=155;Right=75;Bottom=170;" subject="EAID_C0AB9FAD_6592_4131_BE1B_40B7BD9D5564"/>
+                <UML:DiagramElement geometry="Left=184;Top=153;Right=199;Bottom=168;" subject="EAID_D852B4D6_37A7_4267_A173_F272D5D933F8"/>
+                <UML:DiagramElement geometry="Left=60;Top=113;Right=75;Bottom=128;" subject="EAID_D89F60ED_CB0C_4260_99F1_42B74E017894"/>
+                <UML:DiagramElement geometry="Left=184;Top=116;Right=199;Bottom=131;" subject="EAID_95071F6A_3DB4_4b53_AE82_BCA074E8057F"/>
+                <UML:DiagramElement geometry="Left=68;Top=86;Right=191;Bottom=185;" subject="EAID_606321F2_F846_4eea_AB1A_61DC1548800D"/>
+                <UML:DiagramElement geometry="Left=309;Top=133;Right=324;Bottom=148;" subject="EAID_37C864E7_0031_49f4_AF65_64891169051D"/>
+                <UML:DiagramElement geometry="Left=450;Top=128;Right=465;Bottom=143;" subject="EAID_18D1846F_5F4E_4cec_A133_7790E04A9D28"/>
+                <UML:DiagramElement geometry="Left=316;Top=83;Right=457;Bottom=190;" subject="EAID_CD245ED0_CAEE_46fb_AAA0_D92AA21B3403"/>
+                <UML:DiagramElement geometry="Left=322;Top=308;Right=337;Bottom=323;" subject="EAID_89D53520_3770_42a1_8318_772F12066B69"/>
+                <UML:DiagramElement geometry="Left=455;Top=310;Right=470;Bottom=325;" subject="EAID_AA2653CA_9593_4821_BC23_D770C2D2A605"/>
+                <UML:DiagramElement geometry="Left=329;Top=256;Right=462;Bottom=372;" subject="EAID_54C193DB_8ADA_4a9b_9C58_5234FAE94059"/>
+                <UML:DiagramElement geometry="Left=528;Top=251;Right=543;Bottom=266;" subject="EAID_A23901D5_B081_4335_910E_8210ECD88D3B"/>
+                <UML:DiagramElement geometry="Left=12;Top=239;Right=27;Bottom=254;" subject="EAID_635FB072_8440_49ed_B167_6F3F1540244B"/>
+                <UML:DiagramElement geometry="Left=20;Top=20;Right=533;Bottom=409;" subject="EAID_FFA4AED9_E1C2_4db9_AF64_7B7CB2D1DF04"/>
+                <UML:DiagramElement geometry="SX=3;SY=0;EX=0;EY=6;EDGE=3;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=194:-309$;" subject="EAID_7B8BCF69_655B_4f33_9146_1CAA7D77ABF6"/>
+                <UML:DiagramElement geometry="SX=0;SY=3;EX=0;EY=7;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=278:-120$278:-133$;" subject="EAID_EAAC743E_9666_4c99_A24B_91050232ADA0"/>
+                <UML:DiagramElement geometry="SX=0;SY=-2;EX=0;EY=-7;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=489:-319$489:-265$;" subject="EAID_0988CFD8_4ED6_48c6_9E6E_4923C7A753EB"/>
+                <UML:DiagramElement geometry="SX=0;SY=-1;EX=0;EY=6;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=503:-136$503:-66$39:-66$39:-114$;" subject="EAID_0CD9F855_453C_434b_B5B6_AF2789BD8A7D"/>
+                <UML:DiagramElement geometry="SX=0;SY=7;EX=0;EY=-8;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=36:-239$36:-170$;" subject="EAID_9DE47787_D8A8_435b_8D00_19FDDA08EABF"/>
+            </UML:Diagram.element>
+        </UML:Diagram>
+        <UML:Diagram name="Enclosure" xmi.id="EAID_C326222B_3629_4cb4_8E50_6E37B28DCDDA" diagramType="CompositeStructureDiagram" owner="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A" toolName="Enterprise Architect 2.5">
+            <UML:ModelElement.taggedValue>
+                <UML:TaggedValue tag="package" value="EAPK_AB78C4E3_C2DD_48d9_884D_31434547872A"/>
+                <UML:TaggedValue tag="type" value="CompositeStructure"/>
+                <UML:TaggedValue tag="ea_localid" value="7"/>
+                <UML:TaggedValue tag="parent" value="EAID_321F247C_AB21_4984_A30C_000C84F6777C"/>
+                <UML:TaggedValue tag="styleex" value="MDGDgm=SysML1.4::InternalBlock;SF=1;"/>
+            </UML:ModelElement.taggedValue>
+            <UML:Diagram.element>
+                <UML:DiagramElement geometry="Left=488;Top=593;Right=503;Bottom=608;" subject="EAID_06F15C65_EB2F_4029_A116_D983ABC7181B"/>
+                <UML:DiagramElement geometry="Left=699;Top=598;Right=714;Bottom=613;" subject="EAID_C417C9CE_D3C6_48c4_9D00_FEB61643E5AD"/>
+                <UML:DiagramElement geometry="Left=496;Top=529;Right=706;Bottom=682;" subject="EAID_91E0587C_88B2_456d_8FF9_072EC3B2DF0A"/>
+                <UML:DiagramElement geometry="Left=692;Top=122;Right=707;Bottom=137;" subject="EAID_67F76032_35EF_461b_9349_B77AE408B783"/>
+                <UML:DiagramElement geometry="Left=478;Top=123;Right=493;Bottom=138;" subject="EAID_455F9DEB_F31B_48b7_B4E9_A794EF04CAF8"/>
+                <UML:DiagramElement geometry="Left=486;Top=61;Right=699;Bottom=198;" subject="EAID_C82BAD66_14A9_4360_8038_726BE268F574"/>
+                <UML:DiagramElement geometry="Left=702;Top=355;Right=717;Bottom=370;" subject="EAID_A2DC971C_DB52_4e0e_A594_5E360D36AE91"/>
+                <UML:DiagramElement geometry="Left=478;Top=353;Right=493;Bottom=368;" subject="EAID_9A96F2E4_6D4E_4b77_94F4_B5354BF04ADF"/>
+                <UML:DiagramElement geometry="Left=486;Top=284;Right=709;Bottom=436;" subject="EAID_90DA4AA6_2982_4161_BA9F_F672C92D08C1"/>
+                <UML:DiagramElement geometry="Left=74;Top=358;Right=89;Bottom=373;" subject="EAID_6AFC7C57_2BFC_49af_BA19_6F99F1157E78"/>
+                <UML:DiagramElement geometry="Left=376;Top=392;Right=391;Bottom=407;" subject="EAID_12687534_C780_42ef_B46D_9661DAD64857"/>
+                <UML:DiagramElement geometry="Left=376;Top=311;Right=391;Bottom=326;" subject="EAID_31072C8B_7BC1_4183_A898_B82F595F71EE"/>
+                <UML:DiagramElement geometry="Left=376;Top=353;Right=391;Bottom=368;" subject="EAID_938FB4D9_B7FD_4c86_9541_CBFC290FD92D"/>
+                <UML:DiagramElement geometry="Left=81;Top=299;Right=383;Bottom=425;" subject="EAID_C76959A9_F807_42f5_9DF1_BC441A647905"/>
+                <UML:DiagramElement geometry="Left=773;Top=598;Right=788;Bottom=613;" subject="EAID_7933D518_33BB_4bff_B8CD_1E44F15BD7F8"/>
+                <UML:DiagramElement geometry="Left=773;Top=394;Right=788;Bottom=409;" subject="EAID_6434C7FA_1B90_466a_ABA2_98C56F9F27A3"/>
+                <UML:DiagramElement geometry="Left=773;Top=142;Right=788;Bottom=157;" subject="EAID_C8098839_EB90_45da_8295_82975593F53B"/>
+                <UML:DiagramElement geometry="Left=6;Top=503;Right=21;Bottom=518;" subject="EAID_5CF83D12_5CFC_4f54_8F79_22C525A8273E"/>
+                <UML:DiagramElement geometry="Left=14;Top=20;Right=780;Bottom=719;" subject="EAID_321F247C_AB21_4984_A30C_000C84F6777C"/>
+                <UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_76BBF74A_AAE1_4d0a_9A3F_8129C7FA37AF"/>
+                <UML:DiagramElement geometry="SX=8;SY=0;EX=0;EY=-3;EDGE=3;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=717:-404$;" subject="EAID_5B4E51D4_D6C3_4776_B9C5_768E0C747EAD"/>
+                <UML:DiagramElement geometry="SX=8;SY=0;EX=0;EY=2;EDGE=3;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=707:-147$;" subject="EAID_958BA38C_A3CC_489b_9665_E530C665E8B3"/>
+                <UML:DiagramElement geometry="SX=7;SY=0;EX=0;EY=3;EDGE=3;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=390:-597$;" subject="EAID_7576B39A_9C74_41a2_B018_6E6527FB0274"/>
+                <UML:DiagramElement geometry="SX=8;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=391:-130$;" subject="EAID_95B8D850_A5E0_40f3_9AA0_CDB7EEB2FE7F"/>
+                <UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_E0201590_7A30_44b3_8CA5_C22A2D0C44D0"/>
+                <UML:DiagramElement geometry="SX=0;SY=1;EX=0;EY=-8;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=39:-509$39:-373$;" subject="EAID_BAAD66A4_BFC5_40ec_A4D3_5A860EFE77F7"/>
+            </UML:Diagram.element>
+        </UML:Diagram>
+    </XMI.content>
+    <XMI.difference/>
+    <XMI.extensions xmi.extender="Enterprise Architect 2.5"/>
+</XMI>
