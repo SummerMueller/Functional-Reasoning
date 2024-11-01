@@ -108,11 +108,11 @@ public class Reasoning {
    public static void main(String[] args) {
 
       try {
-         boolean hasActD = !true;
+         boolean hasActD = true;
          // Sets up the file
          //String file = "C:\\Users\\summe\\Functional Reasoning\\DanglingNode_Condensed.xml";
-         //String file = "C:\\Users\\summe\\Functional Reasoning\\coffeemaker_manual_2024_Condensed.xml";
-         String file = "C:\\Users\\summe\\Functional Reasoning\\HairDryer_NLP.xml";
+         String file = "C:\\Users\\summe\\Functional Reasoning\\CoffeeMaker_Condensed.xml";
+         //String file = "C:\\Users\\summe\\Functional Reasoning\\HairDryer_NLP.xml";
          //String file = "C:\\Users\\summe\\Functional Reasoning\\Speaker_Manual_Condensed.xml";
          //String file = "C:\\Users\\summe\\Functional Reasoning\\VacuumCleaner_Condensed.xml";
          File inputFile = new File(file);
@@ -792,7 +792,7 @@ public class Reasoning {
      int numInputs = action.inPins().size(); 
      int numOutputs = action.outPins().size();
      
-      if (function.equals("IMPORT") || function.equals("EXPORT")) {
+      if (function.equals("IMPORT") || function.equals("EXPORT") || function.equals("DISPOSE")) {
          if (numInputs == 1 && numOutputs == 1) {
             if (action.inPins().get(0).type.equals(action.outPins().get(0).type)) {
                return true;
@@ -829,7 +829,7 @@ public class Reasoning {
             }
          }
          
-      } else if (function.equals("TRANSFER") || function.equals("ACTUATE")) {
+      } else if (function.equals("ACTUATE")) {
          if (numInputs == 1 && numOutputs == 1) {
             String typeIn1 = action.inPins().get(0).type();
             String typeOut1 = action.outPins().get(0).type();
@@ -837,6 +837,15 @@ public class Reasoning {
                if (getGeneralType(action.inPins().get(0)).equals("energy")) {
                   return true;
                }
+            }
+         }
+         
+      } else if (function.equals("TRANSFER")) {
+         if (numInputs == 1 && numOutputs == 1) {
+            String typeIn1 = action.inPins().get(0).type();
+            String typeOut1 = action.outPins().get(0).type();
+            if (typeIn1.equals(typeOut1)) {
+               return true;
             }
          }
          
