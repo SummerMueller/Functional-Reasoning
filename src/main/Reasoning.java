@@ -1,6 +1,10 @@
+package main;
+
 import java.io.File;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.DocumentBuilder;
+
+import main.UI;
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
 import org.w3c.dom.Node;
@@ -9,7 +13,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Reasoning {
-    
+   private static StringBuilder errorLog;
+   public Reasoning() {
+      errorLog = new StringBuilder();
+   }
    // Main components for the BDDs and IBDs 
    public static record Block(String name, String xmi, ArrayList<String> ports) {
    }
@@ -105,16 +112,16 @@ public class Reasoning {
    public static ArrayList<ActionPin> sourcePins = new ArrayList<ActionPin>();
    public static ArrayList<ActionPin> targetPins = new ArrayList<ActionPin>();
 
-   public static void main(String[] args) {
+   public static void main() {
 
       try {
          boolean hasActD = !true;
          // Sets up the file
-         //String file = "data/DanglingNode_Condensed.xml";
-         //String file = "data/coffeemaker_manual_2024_Condensed.xml";
+//         String file = "data/DanglingNode_Condensed.xml";
+//         String file = "data/coffeemaker_manual_2024_Condensed.xml";
          String file = "data/HairDryer_NLP.xml";
-         //String file = "data/Speaker_Manual_Condensed.xml";
-         //String file = "data/VacuumCleaner_Condensed.xml";
+//         String file = "data/Speaker_Manual_Condensed.xml";
+//         String file = "data/VacuumCleaner_Condensed.xml";
          File inputFile = new File(file);
          DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
          DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
@@ -732,42 +739,75 @@ public class Reasoning {
  
 /**************************************************************************************************/
          // Calculates the total number of errors
-         int totalErrors = allTopsI.size() + allTopsII.size() + allIntegritiesI.size() + 
-               allNodes.size() + allFunctions.size() + allKBs.size();
-         
-         // Prints the type of each error caught and its location         
+//         int totalErrors = allTopsI.size() + allTopsII.size() + allIntegritiesI.size() +
+//               allNodes.size() + allFunctions.size() + allKBs.size();
+//
+//         // Prints the type of each error caught and its location
+//         for (BalanceLawsI error : allIntegritiesI) {
+//            System.out.printf ("%s%n%n", error);
+//         }
+//         if (!hasActD) {
+//            for (BalanceLawsII error : allIntegritiesII) {
+//               System.out.printf ("%s%n%n", error);
+//            }
+//            totalErrors += allIntegritiesII.size();
+//         }
+//         for (IncompleteTopologyI error : allTopsI) {
+//            System.out.printf ("%s%n%n", error);
+//         }
+//         for (IncompleteTopologyII error : allTopsII) {
+//            System.out.printf ("%s%n%n", error);
+//         }
+//         for (DanglingNode error : allNodes) {
+//            System.out.printf ("%s%n%n", error);
+//         }
+//         for (UnknownFunction error : allFunctions) {
+//            System.out.printf ("%s%n%n", error);
+//         }
+//         for (FunctionalKB error : allKBs) {
+//            System.out.printf ("%s%n%n", error);
+//         }
+//         System.out.printf ("Total errors: %d%n", totalErrors);
+//      } catch (Exception e) {
+//         e.printStackTrace();
+         int totalErrors = allTopsI.size() + allTopsII.size() + allIntegritiesI.size() +
+                 allNodes.size() + allFunctions.size() + allKBs.size();
+
          for (BalanceLawsI error : allIntegritiesI) {
-            System.out.printf ("%s%n%n", error);
+            errorLog.append(String.format("%s<br><br>", error));
          }
          if (!hasActD) {
             for (BalanceLawsII error : allIntegritiesII) {
-               System.out.printf ("%s%n%n", error);
+               errorLog.append(String.format("%s<br><br>", error));
             }
             totalErrors += allIntegritiesII.size();
          }
          for (IncompleteTopologyI error : allTopsI) {
-            System.out.printf ("%s%n%n", error);
+            errorLog.append(String.format("%s<br><br>", error));
          }
          for (IncompleteTopologyII error : allTopsII) {
-            System.out.printf ("%s%n%n", error);
+            errorLog.append(String.format("%s<br><br>", error));
          }
          for (DanglingNode error : allNodes) {
-            System.out.printf ("%s%n%n", error);
+            errorLog.append(String.format("%s<br><br>", error));
          }
          for (UnknownFunction error : allFunctions) {
-            System.out.printf ("%s%n%n", error);
+            errorLog.append(String.format("%s<br><br>", error));
          }
          for (FunctionalKB error : allKBs) {
-            System.out.printf ("%s%n%n", error);
+            errorLog.append(String.format("%s<br><br>", error));
          }
-         System.out.printf ("Total errors: %d%n", totalErrors);
-
+         errorLog.append(String.format("Total errors: %d", totalErrors));
       } catch (Exception e) {
          e.printStackTrace();
       }
+
    }
-   
-   
+
+   public String getErrorLog() {
+      return "<html><body style='font-family:Verdana; font-size:12px;'>" + errorLog.toString() + "</body></html>";
+   }
+
    // Determines if the given action is in the function knowledge base at all
    public static boolean isAction (final Action action) {
       
