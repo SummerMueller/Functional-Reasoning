@@ -110,11 +110,11 @@ public class Reasoning {
       try {
          boolean hasActD = !true;
          // Sets up the file
-         //String file = "C:\\Users\\summe\\Functional Reasoning\\DanglingNode_Condensed.xml";
-         //String file = "C:\\Users\\summe\\Functional Reasoning\\coffeemaker_manual_2024_Condensed.xml";
-         String file = "C:\\Users\\summe\\Functional Reasoning\\HairDryer_NLP.xml";
-         //String file = "C:\\Users\\summe\\Functional Reasoning\\Speaker_Manual_Condensed.xml";
-         //String file = "C:\\Users\\summe\\Functional Reasoning\\VacuumCleaner_Condensed.xml";
+         //String file = "data/DanglingNode_Condensed.xml";
+         //String file = "data/coffeemaker_manual_2024_Condensed.xml";
+         String file = "data/HairDryer_NLP.xml";
+         //String file = "data/Speaker_Manual_Condensed.xml";
+         //String file = "data/VacuumCleaner_Condensed.xml";
          File inputFile = new File(file);
          DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
          DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
@@ -126,7 +126,7 @@ public class Reasoning {
          // Extracts the system name from the file
          int start, end;
          String currentSystem = "";
-         start = file.lastIndexOf("\\");
+         start = file.lastIndexOf("/");
          end = file.indexOf(".xml");
          currentSystem = file.substring(start+1,end);
          
