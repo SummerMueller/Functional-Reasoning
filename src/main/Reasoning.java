@@ -79,7 +79,11 @@ public class Reasoning {
    public static record DanglingNode(String ActDName, String xmi) {
    }
    
-   public static record FunctionalReasoning(String actionName, String ActDName,
+   public static record UnknownFunction(String actionName, String ActDName,
+         String xmiOfAction, String xmiOfActD) {
+   }
+   
+   public static record FunctionalKB(String actionName, String ActDName,
          String xmiOfAction, String xmiOfActD) {
    }
 
@@ -104,11 +108,11 @@ public class Reasoning {
    public static void main(String[] args) {
 
       try {
-         boolean hasActD = true;
+         boolean hasActD = !true;
          // Sets up the file
          //String file = "C:\\Users\\summe\\Functional Reasoning\\DanglingNode_Condensed.xml";
-         String file = "C:\\Users\\summe\\Functional Reasoning\\coffeemaker_manual_2024_Condensed.xml";
-         //String file = "C:\\Users\\summe\\Functional Reasoning\\HairDryer_NLP.xml";
+         //String file = "C:\\Users\\summe\\Functional Reasoning\\coffeemaker_manual_2024_Condensed.xml";
+         String file = "C:\\Users\\summe\\Functional Reasoning\\HairDryer_NLP.xml";
          //String file = "C:\\Users\\summe\\Functional Reasoning\\Speaker_Manual_Condensed.xml";
          //String file = "C:\\Users\\summe\\Functional Reasoning\\VacuumCleaner_Condensed.xml";
          File inputFile = new File(file);
@@ -450,7 +454,8 @@ public class Reasoning {
          ArrayList<BalanceLawsI> allIntegritiesI = new ArrayList<BalanceLawsI>();
          ArrayList<BalanceLawsII> allIntegritiesII = new ArrayList<BalanceLawsII>();
          ArrayList<DanglingNode> allNodes = new ArrayList<DanglingNode>();
-         ArrayList<FunctionalReasoning> allFunctions = new ArrayList<FunctionalReasoning>();
+         ArrayList<UnknownFunction> allFunctions = new ArrayList<UnknownFunction>();
+         ArrayList<FunctionalKB> allKBs = new ArrayList<FunctionalKB>();
          
          // Validates that each block has at least one port
          for (Block block : allBlocks) {
@@ -714,8 +719,11 @@ public class Reasoning {
             
             // Iterates over each action to check for inferred balance errors
             for (Action action : act.actions()) {
-               if(!validAction(action)) {
-                  allFunctions.add(new FunctionalReasoning (action.name(),
+               if(!isAction(action)) {
+                  allFunctions.add(new UnknownFunction (action.name(),
+                        act.name(), action.xmi(), act.xmi()));
+               } else if(!validAction(action)) {
+                  allKBs.add(new FunctionalKB (action.name(),
                         act.name(), action.xmi(), act.xmi()));
                }
             }
@@ -723,7 +731,11 @@ public class Reasoning {
          
  
 /**************************************************************************************************/
-         // Prints the type of each error caught and its location
+         // Calculates the total number of errors
+         int totalErrors = allTopsI.size() + allTopsII.size() + allIntegritiesI.size() + 
+               allNodes.size() + allFunctions.size() + allKBs.size();
+         
+         // Prints the type of each error caught and its location         
          for (BalanceLawsI error : allIntegritiesI) {
             System.out.printf ("%s%n%n", error);
          }
@@ -731,6 +743,7 @@ public class Reasoning {
             for (BalanceLawsII error : allIntegritiesII) {
                System.out.printf ("%s%n%n", error);
             }
+            totalErrors += allIntegritiesII.size();
          }
          for (IncompleteTopologyI error : allTopsI) {
             System.out.printf ("%s%n%n", error);
@@ -741,11 +754,12 @@ public class Reasoning {
          for (DanglingNode error : allNodes) {
             System.out.printf ("%s%n%n", error);
          }
-         for (FunctionalReasoning error : allFunctions) {
+         for (UnknownFunction error : allFunctions) {
             System.out.printf ("%s%n%n", error);
          }
-         int totalErrors = allTopsI.size() + allTopsII.size() + allIntegritiesI.size() + 
-               allIntegritiesII.size() + allNodes.size() + allFunctions.size();
+         for (FunctionalKB error : allKBs) {
+            System.out.printf ("%s%n%n", error);
+         }
          System.out.printf ("Total errors: %d%n", totalErrors);
 
       } catch (Exception e) {
@@ -753,63 +767,162 @@ public class Reasoning {
       }
    }
    
+   
+   // Determines if the given action is in the function knowledge base at all
+   public static boolean isAction (final Action action) {
+      
+      String[] functions = {"IMPORT", "EXPORT", "STORE", "STOP", "SEPARATE", 
+            "DISTRIBUTE", "TRANSFER", "GUIDE", "COUPLE", "MIX", "ENERGIZE", 
+            "DEENERGIZE", "REGULATE", "CHANGE", "CONVERT", "SUPPLY", "ACTUATE",
+            "DISPOSE"};
+      
+      String actionName = action.name().toUpperCase();
+      for (String function : functions) {
+         if (function.equals(actionName)) {
+            return true;
+         }
+      }
+      return false;
+   }
+   
    // Determines if the given action follows the function knowledge base
    public static boolean validAction(final Action action) {
      
      String function = action.name().toUpperCase();
+     int numInputs = action.inPins().size(); 
+     int numOutputs = action.outPins().size();
      
       if (function.equals("IMPORT") || function.equals("EXPORT")) {
-         if (action.inPins().size() == 1 && action.outPins().size() == 1) {
+         if (numInputs == 1 && numOutputs == 1) {
             if (action.inPins().get(0).type.equals(action.outPins().get(0).type)) {
                return true;
             }
          }
       
       } else if (function.equals("STORE") || function.equals("STOP")) {
-         if (action.inPins().size() == 1 && action.outPins().size() == 0) {
+         if (numInputs == 1 && numOutputs == 0) {
             if (getGeneralType(action.inPins().get(0)).equals("material")) {
                return true;
             }
          }
          
       } else if (function.equals("SEPARATE")) {
-         return true;
+         if (numInputs == 1 && numOutputs > 1) {
+            for (ActionPin outPin : action.outPins()) {
+               if (!getGeneralType(outPin).equals("material")) {
+                  return false;
+               }
+            }
+            if (action.inPins().get(0).type().equals("M")) {
+               return true;
+            }
+         }
+         
          
       } else if (function.equals("DISTRIBUTE")) {
-         return true;
+         if (numInputs == 1 && numOutputs == 2) {
+            String typeIn1 = action.inPins().get(0).type();
+            String typeOut1 = action.outPins().get(0).type();
+            String typeOut2 = action.outPins().get(1).type();
+            if (typeIn1.equals(typeOut1) && typeIn1.equals(typeOut2)) {
+               return true;
+            }
+         }
          
-      } else if (function.equals("TRANSFER")) {
-         return true;
+      } else if (function.equals("TRANSFER") || function.equals("ACTUATE")) {
+         if (numInputs == 1 && numOutputs == 1) {
+            String typeIn1 = action.inPins().get(0).type();
+            String typeOut1 = action.outPins().get(0).type();
+            if (typeIn1.equals(typeOut1)) {
+               if (getGeneralType(action.inPins().get(0)).equals("energy")) {
+                  return true;
+               }
+            }
+         }
          
-      } else if (function.equals("GUIDE")) {
-         return true;
+      } else if (function.equals("GUIDE") || function.equals("REGULATE") || 
+            function.equals("SUPPLY")) {
+         if (numInputs == 1 && numOutputs == 1) {
+            String typeIn1 = action.inPins().get(0).type();
+            String typeOut1 = action.outPins().get(0).type();
+            if (typeIn1.equals(typeOut1)) {
+               if (getGeneralType(action.inPins().get(0)).equals("material")) {
+                  return true;
+               }
+            }
+         }
          
       } else if (function.equals("COUPLE")) {
-         return true;
+         if (numInputs == 2 && numOutputs == 1) {
+            String typeIn1 = action.inPins().get(0).type();
+            String typeIn2 = action.inPins().get(1).type();
+            String typeOut1 = action.outPins().get(0).type();
+            if (typeIn1.equals(typeOut1) && typeIn2.equals(typeOut1)) {
+               if (getGeneralType(action.inPins().get(0)).equals("material")) {
+                  return true;
+               }
+            }
+         }
          
       } else if (function.equals("MIX")) {
-         return true;
+         if (numInputs > 1 && numOutputs == 1) {
+            for (ActionPin inPin : action.inPins()) {
+               if (!getGeneralType(inPin).equals("material")) {
+                  return false;
+               }
+            }
+            if (action.outPins().get(0).type().equals("M")) {
+               return true;
+            }
+         }
          
       } else if (function.equals("ENERGIZE")) {
-         return true;
+         if (numInputs == 2 && numOutputs == 1) {
+            String typeIn1 = getGeneralType(action.inPins().get(0));
+            String typeIn2 = getGeneralType(action.inPins().get(1));
+            String typeOut1 = getGeneralType(action.outPins().get(0));
+            if (!typeIn1.equals(typeIn2)) {
+               if (typeOut1.equals("material")) {
+                  return true;
+               }
+            }
+         }
          
       } else if (function.equals("DEENERGIZE")) {
-         return true;
-         
-      } else if (function.equals("REGULATE")) {
-         return true;
+         if (numInputs == 1 && numOutputs == 2) {
+            String typeIn1 = getGeneralType(action.inPins().get(0));
+            String typeOut1 = getGeneralType(action.outPins().get(0));
+            String typeOut2 = getGeneralType(action.outPins().get(1));
+            if (!typeOut1.equals(typeOut2)) {
+               if (typeIn1.equals("material")) {
+                  return true;
+               }
+            }
+         }
          
       } else if (function.equals("CHANGE")) {
-         return true;
+         if (numInputs == 1 && numOutputs == 1) {
+            String typeIn1 = getGeneralType(action.inPins().get(0));
+            String typeOut1 = getGeneralType(action.outPins().get(0));
+            if (typeIn1.equals(typeOut1)) {
+               if (typeIn1.equals("material")) {
+                  return true;
+               }
+            }
+         }
          
       } else if (function.equals("CONVERT")) {
-         return true;
-         
-      } else if (function.equals("SUPPLY")) {
-         return true;
-      
-      } else if (function.equals("ACTUATE")) {
-         return true;
+         if (numInputs == 1 && numOutputs == 1) {
+            String typeGIn1 = getGeneralType(action.inPins().get(0));
+            String typeGOut1 = getGeneralType(action.outPins().get(0));
+            String typeSIn1 = action.inPins().get(0).type();
+            String typeSOut1 = action.outPins().get(0).type();
+            if (typeGIn1.equals("energy") && typeGOut1.equals("energy")) {
+               if (!typeSIn1.equals(typeSOut1)) {
+                  return true;
+               }
+            }
+         }
       }
       
       return false;
@@ -833,16 +946,19 @@ public class Reasoning {
       String[] materials = {"M", "S", "L", "G"};
       String[] energies = {"EE", "ME", "THE", "CHE", "EME", "NUE"};
       
+      // Gets the type of the pin
+      String pinType = pin.type().toUpperCase();
+      
       // Determines if the type is a material
       for (int i = 0; i < materials.length; i++) {
-         if (materials[i].equals(pin.type())) {
+         if (materials[i].equals(pinType)) {
             return "material";
          }
       }
    
       // Determines if the type is an energy
       for (int i = 0; i < energies.length; i++) {
-         if (energies[i].equals(pin.type())) {
+         if (energies[i].equals(pinType)) {
             return "energy";
          }
       }
