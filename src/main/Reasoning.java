@@ -62,18 +62,7 @@ public class Reasoning {
    public static record IncompleteTopologyII(String nodeName, String nodeType, String ownerName, 
          String ownerType, String diagramName, String diagramType, String xmiOfNode) {
    }
-   
-   /*public static record BalanceLaws(String IBD, String roleName, String xmiOfRole,
-         String dPorts, String sPorts) {
-   }
-   
-   public static record NoFlows(String IBD, String roleName, String xmiOfRole) {
-   }
-   
-   public static record DanglingEdge(String name, String xmi, String sourceName,
-         String xmiOfSource, String destinationName, String xmiOfDestination) {
-   }*/
-   
+
    public static record BalanceLawsI(String IBD, String associationName,
          String xmiOfAssociation, String sPortOwner, String sPort,
          String xmiOfsPort, String dPortOwner, String dPort, String xmiOfdPort) {
@@ -527,88 +516,6 @@ public class Reasoning {
             }
          }
 
-         
-         // Begins validating the old balance laws inspection
-         
-         // Creates ArrayLists to separately store source and destination ports
-         /*ArrayList<Port> allDPorts = new ArrayList<Port>();
-         ArrayList<Port> allSPorts = new ArrayList<Port>();
-         
-         // Separates each port into source and destination
-         for (Association association : allAssociations) {
-            for (Port port : allPorts) {
-               if (port.xmi().equals(association.xmiOfDestination)) {
-                  allDPorts.add(port);
-               }
-            }
-            for (Port port : allPorts) {
-               if (port.xmi().equals(association.xmiOfSource)) {
-                  allSPorts.add(port);
-               }
-            }
-         }
-         
-         // Iterates over all the roles to check each has a source and destination port
-         for (ClassifierRole role : allRoles) {
-            
-            // Creates fields to store the source and destination ports of the current role
-            String dPortsList = "";
-            String sPortsList = "";
-            
-            // Determines if the role has a destination port
-            boolean hasDPort = false;
-            for (Port port : allDPorts) {
-               if (role.xmi().equals(port.xmiOfOwner())) {
-                  dPortsList = dPortsList.concat(port.name()).concat(" ");
-                  hasDPort = true;
-               }
-            }
-            
-            // Determines if the role has a source port
-            boolean hasSPort = false;
-            for (Port port : allSPorts) {
-               if (role.xmi().equals(port.xmiOfOwner())) {
-                  sPortsList = sPortsList.concat(port.name()).concat(" ");
-                  hasSPort = true;
-               }
-            }
-            
-            // Removes extra spaces at the end of dPort and sPort strings
-            if (hasDPort) {
-               dPortsList = dPortsList.substring(0,dPortsList.length()-1);
-            }
-            if (hasSPort) {
-               sPortsList = sPortsList.substring(0,sPortsList.length()-1);
-            }
-            
-            // If missing either a source or destination port, add to list of all errors
-            if (!(hasDPort || hasSPort)) {
-               allFlows.add(new NoFlows (getIBD(allIBDs, role.xmi()), role.name(), role.xmi()));
-            } else if (!(hasDPort && hasSPort)) {
-               allLaws.add(new BalanceLaws (getIBD(allIBDs, role.xmi()), role.name(), role.xmi(), dPortsList, sPortsList));
-            }
-
-         }*/
-         
-         // Checks for dangling edges
-         /*for (Association asso : allAssociations) {
-            boolean validSource = false;
-            boolean validDestination = false;
-            for (Port port : allPorts) {
-               if (asso.xmiOfSource().equals(port.xmi())) {
-                  validSource = true;
-               }
-               if (asso.xmiOfDestination().equals(port.xmi())) {
-                  validDestination = true;
-               }
-            }
-            if (!(validSource && validDestination)) {
-               allEdges.add(new DanglingEdge (asso.name(), asso.xmi(), asso.sourceName(),
-                  asso.xmiOfSource(), asso.destinationName(), asso.xmiOfDestination()));
-            }
-         }*/
-         
-         
 /**************************************************************************************************/         
          // Begins validating the balance laws inspection
          
