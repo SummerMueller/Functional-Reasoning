@@ -9,3 +9,25 @@ System and software design benefits greatly from formal modeling, allowing for a
 02. [Installation](#installation)
 03. [Usage](#usage)
 04. [Contact](#contact)
+
+## Requirements
+### System Model Type
+
+### Layers of Nesting
+
+### Flow Type Vocabulary
+
+### Functional Knowledge Base
+
+
+## Installation
+
+
+## Usage
+
+
+## Contact
+For questions, suggestions, or collaborations:
+- **Candice Chambers** - chambersc2017@my.fit.edu
+- **Summer Mueller** - smueller2023@my.fit.edu
+- **Parth Ganeriwala** - pganeriwala2022@my.fit.edu
