@@ -11,13 +11,15 @@ System and software design benefits greatly from formal modeling, allowing for a
 04. [Contact](#contact)
 
 ## Requirements
-### System Model Type
+### (a) System Model Type
+The reasoner performs a series of physics-based inspectinos to the model input by the user. The structural and functional analysis relies on the system's physical components as well as the system's flow of materials and energies. For this reason, the reasoner was constructed to validate only electro-mechanical systems. For example, our case study tested an electric coffeemaker, a hair dryer, a vacuum cleaner, and a wired speaker.
 
-### Layers of Nesting
+### (b) SysML Diagrams
+To apply the reasoner to a SysML model, the system must at least have a Block Definition Diagram (BDD) and an Internal Block Diagram (IBD) for each block with internal components. In addition, each IBD should only have one layer of internal nesting. For a more in-depth analysis, Activity Diagrams (AD) can be included to perform reasoning on functions. Note that without ADs, the reasoner is restricted to a structural analysis of the model. The specifications for ADs are elborated on in the requirements for the functional knowledge base.
 
-### Flow Type Vocabulary
+### (c) Flow Type Vocabulary
 
-### Functional Knowledge Base
+### (d) Functional Knowledge Base
 
 
 ## Installation
