@@ -15,9 +15,10 @@ System and software design benefits greatly from formal modeling, allowing for a
 The reasoner performs a series of physics-based inspectinos to the model input by the user. The structural and functional analysis relies on the system's physical components as well as the system's flow of materials and energies. For this reason, the reasoner was constructed to validate only electro-mechanical systems. For example, our case study tested an electric coffeemaker, a hair dryer, a vacuum cleaner, and a wired speaker.
 
 ### (b) SysML Diagrams
-To apply the reasoner to a SysML model, the system must at least have a Block Definition Diagram (BDD) and an Internal Block Diagram (IBD) for each block with internal components. In addition, each IBD should only have one layer of internal nesting. For a more in-depth analysis, Activity Diagrams (AD) can be included to perform reasoning on functions. Note that without ADs, the reasoner is restricted to a structural analysis of the model. The specifications for ADs are elborated on in the requirements for the functional knowledge base.
+To apply the reasoner to a SysML model, the system must have at least a Block Definition Diagram (BDD) and an Internal Block Diagram (IBD) for each block with internal components. In addition, each IBD should only have one layer of internal nesting. For a more in-depth analysis, Activity Diagrams (AD) can be included to perform reasoning on functions. Note that without ADs, the reasoner is restricted to a structural analysis of the model. The specifications for ADs are elborated on in the requirements for the functional knowledge base.
 
 ### (c) Flow Type Vocabulary
+To perform the balance laws inspection, the ports on blocks and properties must adhere to a specialized naming system. The string should begin with either "IN" or "OUT" to specify whether the flow is entering or exiting a component. The next segment of the string should define the type of flow being transferred. See Table 1 for a list of accepted abreviations that correspond to each material and energy flow. Ensure also that the flow direction and flow type are separated in the string by an underscore. Additionally, the port names are not case sensitive and may contain numeric values to maintain singularity.
 
 ### (d) Functional Knowledge Base
 
