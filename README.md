@@ -18,7 +18,16 @@ The reasoner performs a series of physics-based inspectinos to the model input b
 To apply the reasoner to a SysML model, the system must have at least a Block Definition Diagram (BDD) and an Internal Block Diagram (IBD) for each block with internal components. In addition, each IBD should only have one layer of internal nesting. For a more in-depth analysis, Activity Diagrams (AD) can be included to perform reasoning on functions. Note that without ADs, the reasoner is restricted to a structural analysis of the model. The specifications for ADs are elborated on in the requirements for the functional knowledge base.
 
 ### (c) Flow Type Vocabulary
-To perform the balance laws inspection, the ports on blocks and properties must adhere to a specialized naming system. The string should begin with either "IN" or "OUT" to specify whether the flow is entering or exiting a component. The next segment of the string should define the type of flow being transferred. See Table 1 for a list of accepted abreviations that correspond to each material and energy flow. Ensure also that the flow direction and flow type are separated in the string by an underscore. Additionally, the port names are not case sensitive and may contain numeric values to maintain singularity.
+To perform the balance laws inspection, the ports on blocks and properties must adhere to a specialized naming system. The string should begin with either "IN" or "OUT" to specify whether the flow is entering or exiting a component. The next segment of the string should define the type of flow being transferred. See Table 1 and Table 2 for a list of accepted abbreviations that correspond to each material and energy flow. Ensure also that the flow direction and flow type are separated in the string by an underscore. Additionally, the port names are not case sensitive and may contain numeric values to maintain singularity.
+
+<em>Table 1: Material Flow Abbreviations</em>
+
+<img src="https://github.com/user-attachments/assets/2a2564be-bd05-485c-ad34-78d922bb3862" width="180" alt="Material Abbr. Table"> <p>  </p>
+
+<em>Table 2: Energy Flow Abbreviations</em> 
+
+<img src="https://github.com/user-attachments/assets/b23ebc0d-da2f-4dee-bd5a-c027eee0baf5" width="280" alt="Energy Abbr. Table">
+
 
 ### (d) Functional Knowledge Base
 
