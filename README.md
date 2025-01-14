@@ -32,6 +32,10 @@ To perform the balance laws inspection, the ports on blocks and properties must 
 ### (d) Functional Knowledge Base
 If an AD is present in the model, the reasoner will perform an evaluation of the functions. This analysis verifies that the number and types of input and output flows correspond to the correct keyword on each action block. A set of 18 function keywords were selected from the functional KB to be used by the reasoner. See Table 3 for the acceptable list of functions. The reasoner will only recognize and perform inspections on this set of functions given they are all spelled correctly. Otherwise, the reasoner will flag the function as unknown.
 
+<em>Table 3: Functional KB Vocabulary</em>
+
+<img src="https://github.com/user-attachments/assets/28e0f455-44cf-4d71-8eb4-a824fdb0d4e8" width="650" alt="List of Functional KB Vocabulary Keywords">
+
 ## Installation
 
 
